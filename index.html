@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seogyeong Jang — Product Designer</title>
+  <meta name="description" content="Seogyeong Jang is a product designer shaping clear, human experiences through research, testing and craft.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/site.css">
+  <script>document.documentElement.classList.add('js');try{if(sessionStorage.getItem('from')==='work'){document.documentElement.classList.add('from-work');sessionStorage.removeItem('from');}}catch(e){}</script>
+</head>
+<body class="home">
+  <a class="skip-link t-label" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">MENU</button>
+  <nav class="menu-panel" id="nav-links" aria-label="Primary">
+    <a class="t-nav" href="index.html" aria-current="page">Home</a>
+    <a class="t-nav" href="about.html">About</a>
+    <a class="t-nav" href="#work">Work</a>
+    <a class="t-nav" href="work.html">Case Studies</a>
+    <a class="t-nav" href="#contact">Contact</a>
+  </nav>
+
+  <main id="main">
+    <!-- Hero: short intro (top-left), nav (top-right), photo on a tight card pile, giant title -->
+    <section class="home-hero2" aria-label="Introduction">
+      <h1 class="sr-only">Seogyeong Jang — Product Designer</h1>
+      <div class="hero2__top">
+        <p class="home-intro"><strong>Seogyeong Jang</strong> — a product designer shaping clear, human experiences through research, testing and craft. I find what people really need, then design the simplest way to get there.</p>
+        <nav class="hero2__nav" aria-label="Home sections"><a href="#work">Work</a><a href="about.html">About</a><a href="work.html">Case Studies</a><a href="#contact">Contact</a></nav>
+      </div>
+      <a class="pile pre intro" data-pile href="work.html" aria-label="View case studies">
+        <span class="pcard pcard--b3" style="--c:#b3f4ef;--k:-.9;--i:0" aria-hidden="true"></span>
+        <span class="pcard pcard--b2" style="--c:#ffe299;--k:.7;--i:1" aria-hidden="true"></span>
+        <span class="pcard pcard--b1" style="--c:#1d3fd1;--k:-.5;--i:2" aria-hidden="true"><img src="img/hero-project.jpg" alt=""></span>
+        <span class="pcard pcard--top" style="--k:.25;--i:3"><img src="img/profile.jpg" alt="Seogyeong Jang working on a laptop" width="1000" height="1333"></span>
+      </a>
+      <p class="hero2__title" aria-hidden="true"><span class="l1">Seogyeong</span><span class="l2">Jang<span class="role">Product Designer.</span></span></p>
+      <p class="hero2__copy t-meta">© 2026</p>
+    </section>
+
+    <!-- About: big statement -->
+    <section class="assemble" id="about" data-assemble aria-labelledby="about-label">
+      <div class="assemble__sticky">
+        <div class="container">
+          <p class="section-header__label t-overline" id="about-label">About</p>
+          <p class="home-statement" data-assemble-text>Seogyeong Jang brings research and design together, turning complexity into clarity and curiosity into craft.</p>
+          <p class="home-statement-sub t-body-md" data-assemble-sub>I like problems that look complicated at first. I research widely, narrow down with evidence, and keep testing until the design is clear enough for anyone to follow.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected work: three stacking case-study cards -->
+    <section class="stack-section" id="work" aria-labelledby="work-label">
+      <div class="container">
+        <div class="stack-head">
+          <h2 class="section-header__title t-h1" id="work-label" data-reveal>Selected work</h2>
+          <a class="stack-head__all t-label" href="work.html" data-reveal>All case studies →</a>
+        </div>
+        <div class="stack" data-stack>
+          <div class="stack__item" style="--i:0">
+            <a class="scard" href="case-study.html" style="--c:#ffa8db" aria-label="Case study 01: RE:HAND">
+              <div class="scard__text">
+                <span class="scard__idx t-overline">01 /</span>
+                <h3 class="scard__title">RE:HAND</h3>
+                <p class="scard__desc t-body-lg">Real-time pottery biofeedback that helps stroke survivors rehab fine motor skills safely at home.</p>
+                <ul class="chips"><li class="chip t-chip">Fine motor rehab</li><li class="chip t-chip">Biofeedback</li><li class="chip t-chip">Usability testing</li></ul>
+                <span class="scard__cta t-label">View case study <span aria-hidden="true">→</span></span>
+              </div>
+              <div class="scard__media"><img src="img/hero-project.jpg" alt="RE:HAND key image" style="object-position:50% 35%"></div>
+            </a>
+          </div>
+          <div class="stack__item" style="--i:1">
+            <a class="scard" href="case-study-2.html" style="--c:#ffe299" aria-label="Case study 02">
+              <div class="scard__text">
+                <span class="scard__idx t-overline">02 /</span>
+                <h3 class="scard__title">Case study 02</h3>
+                <p class="scard__desc t-body-lg">A redesign of an existing social platform. Details coming soon.</p>
+                <ul class="chips"><li class="chip t-chip">Redesign</li><li class="chip t-chip">Social</li></ul>
+                <span class="scard__cta t-label">View case study <span aria-hidden="true">→</span></span>
+              </div>
+              <div class="scard__media"><img src="img/case-02.jpg" alt="Case study 02 key image"></div>
+            </a>
+          </div>
+          <div class="stack__item" style="--i:2">
+            <a class="scard" href="case-study-3.html" style="--c:#b3f4ef" aria-label="Case study 03">
+              <div class="scard__text">
+                <span class="scard__idx t-overline">03 /</span>
+                <h3 class="scard__title">Case study 03</h3>
+                <p class="scard__desc t-body-lg">Details coming soon.</p>
+                <ul class="chips"><li class="chip t-chip">Coming soon</li></ul>
+                <span class="scard__cta t-label">View case study <span aria-hidden="true">→</span></span>
+              </div>
+              <div class="scard__media"><img src="img/case-03.jpg" alt="Case study 03 key image"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I do -->
+    <section class="section section--band" aria-labelledby="do-label">
+      <div class="container">
+        <p class="section-header__label t-overline" id="do-label" data-reveal>What I do</p>
+        <div class="do-list">
+          <div class="do-row" data-reveal><span class="do-row__idx t-overline">A /</span><h2 class="do-row__title">Research</h2><p class="do-row__text t-body-lg">I dig into papers, communities and real conversations until the real problem shows itself.</p></div>
+          <div class="do-row" data-reveal><span class="do-row__idx t-overline">B /</span><h2 class="do-row__title">Define</h2><p class="do-row__text t-body-lg">I turn scattered findings into one clear point of view and a problem worth solving.</p></div>
+          <div class="do-row" data-reveal><span class="do-row__idx t-overline">C /</span><h2 class="do-row__title">Design</h2><p class="do-row__text t-body-lg">I design the simplest interaction that lets people act with confidence.</p></div>
+          <div class="do-row" data-reveal><span class="do-row__idx t-overline">D /</span><h2 class="do-row__title">Test</h2><p class="do-row__text t-body-lg">I test with real people, learn what breaks, and refine until it feels clear.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- In numbers -->
+    <section class="section" aria-labelledby="num-label">
+      <div class="container">
+        <p class="section-header__label t-overline" id="num-label" data-reveal>In numbers</p>
+        <ul class="num-grid">
+          <li class="num" data-reveal><span class="num__value">03</span><span class="num__label t-h2">Case studies</span><span class="num__note t-body-sm">Planned for this portfolio</span></li>
+          <li class="num" data-reveal style="--reveal-delay:80ms"><span class="num__value">06</span><span class="num__label t-h2">Test &amp; iteration stages</span><span class="num__note t-body-sm">RE:HAND, from pilot to refinement</span></li>
+          <li class="num" data-reveal style="--reveal-delay:160ms"><span class="num__value">70</span><span class="num__label t-h2">SUS score</span><span class="num__note t-body-sm">Expert evaluation, RE:HAND</span></li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- Process -->
+    <section class="section section--band" id="process" aria-labelledby="proc-label">
+      <div class="container">
+        <p class="section-header__label t-overline" id="proc-label" data-reveal>The process</p>
+        <ol class="proc-grid">
+          <li class="proc" data-reveal><span class="t-overline">01</span><h3 class="t-card">Listen</h3><p class="t-body-sm">Interviews, papers and communities. I start from what people say and do.</p></li>
+          <li class="proc" data-reveal style="--reveal-delay:70ms"><span class="t-overline">02</span><h3 class="t-card">Narrow down</h3><p class="t-body-sm">Cluster the findings, name the insight, and choose one path with clear reasons.</p></li>
+          <li class="proc" data-reveal style="--reveal-delay:140ms"><span class="t-overline">03</span><h3 class="t-card">Prototype</h3><p class="t-body-sm">Sketch many ideas, then build the simplest interaction that proves the point.</p></li>
+          <li class="proc" data-reveal style="--reveal-delay:210ms"><span class="t-overline">04</span><h3 class="t-card">Test &amp; refine</h3><p class="t-body-sm">Test with real users and experts, learn what breaks, and iterate.</p></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="home-footer" id="contact">
+    <div class="container">
+      <p class="home-footer__big" data-reveal>Let’s work together.</p>
+      <p class="t-card home-footer__mail">hello@your-email.com</p>
+      <div class="home-footer__links t-nav"><a href="#">LinkedIn</a><a href="#">Behance</a><a href="#">Resume</a></div>
+      <div class="home-footer__meta t-meta"><span>© 2026 Seogyeong Jang</span><a href="#main">Back to top ↑</a></div>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

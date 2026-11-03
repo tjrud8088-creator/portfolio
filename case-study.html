@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RE:HAND — Case Study</title>
+  <meta name="description" content="RE:HAND is a home rehabilitation service that combines pottery activities with real-time movement feedback for stroke survivors.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/site.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link t-label" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary">
+      <a class="nav__brand t-nav" href="index.html">Seogyeong Jang</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span></button>
+      <div class="nav__links" id="nav-links">
+        <a class="nav__link t-nav" href="index.html">Home</a>
+        <a class="nav__link t-nav" href="about.html">About</a>
+        <a class="nav__link t-nav" href="work.html" aria-current="page">Case Studies</a>
+        <a class="nav__link t-nav" href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top" data-section="Intro" aria-labelledby="hero-title">
+      <div class="container section__inner">
+        <div class="section-header" data-reveal>
+          <p class="section-header__label t-overline">Case study 01</p>
+          <h1 class="section-header__title t-h1" id="hero-title">RE:HAND</h1>
+        </div>
+        <p class="statement t-display-statement" data-reveal style="--reveal-delay:80ms">A home rehabilitation service that combines pottery activities with real-time movement feedback for stroke survivors.</p>
+        <figure class="media" data-reveal style="--reveal-delay:120ms">
+          <div class="media__img ratio-hero"><img src="img/hero-project.jpg" alt="RE:HAND key image" style="width:100%;height:100%;object-fit:cover;object-position:50% 35%"></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Project overview -->
+    <section class="section" id="overview" data-section="Overview" aria-labelledby="overview-label">
+      <div class="container section__inner">
+        <div class="section-header" data-reveal><p class="section-header__label t-overline" id="overview-label">Project overview</p></div>
+        <dl class="meta" data-reveal>
+          <div class="meta__item"><dt class="meta__label t-label">Role</dt><dd class="t-body-sm" style="margin:0">Lead UX/UI Designer</dd></div>
+          <div class="meta__item"><dt class="meta__label t-label">Platform</dt><dd class="t-body-sm" style="margin:0">Tablet app</dd></div>
+          <div class="meta__item"><dt class="meta__label t-label">Timeline</dt><dd class="t-body-sm" style="margin:0">2026.08 – 2026.11</dd></div>
+          <div class="meta__item"><dt class="meta__label t-label">Team</dt><dd class="t-body-sm" style="margin:0">Solo project</dd></div>
+        </dl>
+        <div class="stack-sm" data-reveal>
+          <h2 class="t-label" style="color:var(--text-secondary)">Methods</h2>
+          <ul class="chips">
+            <li class="chip t-chip">Literature review</li><li class="chip t-chip">Reddit analysis</li>
+            <li class="chip t-chip">1:1 interviews</li><li class="chip t-chip">Affinity mapping</li>
+            <li class="chip t-chip">Ideation</li><li class="chip t-chip">High-fi UI</li>
+            <li class="chip t-chip">Usability testing</li><li class="chip t-chip">Expert UT</li>
+          </ul>
+        </div>
+        <div class="stack-sm measure" data-reveal>
+          <h2 class="t-label" style="color:var(--text-secondary)">Deliverables</h2>
+          <ul class="deliverables t-body-md">
+            <li>Research insights &amp; problem definition</li>
+            <li>Prioritized feature set</li>
+            <li>High-fidelity tablet UI</li>
+            <li>Interactive 3D pottery prototype</li>
+            <li>Step-by-step onboarding flow</li>
+            <li>Usability findings &amp; design iterations</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- The problem -->
+    <section class="section" id="problem" data-section="Problem" aria-labelledby="problem-title">
+      <div class="container section__inner">
+        <div class="section-header" data-reveal>
+          <p class="section-header__label t-overline">The problem</p>
+          <h2 class="section-header__title t-h1" id="problem-title">Practicing at home. Unsure of each movement.</h2>
+        </div>
+        <p class="prose t-body-lg" data-reveal>After discharge, stroke survivors may continue hand exercises at home. But without feedback during practice, it can be difficult to know whether they are performing the movements as intended—and to stay motivated to continue.</p>
+        <div class="callout" data-reveal>
+          <p class="callout__label t-overline-sm">Problem statement</p>
+          <p class="callout__body t-body-lg">How might we help stroke survivors practice hand movements at home with clear feedback and a sense of progress?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design opportunity -->
+    <section class="section section--band" id="opportunity" data-section="Opportunity" aria-labelledby="opp-title">
+      <div class="container section__inner">
+        <div class="section-header" data-reveal>
+          <p class="section-header__label t-overline">Design opportunity</p>
+          <h2 class="section-header__title t-h1" id="opp-title">Make practice easier to follow.</h2>
+        </div>
+        <div class="cs-split">
+          <div class="stack-md">
+            <p class="prose t-body-lg" data-reveal>For this concept, feedback is part of the activity itself. Users should be able to see how their touch changes the virtual clay and how each action moves them toward completing a pottery piece.</p>
+            <blockquote class="designgoal t-body-lg-italic" data-reveal>Design goal: make the next action clear.</blockquote>
+          </div>
+          <figure class="loopbox" data-reveal style="--reveal-delay:100ms">
+            <div class="loopbox__box t-body-lg"><span>Touch the clay</span><span aria-hidden="true">↓</span><span>See it respond</span><span aria-hidden="true">↓</span><span>Track task progress</span></div>
+            <figcaption class="t-label">Proposed interaction loop · virtual pottery</figcaption>
+          </figure>
+        </div>
+        <div class="dircard" data-reveal>
+          <p class="t-overline-sm dircard__label">Design direction</p>
+          <p class="t-body-lg dircard__text">Pair visible responses to touch with achievable pottery tasks, so users can follow the activity and recognize their progress.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="section" id="research" data-section="Research" aria-labelledby="research-title">
+      <div class="container section__inner">
+        <div class="section-header" data-reveal>
+          <p class="section-header__label t-overline">Research</p>
+          <h2 class="section-header__title t-h1" id="research-title">Secondary Research</h2>
+        </div>
+        <p class="prose t-body-md" data-reveal>I reviewed clinical literature and global patient communities to ground the design direction.</p>
+        <ul class="sources t-body-sm" data-reveal>
+          <li>Clinical literature on upper-limb fine motor recovery after stroke.</li>
+          <li>Global patient communities (Reddit): the ultimate goal is full functional normalization.</li>
+          <li>Existing homecare rehabilitation apps and their feedback models.</li>
+        </ul>
+        <div class="stack-md" style="margin-top:var(--space-md)">
+          <h3 class="t-h1" data-reveal>Primary Research: Interview Themes</h3>
+          <p class="prose t-body-md" data-reveal>Top row: what patient communities and clinical literature showed. Bottom row: what 1:1 interviews with stroke survivors and caregivers confirmed.</p>
+          <ul class="stats">
+            <li class="stat" data-reveal><p class="stat__value t-display-stat">Back to normal</p><p class="stat__text t-caption">Reddit communities: the ultimate goal is full functional recovery for daily life</p></li>
+            <li class="stat" data-reveal style="--reveal-delay:80ms"><p class="stat__value t-display-stat">Quit early</p><p class="stat__text t-caption">Reddit communities: with no real-time performance standard, patients stop rehab early</p></li>
+            <li class="stat" data-reveal style="--reveal-delay:160ms"><p class="stat__value t-display-stat">At home</p><p class="stat__text t-caption">Literature and communities: no professional guidance for fine motor recovery after discharge</p></li>
+            <li class="stat" data-reveal><p class="stat__value t-display-stat">1:1 interviews</p><p class="stat__text t-caption">In-depth interviews with stroke survivors and caregivers</p></li>
+            <li class="stat" data-reveal style="--reveal-delay:80ms"><p class="stat__value t-display-stat">Too late</p><p class="stat__text t-caption">Interviews: a summary after exercise can’t help correct movement</p></li>
+            <li class="stat" data-reveal style="--reveal-delay:160ms"><p class="stat__value t-display-stat">In the moment</p><p class="stat__text t-caption">Interviews: patients wanted correction during the exercise itself</p></li>
+          </ul>
+        </div>
+        <div class="stack-md">
+          <blockquote class="quote t-body-lg-italic" data-reveal>Background: patients want full recovery for daily life but have no real-time standard to judge their own movements.</blockquote>
+          <blockquote class="quote t-body-lg-italic" data-reveal>Interviews: a summary after exercise is not enough; patients need correction while they exercise.</blockquote>
+        </div>
+        <div class="callout callout--dark" data-reveal>
+          <p class="callout__label t-overline-sm">Insight</p>
+          <p class="callout__body t-body-lg">Patients aim for full recovery yet cannot judge their own movements, so the real problem is the lack of real-time correction during exercise.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Affinity mapping -->
+    <section class="section section--band" id="insights" data-section="Insights" aria-labelledby="affinity-label">
+      <div class="container section__inner">
+        <div class="section-header" data-reveal>
+          <p class="section-header__label t-overline" id="affinity-label">Affinity mapping &amp; insights</p>
+          <h2 class="section-header__title t-h1">From research notes to design priorities.</h2>
+        </div>
+        <p class="prose t-body-lg" data-reveal>I grouped research notes into recurring themes, then translated them into priorities for the home rehabilitation experience.</p>
+        <div class="aff-grid">
+          <figure class="photo" data-reveal>
+            <img src="img/affinity-session.jpg" alt="Grouping research notes on a whiteboard during an affinity mapping session" width="656" height="492">
+            <figcaption class="t-label">Process documentation · grouping research notes on the whiteboard</figcaption>
+          </figure>
+          <div class="pcards">
+            <article class="pcard-s" data-reveal><div class="pcard-s__row"><h3 class="t-card">Support at home</h3><span class="t-meta">01</span></div><p class="t-body-sm">Design priority: provide a clear starting point and manageable tasks for home practice.</p></article>
+            <article class="pcard-s" data-reveal style="--reveal-delay:80ms"><div class="pcard-s__row"><h3 class="t-card">Feedback during practice</h3><span class="t-meta">02</span></div><p class="t-body-sm">Design priority: make the effect of each touch visible while shaping the virtual clay.</p></article>
+            <article class="pcard-s" data-reveal style="--reveal-delay:160ms"><div class="pcard-s__row"><h3 class="t-card">Visible progress</h3><span class="t-meta">03</span></div><p class="t-body-sm">Design priority: show task completion and practice history to support an ongoing routine.</p></article>
+          </div>
+        </div>
+        <div class="callout callout--dark" data-reveal>
+          <p class="callout__label t-overline-sm">Synthesis</p>
+          <p class="callout__body t-body-lg">A simple pottery task brings guidance, immediate visual responses and a sense of progress into one experience.</p>
+        </div>
+        <div class="stack-sm" data-reveal>
+          <h3 class="t-overline" style="color:var(--text-secondary)">Design principles</h3>
+          <ul class="principles t-body-sm">
+            <li>Keep each task simple and focused</li>
+            <li>Use clear, approachable instructions</li>
+            <li>Make touch responses easy to understand</li>
+            <li>Show achievable steps and visible progress</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Primary persona -->
+    <section class="section" id="users" data-section="Persona" aria-labelledby="persona-label">
+      <div class="container section__inner">
+        <div class="section-header" data-reveal>
+          <p class="section-header__label t-overline" id="persona-label">Target user &amp; POV</p>
+          <h2 class="section-header__title t-h1">Who I designed for</h2>
+        </div>
+        <p class="prose t-body-lg" data-reveal>The research pointed to one person: someone who has just come home after intensive hospital rehab and now has to rebuild fine motor control by herself.</p>
+        <article class="persona2" data-reveal>
+          <div class="persona2__visual">
+            <img src="img/persona.jpg" alt="Illustration of Seoyeon practicing with a tablet" onerror="this.remove()">
+            <div class="persona2__id">
+              <h3 class="t-card">Seoyeon Kim</h3>
+              <dl class="persona2__meta t-body-sm">
+                <div><dt>Age</dt><dd>34</dd></div>
+                <div><dt>Gender</dt><dd>Female</dd></div>
+                <div><dt>Condition</dt><dd>Left-side hemiparesis</dd></div>
+                <div><dt>Stage</dt><dd>Post-discharge, at home</dd></div>
+              </dl>
+            </div>
+          </div>
+          <div class="persona2__body">
+            <h3 class="persona2__name">Seoyeon Kim</h3>
+            <p class="persona2__quote">“I can move my arm after discharge, but my left fingers won’t move the way I want. I can’t tell whether I’m doing it right, or even getting better, so I lose the will to keep going.”</p>
+            <p class="persona2__bio t-body-md">A stroke survivor preparing for independence in daily activities (ADL). She regained shoulder and arm movement in early rehab, but pinch and precision in her left wrist and fingers are still weak. She is in the “golden time” of small-muscle rehab and looking for ways to train on her own.</p>
+            <div class="persona2__cols">
+              <div>
+                <h4 class="t-overline-sm">Goals</h4>
+                <ul class="persona2__list t-body-sm">
+                  <li><b>See her recovery objectively (core).</b> Real-time touch feedback as a heatmap, and a weekly dashboard of pressure, precision and performance to keep her motivated.</li>
+                  <li><b>Do daily activities on her own.</b> Recover fine motor sense in her left hand, such as holding a cup or handling her belongings.</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="t-overline-sm">Pain points</h4>
+                <ul class="persona2__list t-body-sm">
+                  <li><b>Unclear recovery, lost persistence (core).</b> Alone, she can’t track progress or proper technique, and motivation drops.</li>
+                  <li><b>Limits in fine daily tasks.</b> Weak grasp and stiffness make even holding a water cup hard.</li>
+                  <li><b>Monotonous rehab.</b> Simple repeated exercises are boring.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="persona2__meters">
+              <div class="meter"><div class="meter__top t-label"><span>Digital proficiency</span><span>8/10</span></div><div class="meter__bar"><span style="width:80%"></span></div><p class="t-caption">Highly proficient with a smartphone and tablet.</p></div>
+              <div class="meter"><div class="meter__top t-label"><span>Adaptability to new apps</span><span>9/10</span></div><div class="meter__bar"><span style="width:90%"></span></div><p class="t-caption">Understands gamification and intuitive UI, with no resistance.</p></div>
+            </div>
+          </div>
+        </article>
+        <!-- TODO (author): the board says "late 30s" in the background but 34 in the title; confirm the age. Add the illustration as site/img/persona.jpg. -->
+      </div>
+    </section>
+
+    <!-- Usability testing & iteration -->
+    <section class="section" id="testing" data-section="Testing" aria-labelledby="journey-label">
+      <div class="container section__inner">
+        <div class="section-header" data-reveal><p class="section-header__label t-overline" id="journey-label">Usability testing &amp; iteration</p></div>
+        <p class="prose t-body-lg" data-reveal>How testing with a real stroke survivor and an occupational therapist reshaped the interaction and the metrics.</p>
+        <ol class="journey" data-reveal>
+          <li class="stage stage--blue" tabindex="0">
+            <p class="stage__name t-overline-sm">Pilot UT</p><p class="stage__action t-caption">Validated onboarding flows</p>
+            <div class="stage__block"><p class="stage__label t-overline-sm">Finding</p><p class="stage__finding t-caption">Layout bugs; stiff touch guides</p></div>
+            <hr class="stage__divider">
+            <div class="stage__block"><p class="stage__label t-overline-sm">Result</p><p class="stage__result t-caption">Fixed bugs; curved hand paths</p></div>
+          </li>
+          <li class="journey__arrow t-caption" aria-hidden="true">→</li>
+          <li class="stage stage--red" tabindex="0">
+            <p class="stage__name t-overline-sm">1st Main UT</p><p class="stage__action t-caption">Tested with a stroke survivor</p>
+            <div class="stage__block"><p class="stage__label t-overline-sm">Finding</p><p class="stage__finding t-caption">Flat screen clashed with full-grab motion</p></div>
+            <hr class="stage__divider">
+            <div class="stage__block"><p class="stage__label t-overline-sm">Result</p><p class="stage__result t-caption">Tracking friction exposed</p></div>
+          </li>
+          <li class="journey__arrow t-caption" aria-hidden="true">→</li>
+          <li class="stage stage--yellow" tabindex="0">
+            <p class="stage__name t-overline-sm">Pivot</p><p class="stage__action t-caption">Reworked the interaction</p>
+            <div class="stage__block"><p class="stage__label t-overline-sm">Finding</p><p class="stage__finding t-caption">Multi-finger dragging was high-friction</p></div>
+            <hr class="stage__divider">
+            <div class="stage__block"><p class="stage__label t-overline-sm">Result</p><p class="stage__result t-caption">Snap-based touch logic</p></div>
+          </li>
+          <li class="journey__arrow t-caption" aria-hidden="true">→</li>
+          <li class="stage stage--purple" tabindex="0">
+            <p class="stage__name t-overline-sm">Onboarding</p><p class="stage__action t-caption">Added a multi-level system</p>
+            <div class="stage__block"><p class="stage__label t-overline-sm">Finding</p><p class="stage__finding t-caption">Needs differ across users</p></div>
+            <hr class="stage__divider">
+            <div class="stage__block"><p class="stage__label t-overline-sm">Result</p><p class="stage__result t-caption">Guided entry for every level</p></div>
+          </li>
+          <li class="journey__arrow t-caption" aria-hidden="true">→</li>
+          <li class="stage stage--green" tabindex="0">
+            <p class="stage__name t-overline-sm">Expert UT</p><p class="stage__action t-caption">Tested with an occupational therapist</p>
+            <div class="stage__block"><p class="stage__label t-overline-sm">Finding</p><p class="stage__finding t-caption">Praised weekly trends and finger hold stability</p></div>
+            <hr class="stage__divider">
+            <div class="stage__block"><p class="stage__label t-overline-sm">Result</p><p class="stage__result t-caption">SUS score: 70</p></div>
+          </li>
+          <li class="journey__arrow t-caption" aria-hidden="true">→</li>
+          <li class="stage stage--blue" tabindex="0">
+            <p class="stage__name t-overline-sm">Refinement</p><p class="stage__action t-caption">Reviewed metrics for clinical use</p>
+            <div class="stage__block"><p class="stage__label t-overline-sm">Finding</p><p class="stage__finding t-caption">Recovery-date estimate could mislead</p></div>
+            <hr class="stage__divider">
+            <div class="stage__block"><p class="stage__label t-overline-sm">Result</p><p class="stage__result t-caption">Removed it; split flexion and extension</p></div>
+          </li>
+        </ol>
+        <div class="callout" data-reveal style="max-width:var(--text-width)">
+          <p class="callout__label t-overline-sm">Takeaway</p>
+          <p class="callout__body t-body-lg">Rather than abandoning the concept, I pivoted the interaction from high-friction dragging to snap-based touch.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution landscape -->
+    <section class="section" id="landscape" data-section="Landscape" aria-labelledby="landscape-label">
+      <div class="container section__inner">
+        <div class="section-header" data-reveal><p class="section-header__label t-overline" id="landscape-label">Solution landscape</p></div>
+        <div class="landscape">
+          <article class="row" data-reveal>
+            <header class="row__name"><h3 class="row__title t-h2">Hospital rehabilitation</h3><p class="row__descriptor t-overline-sm">Ends at discharge</p></header>
+            <div class="row__col"><p class="row__col-label t-overline-sm">Strengths</p>
+              <ul class="row__list row__list--plus t-body-sm"><li>Professional therapist guidance</li><li>Structured clinical care</li><li>Gross motor recovery support</li></ul></div>
+            <div class="row__col"><p class="row__col-label t-overline-sm">Weaknesses</p>
+              <ul class="row__list row__list--minus t-body-sm"><li>Ends at discharge</li><li>No fine motor support at home</li><li>Patients left on their own</li></ul></div>
+          </article>
+          <article class="row" data-reveal>
+            <header class="row__name"><h3 class="row__title t-h2">Existing homecare apps</h3><p class="row__descriptor t-overline-sm">Passive end-of-day summary</p></header>
+            <div class="row__col"><p class="row__col-label t-overline-sm">Strengths</p>
+              <ul class="row__list row__list--plus t-body-sm"><li>Usable at home</li><li>Logs completed sessions</li><li>Self-paced routines</li></ul></div>
+            <div class="row__col"><p class="row__col-label t-overline-sm">Weaknesses</p>
+              <ul class="row__list row__list--minus t-body-sm"><li>Only a summary after the fact</li><li>No real-time correction</li><li>Can’t answer “am I doing it right?”</li></ul></div>
+          </article>
+          <article class="row row--ours" data-reveal>
+            <header class="row__name"><h3 class="row__title t-h2">RE:HAND</h3><p class="row__descriptor t-overline-sm">Real-time pottery biofeedback</p></header>
+            <div class="row__col"><p class="row__col-label t-overline-sm">Strengths</p>
+              <ul class="row__list row__list--plus t-body-sm"><li>Instant visual, haptic and tactile feedback</li><li>3D pottery-shaping interaction</li><li>Adaptive diagnostic calibration</li></ul></div>
+            <div class="row__col"><p class="row__col-label t-overline-sm">Weaknesses</p>
+              <ul class="row__list row__list--minus t-body-sm"><li>Flat tablet limits full-grab motion</li><li>Needs multi-level onboarding</li><li>—</li></ul></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem definition -->
+    <section class="section section--band" id="hmw" data-section="HMW" aria-labelledby="hmw-title">
+      <div class="container section__inner">
+        <div class="section-header" data-reveal>
+          <p class="section-header__label t-overline">Problem definition</p>
+          <h2 class="section-header__title t-h1" id="hmw-title">How Might We</h2>
+        </div>
+        <ol class="hmw">
+          <li class="hmw__item" data-reveal><span class="hmw__num t-overline-sm">01</span><p class="t-body-sm">HMW make the effect of a hand interaction clear during practice?</p></li>
+          <li class="hmw__item" data-reveal style="--reveal-delay:60ms"><span class="hmw__num t-overline-sm">02</span><p class="t-body-sm">HMW translate repeated hand actions into an intuitive task?</p></li>
+          <li class="hmw__item" data-reveal style="--reveal-delay:120ms"><span class="hmw__num t-overline-sm">03</span><p class="t-body-sm">HMW give users a clear next step after each session?</p></li>
+          <li class="hmw__item" data-reveal style="--reveal-delay:180ms"><span class="hmw__num t-overline-sm">04</span><p class="t-body-sm">HMW make small changes and task progress visible over time?</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Ideation -->
+    <section class="section" id="ideation" data-section="Ideation" aria-labelledby="ide-title">
+      <div class="container section__inner">
+        <div class="section-header" data-reveal>
+          <p class="section-header__label t-overline">Ideation / Explore → Select</p>
+          <h2 class="section-header__title t-h1" id="ide-title">From many possibilities to one pottery experience.</h2>
+        </div>
+        <div class="ide-grid">
+          <figure class="photo" data-reveal>
+            <img src="img/ideation-board.jpg" alt="Whiteboard covered in sticky notes from the ideation and selection session" width="656" height="492">
+            <figcaption class="t-label">Actual ideation session · candidates, questions and selection criteria.</figcaption>
+          </figure>
+          <div class="wiw">
+            <div data-reveal><p class="t-overline-sm">What I did</p><p class="t-body-sm">Expanded ideas across three moments—during practice, after a session and over time—then compared hand-action fit, observable inputs and readable feedback.</p></div>
+            <div data-reveal style="--reveal-delay:80ms"><p class="t-overline-sm">What I learned</p><p class="t-body-sm">An engaging response was not enough. Users needed to understand what their action changed and see progress beyond a completion mark.</p></div>
+            <div data-reveal style="--reveal-delay:160ms"><p class="t-overline-sm">What I chose</p><p class="t-body-sm">A tablet pottery task: gathering and spreading touches reshape the clay, with immediate visual responses, session summaries and personal records.</p></div>
+          </div>
+        </div>
+        <div class="stack-sm" data-reveal>
+          <p class="t-overline-sm" style="color:var(--text-secondary)">Core experience</p>
+          <p class="t-body-lg">Personal setup → Virtual pottery → Session results → Practice history</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sketches -->
+    <section class="section" id="sketches" data-section="Sketches" aria-labelledby="sk-title">
+      <div class="container section__inner">
+        <div class="section-header" data-reveal>
+          <p class="section-header__label t-overline">Early exploration / Sketches</p>
+          <h2 class="section-header__title t-h1" id="sk-title">Turning the direction into a first experience.</h2>
+        </div>
+        <p class="prose t-body-md" data-reveal>The next step was to sketch the task sequence: preparing, shaping the clay and reviewing the result. This section will show the service’s first screen ideas before digital prototyping.</p>
+        <figure class="media" data-reveal>
+          <div class="ph ratio-sketch"><p class="ph__title">Sketches</p><p class="ph__note">Add the project’s own sketch photos here.</p></div>
+        </figure>
+        <!-- Note from the Figma frame: the reference image used there shows another service, not the project's sketches, so it is not used. -->
+      </div>
+    </section>
+
+    <!-- Initial prototype -->
+    <section class="section section--band" id="prototype" data-section="Prototype" aria-labelledby="proto-title">
+      <div class="container section__inner">
+        <div class="section-header" data-reveal>
+          <p class="section-header__label t-overline">Initial prototype</p>
+          <h2 class="section-header__title t-h1" id="proto-title">Making the sketches testable.</h2>
+        </div>
+        <p class="prose t-body-lg" data-reveal>The first digital prototype made the task sequence and touch instructions testable. Present this version as a baseline, so the later changes are easy to understand.</p>
+        <div class="proto-grid">
+          <div class="ph" data-reveal><p class="ph__title">First digital prototype</p><p class="ph__note">배치할 자료: 초안 화면 3–4개 또는 초기 작동 영상. 각 화면에는 버전과 수행 과업을 표시.</p></div>
+          <div class="proto-q" data-reveal style="--reveal-delay:100ms">
+            <p class="t-overline-sm">Questions to test</p>
+            <p class="proto-q__big">Can users get started? Can they understand the gesture? Can they recognize task progress?</p>
+            <p class="t-body-sm">여기에는 당시 확인하려던 질문을 적습니다. 테스트에서 나온 결과와 분리해 보여줍니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Validation -->
+    <section class="section" id="validation" data-section="Validation" aria-labelledby="val-title">
+      <div class="container section__inner">
+        <div class="section-header" data-reveal>
+          <p class="section-header__label t-overline">Validation</p>
+          <h2 class="section-header__title t-h1" id="val-title">Where the first interaction broke down.</h2>
+        </div>
+        <p class="prose t-body-lg" data-reveal>Show the observations that triggered a design change. Keep user testing and expert review distinct, and connect each observation to the affected screen or gesture.</p>
+        <div class="cards3">
+          <article class="card3" data-reveal><h3 class="t-card">01 / Pilot test</h3><p class="t-body-sm">기존 기록: 온보딩 흐름과 터치 안내의 사용성 점검.</p><p class="t-body-sm">추가할 근거: 테스트 과업, 참여자 정보, 문제가 드러난 초안 화면. 실명 대신 참여자 코드 사용.</p></article>
+          <article class="card3" data-reveal style="--reveal-delay:80ms"><h3 class="t-card">02 / User test</h3><p class="t-body-sm">기존 기록: 평평한 태블릿에서 사용자가 기대한 쥐기 동작과 다중 손가락 드래그 사이의 마찰.</p><p class="t-body-sm">추가할 근거: 관찰 장면·실제 발언·과업 결과.</p></article>
+          <article class="card3" data-reveal style="--reveal-delay:160ms"><h3 class="t-card">03 / Expert review</h3><p class="t-body-sm">기존 기록: 작업치료사 검토.</p><p class="t-body-sm">추가할 근거: 검토 범위, 제안 사항과 반영 여부. 사용성 평가와 임상 효과 검증을 구분.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Iterations -->
+    <section class="section section--band" id="iteration" data-section="Iteration" aria-labelledby="iter-title">
+      <div class="container section__inner">
+        <div class="section-header" data-reveal>
+          <p class="section-header__label t-overline">Iteration</p>
+          <h2 class="section-header__title t-h1" id="iter-title">Changing the interaction, not just the visuals.</h2>
+        </div>
+        <p class="prose t-body-lg" data-reveal>Make the change visible: show the original design, the observed friction and the revised behaviour together. Explain the decision before revealing the final interface.</p>
+        <div class="ba-grid">
+          <div class="ph" data-reveal><p class="ph__title">Before / Initial interaction</p><p class="ph__note">배치할 자료: 수정 전 다중 손가락 드래그 화면·영상. 문제가 생긴 터치 지점과 안내를 표시.</p></div>
+          <div class="ph" data-reveal style="--reveal-delay:100ms"><p class="ph__title">After / Revised interaction</p><p class="ph__note">배치할 자료: 스냅 기반 터치와 단계별 온보딩 화면·영상. 같은 과업을 나란히 비교.</p></div>
+        </div>
+        <p class="t-overline-sm" style="color:var(--text-secondary)" data-reveal>Observation → Design change → Recheck</p>
+        <div class="cards3 cards3--white">
+          <article class="card3" data-reveal><h3 class="t-card">Touch interaction</h3><p class="t-body-sm">Original: continuous multi-finger dragging.<br>Change: snap-based touch logic.</p><p class="t-body-sm">재검증 결과는 후속 테스트 근거가 있는 범위만 추가.</p></article>
+          <article class="card3" data-reveal style="--reveal-delay:80ms"><h3 class="t-card">Onboarding</h3><p class="t-body-sm">Original: early touch instructions.<br>Change: multi-level onboarding and clearer touch guidance.</p><p class="t-body-sm">어떤 안내를 어느 단계로 옮겼는지 화면에 표시.</p></article>
+          <article class="card3" data-reveal style="--reveal-delay:160ms"><h3 class="t-card">What changed after testing?</h3><p class="t-body-sm">최종본이 달라졌다는 설명 대신, 과업 수행이나 이해에 어떤 차이가 관찰됐는지 제시.</p><p class="t-body-sm">아직 확인하지 않은 효과는 다음 검증 과제로 분리.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final interface -->
+    <section class="section" id="final" data-section="Final" aria-labelledby="final-title">
+      <div class="container section__inner">
+        <div class="section-header" data-reveal>
+          <p class="section-header__label t-overline">Final experience</p>
+          <h2 class="section-header__title t-h1" id="final-title">See the refined experience in motion.</h2>
+        </div>
+        <p class="prose t-body-lg" data-reveal>The final interface brings the revised interactions together: preparing a session, shaping virtual clay, reviewing results and returning to practice.</p>
+        <div class="ph ph--wide" data-reveal><p class="ph__title">Final interface / Motion demo</p><p class="ph__note">배치할 자료: 최종 실제 인터페이스의 짧은 영상 또는 작동 프로토타입. 준비 → 도예 조작 → 화면 반응 → 완성·결과의 대표 과업을 보여주기. 영상 아래에는 재생·일시정지와 정적 대체 화면을 제공.</p></div>
+        <div class="cards3">
+          <article class="card3" data-reveal><h3 class="t-card">Start with confidence</h3><p class="t-body-sm">최종 온보딩·개인 설정 화면.<br>초안 대비 달라진 핵심 안내를 한 문장으로 설명.</p></article>
+          <article class="card3" data-reveal style="--reveal-delay:80ms"><h3 class="t-card">Shape and see the response</h3><p class="t-body-sm">최종 도예 조작 장면.<br>영상에서 터치와 화면 반응이 함께 보이도록 구성.</p></article>
+          <article class="card3" data-reveal style="--reveal-delay:160ms"><h3 class="t-card">Finish and return</h3><p class="t-body-sm">최종 세션 결과·개인 기록 화면.<br>완료 경험과 다음 이용으로 이어지는 흐름을 제시.</p></article>
+        </div>
+        <p class="t-overline-sm disclaimer" data-reveal>Concept &amp; prototype · This case study presents a design exploration; clinical effectiveness has not been established.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a class="next" href="case-study-2.html" aria-label="Next project: Case study 02">
+        <span class="next__label t-overline">Next project</span>
+        <span class="next__row"><span class="next__title t-h1">Case study 02</span><span class="next__arrow t-h1" aria-hidden="true">→</span></span>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
