@@ -580,6 +580,12 @@ a.plist__row:hover .plist__arrow, a.plist__row:focus-visible .plist__arrow { tra
 }
 .hero2__top { position: relative; z-index: 5; display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; }
 .hero2__nav { display: flex; gap: clamp(1.25rem, 4vw, 4rem); font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; padding-top: 0.35rem; }
+/* Desktop/tablet: nav stays top right, the short intro sits to the right of the photo card (below the nav) */
+@media (min-width: 721px) {
+  .hero2__top { position: static; justify-content: flex-end; }
+  .hero2__nav { position: relative; z-index: 5; }
+  .home-hero2 .home-intro { position: absolute; z-index: 5; left: 56.6vw; top: 28.5vh; width: 36.4vw; max-width: none; font-size: clamp(1rem, 1.3vw, 1.75rem); }
+}
 .hero2__nav a { position: relative; padding-block: 0.25rem; }
 .hero2__nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: currentColor; transform: scaleX(0); transform-origin: 0 50%; transition: transform var(--dur-base) var(--ease-out); }
 .hero2__nav a:hover::after { transform: scaleX(1); }
@@ -592,8 +598,8 @@ a.plist__row:hover .plist__arrow, a.plist__row:focus-visible .plist__arrow { tra
 .hero2__title .role { font-size: clamp(1rem, 0.7rem + 1.5vw, 2.25rem); font-weight: 600; letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 0.9em; }
 .hero2__copy { display: none; }
 .pile {
-  --mx: 0; --my: 0; --w: clamp(220px, min(26vw, 38vh), 520px);
-  position: absolute; z-index: 3; left: 60%; bottom: calc(var(--size) * 2.05); width: var(--w); aspect-ratio: 4 / 3; margin-left: 0;
+  --mx: 0; --my: 0; --w: clamp(240px, 30.8vw, 640px);
+  position: absolute; z-index: 3; left: 16.7vw; bottom: calc(var(--size) * 1.75); width: var(--w); aspect-ratio: 569 / 409; margin-left: 0;
 }
 .pcard {
   --tx: 0%; --ty: 0%; --rot: 0deg; position: absolute; inset: 0; display: block; border-radius: 4px; background: var(--c, #ededed); overflow: hidden;
