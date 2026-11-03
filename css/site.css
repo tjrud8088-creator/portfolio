@@ -576,7 +576,7 @@ a.plist__row:hover .plist__arrow, a.plist__row:focus-visible .plist__arrow { tra
 
 /* ---------- Home hero 2: intro + nav on top, photo on a tight pile, giant title behind ---------- */
 .home-hero2 {
-  --size: 16.8vw; position: relative; min-height: max(880px, 100svh); overflow: hidden; padding: 28px var(--page-pad) 0;
+  --size: min(16.8vw, 24vh); position: relative; min-height: max(820px, 100svh); overflow: hidden; padding: 28px var(--page-pad) 0;
 }
 .hero2__top { position: relative; z-index: 5; display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; }
 .hero2__nav { display: flex; gap: clamp(1.25rem, 4vw, 4rem); font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; padding-top: 0.35rem; }
@@ -592,8 +592,8 @@ a.plist__row:hover .plist__arrow, a.plist__row:focus-visible .plist__arrow { tra
 .hero2__title .role { font-size: clamp(1rem, 0.7rem + 1.5vw, 2.25rem); font-weight: 600; letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 0.9em; }
 .hero2__copy { display: none; }
 .pile {
-  --mx: 0; --my: 0; --w: clamp(190px, 24vw, 360px);
-  position: absolute; z-index: 3; left: 50%; bottom: calc(var(--size) * 1.7); width: var(--w); aspect-ratio: 4 / 5; margin-left: calc(var(--w) / -2);
+  --mx: 0; --my: 0; --w: clamp(220px, min(26vw, 38vh), 520px);
+  position: absolute; z-index: 3; left: 60%; bottom: calc(var(--size) * 2.05); width: var(--w); aspect-ratio: 4 / 3; margin-left: 0;
 }
 .pcard {
   --tx: 0%; --ty: 0%; --rot: 0deg; position: absolute; inset: 0; display: block; border-radius: 4px; background: var(--c, #ededed); overflow: hidden;
@@ -605,7 +605,7 @@ a.plist__row:hover .plist__arrow, a.plist__row:focus-visible .plist__arrow { tra
 .pcard--b2 { --tx: 4%; --ty: -1%; --rot: 6deg; }
 .pcard--b3 { --tx: -7%; --ty: 3%; --rot: -12deg; }
 .pcard--top { --rot: 2.5deg; border-radius: 4px; }
-.pcard--top img { width: 100%; height: 100%; object-fit: cover; object-position: 56% 50%; display: block; }
+.pcard--top img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; display: block; }
 .pile:hover .pcard--top { scale: 1.015; }
 .pile.pre .pcard { opacity: 0; transform: translateY(90px) rotate(0deg); }
 .pile.intro .pcard { transition-delay: calc(var(--i) * 90ms + 80ms); }
@@ -613,7 +613,7 @@ a.plist__row:hover .plist__arrow, a.plist__row:focus-visible .plist__arrow { tra
 @media (max-width: 720px) {
   .home-hero2 { min-height: min(100svh, 700px); }
   .home-hero2 .home-intro { padding-right: 84px; }
-  .pile { --w: 56vw; }
+  .pile { --w: 62vw; left: 50%; margin-left: calc(var(--w) / -2); bottom: calc(var(--size) * 2.6); }
 }
 @media (min-width: 861px) {
   .menu-btn { opacity: 0; visibility: hidden; transition: opacity var(--dur-base), visibility 0s linear var(--dur-base), background var(--dur-fast); }
