@@ -4,12 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Deft — Case Study</title>
-  <meta name="description" content="Deft is a home rehabilitation service that combines pottery activities with real-time movement feedback for stroke survivors.">
+  <meta name="description" content="Deft helps stroke survivors see whether their home practice is working: an end-to-end UX case study from field research to first usability tests.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/ver7.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -30,457 +31,365 @@
     </nav>
   </header>
 
-  <main id="main">
-    <!-- Hero -->
-    <section class="hero" id="top" data-section="Intro" aria-labelledby="hero-title">
-      <div class="container section__inner">
-        <div class="section-header" data-reveal>
-          <p class="section-header__label t-overline">Case study 01</p>
-          <h1 class="section-header__title t-h1" id="hero-title">Deft</h1>
-        </div>
-        <p class="statement t-display-statement" data-reveal style="--reveal-delay:80ms">A home rehabilitation service that combines pottery activities with real-time movement feedback for stroke survivors.</p>
-        <figure class="media" data-reveal style="--reveal-delay:120ms">
-          <div class="media__img ratio-hero"><img src="img/hero-project.jpg" alt="Deft key image" style="width:100%;height:100%;object-fit:cover;object-position:50% 35%"></div>
-        </figure>
+  <main id="main" class="v7">
+    <section class="v7-sec v7-bg-green" id="hero" data-section="Overview" aria-labelledby="hero-t">
+      <div class="v7-in">
+      <div class="v7-head" data-reveal><p class="v7-eyebrow">Case study 01</p><h1 class="v7-title" id="hero-t">Deft helps stroke survivors see whether their home practice is working</h1></div>
+      <p class="v7-lead" data-reveal>End-to-end UX case study, from field research to first usability tests. A tablet app where virtual clay responds to every hand movement and personal records show progress over time.</p>
+      <div class="v7-cards v7-cards--plain" data-reveal>
+        <div class="v7-card"><h3>Role</h3><p>Lead UX/UI Designer · Solo</p></div>
+        <div class="v7-card"><h3>Platform</h3><p>Tablet · Interactive concept</p></div>
+        <div class="v7-card"><h3>Timeline</h3><p>Aug–Nov 2026</p></div>
       </div>
+      <div class="v7-cards v7-cards--white" data-reveal>
+        <div class="v7-card"><h3>Research</h3><p>Desk research · Interviews · Benchmarking</p></div>
+        <div class="v7-card"><h3>Strategy &amp; synthesis</h3><p>Affinity map · Journey · Persona · HMW</p></div>
+        <div class="v7-card"><h3>Design &amp; validation</h3><p>IA · Task flow · Prototype · Usability test</p></div>
+      </div>
+      <figure class="v7-fig v7-fig--hero" data-reveal><img src="img/hero-project.jpg" alt="Deft key image: tablet clay interaction" loading="lazy" style="object-fit:cover"></figure></div>
     </section>
 
-    <!-- Project overview -->
-    <section class="section" id="overview" data-section="Overview" aria-labelledby="overview-label">
-      <div class="container section__inner">
-        <div class="section-header" data-reveal><p class="section-header__label t-overline" id="overview-label">Project overview</p></div>
-        <dl class="meta" data-reveal>
-          <div class="meta__item"><dt class="meta__label t-label">Role</dt><dd class="t-body-sm" style="margin:0">Lead UX/UI Designer</dd></div>
-          <div class="meta__item"><dt class="meta__label t-label">Platform</dt><dd class="t-body-sm" style="margin:0">Tablet app</dd></div>
-          <div class="meta__item"><dt class="meta__label t-label">Timeline</dt><dd class="t-body-sm" style="margin:0">2026.08 – 2026.11</dd></div>
-          <div class="meta__item"><dt class="meta__label t-label">Team</dt><dd class="t-body-sm" style="margin:0">Solo project</dd></div>
-        </dl>
-        <div class="stack-sm" data-reveal>
-          <h2 class="t-label" style="color:var(--text-secondary)">Methods</h2>
-          <ul class="chips">
-            <li class="chip t-chip">Literature review</li><li class="chip t-chip">Reddit analysis</li>
-            <li class="chip t-chip">1:1 interviews</li><li class="chip t-chip">Affinity mapping</li>
-            <li class="chip t-chip">Ideation</li><li class="chip t-chip">High-fi UI</li>
-            <li class="chip t-chip">Usability testing</li><li class="chip t-chip">Expert UT</li>
-          </ul>
-        </div>
-        <div class="stack-sm measure" data-reveal>
-          <h2 class="t-label" style="color:var(--text-secondary)">Deliverables</h2>
-          <ul class="deliverables t-body-md">
-            <li>Research insights &amp; problem definition</li>
-            <li>Prioritized feature set</li>
-            <li>High-fidelity tablet UI</li>
-            <li>Interactive 3D pottery prototype</li>
-            <li>Step-by-step onboarding flow</li>
-            <li>Usability findings &amp; design iterations</li>
-          </ul>
-        </div>
-      </div>
+    <section class="v7-sec v7-bg-mist" id="double-diamond" data-section="Process" aria-labelledby="double-diamond-t">
+      <div class="v7-in">
+      <div class="v7-head v7-head--lg" data-reveal><p class="v7-eyebrow v7-eyebrow--rust">How I worked · Double Diamond</p><h2 class="v7-title v7-title--lg" id="double-diamond-t">I ran the project as a Double Diamond, applying a clear method at every stage</h2><p class="v7-sub">From life after discharge to a clay prototype tested with users</p></div>
+      <div class="v7-scroll" data-reveal><svg class="v7-svg" viewBox="-8 0 1216 470" role="img" aria-label="Double Diamond: Discover, Define, Develop, Deliver" width="1216" height="470">
+  <polygon points="0,220 300,80 300,360" fill="#D6EBDE" stroke="#14382e" stroke-width="1.2"/>
+  <polygon points="300,80 600,220 300,360" fill="#A8D1BA" stroke="#14382e" stroke-width="1.2"/>
+  <polygon points="600,220 900,80 900,360" fill="#F7E8D9" stroke="#14382e" stroke-width="1.2"/>
+  <polygon points="900,80 1200,220 900,360" fill="#EBC4A6" stroke="#14382e" stroke-width="1.2"/>
+  <text x="144" y="199" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="144" dy="0">01</tspan></text><text x="144" y="230" text-anchor="middle" font-size="22" font-weight="700" fill="#14382e"><tspan x="144" dy="0">Discover</tspan></text><text x="444" y="199" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="444" dy="0">02</tspan></text><text x="444" y="230" text-anchor="middle" font-size="22" font-weight="700" fill="#14382e"><tspan x="444" dy="0">Define</tspan></text><text x="744" y="199" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="744" dy="0">03</tspan></text><text x="744" y="230" text-anchor="middle" font-size="22" font-weight="700" fill="#14382e"><tspan x="744" dy="0">Develop</tspan></text><text x="1044" y="199" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="1044" dy="0">04</tspan></text><text x="1044" y="230" text-anchor="middle" font-size="22" font-weight="700" fill="#14382e"><tspan x="1044" dy="0">Deliver</tspan></text>
+  <text x="300" y="16" text-anchor="middle" font-size="14" font-weight="700" fill="#14382e"><tspan x="300" dy="0">Problem Space</tspan></text><text x="900" y="16" text-anchor="middle" font-size="14" font-weight="700" fill="#9e6140"><tspan x="900" dy="0">Solution Space</tspan></text>
+  <line x1="0" y1="64" x2="0" y2="212" stroke="#14382e" stroke-width="1.2" stroke-dasharray="3 4"/><circle cx="0" cy="220" r="7" fill="#14382e"/><rect x="0" y="34" width="162" height="30" rx="15" fill="#14382e" /><text x="81" y="54" text-anchor="middle" font-size="12" font-weight="700" fill="#fff"><tspan x="81" dy="0">Life after discharge</tspan></text><line x1="600" y1="64" x2="600" y2="212" stroke="#14382e" stroke-width="1.2" stroke-dasharray="3 4"/><circle cx="600" cy="220" r="7" fill="#14382e"/><rect x="453" y="34" width="294" height="30" rx="15" fill="#14382e" /><text x="600" y="54" text-anchor="middle" font-size="12" font-weight="700" fill="#fff"><tspan x="600" dy="0">No reference point when practicing alone</tspan></text><line x1="1200" y1="64" x2="1200" y2="212" stroke="#14382e" stroke-width="1.2" stroke-dasharray="3 4"/><circle cx="1200" cy="220" r="7" fill="#14382e"/><rect x="985" y="34" width="215" height="30" rx="15" fill="#14382e" /><text x="1092.5" y="54" text-anchor="middle" font-size="12" font-weight="700" fill="#fff"><tspan x="1092.5" dy="0">First usability observations</tspan></text>
+  <text x="150" y="409" text-anchor="middle" font-size="17" font-weight="700" fill="#14382e"><tspan x="150" dy="0">Understood life after discharge</tspan></text><text x="150" y="433" text-anchor="middle" font-size="14" font-weight="400" fill="#475c52"><tspan x="150" dy="0">Desk research · r/stroke analysis ·</tspan><tspan x="150" dy="18">1:1 interview</tspan></text><text x="450" y="409" text-anchor="middle" font-size="17" font-weight="700" fill="#14382e"><tspan x="450" dy="0">Framed the problem</tspan></text><text x="450" y="433" text-anchor="middle" font-size="14" font-weight="400" fill="#475c52"><tspan x="450" dy="0">Affinity map · Journey map · Persona · HMW ·</tspan><tspan x="450" dy="18">Benchmarking</tspan></text><text x="750" y="409" text-anchor="middle" font-size="17" font-weight="700" fill="#14382e"><tspan x="750" dy="0">Explored ways to meet the need</tspan></text><text x="750" y="433" text-anchor="middle" font-size="14" font-weight="400" fill="#475c52"><tspan x="750" dy="0">Ideation · Concept selection · IA ·</tspan><tspan x="750" dy="18">Task flow</tspan></text><text x="1050" y="409" text-anchor="middle" font-size="17" font-weight="700" fill="#14382e"><tspan x="1050" dy="0">Built and tested</tspan></text><text x="1050" y="433" text-anchor="middle" font-size="14" font-weight="400" fill="#475c52"><tspan x="1050" dy="0">Sketches · Prototype · Usability test ·</tspan><tspan x="1050" dy="18">OT review</tspan></text>
+</svg></div></div>
     </section>
 
-    <!-- The problem -->
-    <section class="section" id="problem" data-section="Problem" aria-labelledby="problem-title">
-      <div class="container section__inner">
-        <div class="section-header" data-reveal>
-          <p class="section-header__label t-overline">The problem</p>
-          <h2 class="section-header__title t-h1" id="problem-title">Practicing at home. Unsure of each movement.</h2>
-        </div>
-        <p class="prose t-body-lg" data-reveal>After discharge, stroke survivors may continue hand exercises at home. But without feedback during practice, it can be difficult to know whether they are performing the movements as intended—and to stay motivated to continue.</p>
-        <div class="callout" data-reveal>
-          <p class="callout__label t-overline-sm">Problem statement</p>
-          <p class="callout__body t-body-lg">How might we help stroke survivors practice hand movements at home with clear feedback and a sense of progress?</p>
-        </div>
+    <section class="v7-sec v7-bg-white" id="context" data-section="Context" aria-labelledby="context-t">
+      <div class="v7-in">
+      <div class="v7-head" data-reveal><p class="v7-eyebrow">01 / Context &amp; desk research</p><h2 class="v7-title" id="context-t">Desk research showed that support thins out once stroke survivors leave the hospital</h2></div>
+      <p class="v7-skills" data-reveal>SKILLS  ·  DESK RESEARCH  ·  LITERATURE &amp; COMMUNITY ANALYSIS  ·  OPPORTUNITY FRAMING</p>
+      <p class="v7-lead" data-reveal>Starting from smart-healthcare research, I narrowed in on one question: what changes when stroke survivors go home?</p>
+      <div class="v7-cards" data-reveal><div class="v7-card"><h3>Signals need context</h3><p>Wearable and motion data only help when tied to a person’s own activity.</p></div><div class="v7-card"><h3>Gaps at home</h3><p>Literature and r/stroke posts show gaps in follow-up, guidance and participation.</p></div><div class="v7-card"><h3>Three lines of inquiry</h3><p>Continuity, cues during practice, and meaningful goals.</p></div></div>
+      <div class="v7-pair" data-reveal>
+        <figure class="v7-evi"><h3>Desk research board</h3><img src="img/v7/desk-research-board.png" alt="Cropped FigJam board of early desk research" loading="lazy"><figcaption>Cropped FigJam board: early research → three inquiry lines.</figcaption></figure>
+        <figure class="v7-evi"><h3>Community observation</h3><img src="img/v7/community-observation.png" alt="Anonymized community post with highlighted passages" loading="lazy"><figcaption>One anonymized post with a short caption.</figcaption></figure>
       </div>
+      <p class="v7-next" data-reveal>Next: an interview to see how these fit one person’s real routine.</p></div>
     </section>
 
-    <!-- Design opportunity -->
-    <section class="section section--band" id="opportunity" data-section="Opportunity" aria-labelledby="opp-title">
-      <div class="container section__inner">
-        <div class="section-header" data-reveal>
-          <p class="section-header__label t-overline">Design opportunity</p>
-          <h2 class="section-header__title t-h1" id="opp-title">Make practice easier to follow.</h2>
-        </div>
-        <div class="cs-split">
-          <div class="stack-md">
-            <p class="prose t-body-lg" data-reveal>For this concept, feedback is part of the activity itself. Users should be able to see how their touch changes the virtual clay and how each action moves them toward completing a pottery piece.</p>
-            <blockquote class="designgoal t-body-lg-italic" data-reveal>Design goal: make the next action clear.</blockquote>
-          </div>
-          <figure class="loopbox" data-reveal style="--reveal-delay:100ms">
-            <div class="loopbox__box t-body-lg"><span>Touch the clay</span><span aria-hidden="true">↓</span><span>See it respond</span><span aria-hidden="true">↓</span><span>Track task progress</span></div>
-            <figcaption class="t-label">Proposed interaction loop · virtual pottery</figcaption>
-          </figure>
-        </div>
-        <div class="dircard" data-reveal>
-          <p class="t-overline-sm dircard__label">Design direction</p>
-          <p class="t-body-lg dircard__text">Pair visible responses to touch with achievable pottery tasks, so users can follow the activity and recognize their progress.</p>
-        </div>
-      </div>
+    <section class="v7-sec v7-bg-green" id="interview" data-section="Interview" aria-labelledby="interview-t">
+      <div class="v7-in">
+      <div class="v7-head" data-reveal><p class="v7-eyebrow">02 / Primary research</p><h2 class="v7-title" id="interview-t">A 64-minute interview showed how one survivor practices at home, and where it stalls</h2></div>
+      <p class="v7-skills" data-reveal>SKILLS  ·  INTERVIEW GUIDE DESIGN  ·  SEMI-STRUCTURED INTERVIEW  ·  QUALITATIVE DATA</p>
+      <p class="v7-lead" data-reveal>One 64-minute KakaoTalk text interview with a stroke survivor in their mid-30s, back at freelance webtoon work. Topics: discharge, home practice, return to work.</p>
+      <h3 class="v7-sublead" data-reveal>Interview guide (reconstructed)</h3>
+      <div class="v7-cards" data-reveal><div class="v7-card"><h3>01 / Discharge &amp; routine</h3><p>What changed at home? Walk me through a practice day.</p></div><div class="v7-card"><h3>02 / Decisions mid-practice</h3><p>When were you unsure whether to continue, change or stop an exercise?</p></div><div class="v7-card"><h3>03 / Back to daily roles</h3><p>Which activities did you want back? Which hand movements made them hard?</p></div></div>
+      <p class="v7-body" data-reveal>Follow-ups · A specific episode, who or what was involved, what they did, how it felt.</p>
+      <p class="v7-next" data-reveal>Organized by what happened, what was hard, and what support was needed.</p></div>
     </section>
 
-    <!-- Research -->
-    <section class="section" id="research" data-section="Research" aria-labelledby="research-title">
-      <div class="container section__inner">
-        <div class="section-header" data-reveal>
-          <p class="section-header__label t-overline">Research</p>
-          <h2 class="section-header__title t-h1" id="research-title">Secondary Research</h2>
-        </div>
-        <p class="prose t-body-md" data-reveal>I reviewed clinical literature and global patient communities to ground the design direction.</p>
-        <ul class="sources t-body-sm" data-reveal>
-          <li>Clinical literature on upper-limb fine motor recovery after stroke.</li>
-          <li>Global patient communities (Reddit): the ultimate goal is full functional normalization.</li>
-          <li>Existing homecare rehabilitation apps and their feedback models.</li>
-        </ul>
-        <div class="stack-md" style="margin-top:var(--space-md)">
-          <h3 class="t-h1" data-reveal>Primary Research: Interview Themes</h3>
-          <p class="prose t-body-md" data-reveal>Top row: what patient communities and clinical literature showed. Bottom row: what 1:1 interviews with stroke survivors and caregivers confirmed.</p>
-          <ul class="stats">
-            <li class="stat" data-reveal><p class="stat__value t-display-stat">Back to normal</p><p class="stat__text t-caption">Reddit communities: the ultimate goal is full functional recovery for daily life</p></li>
-            <li class="stat" data-reveal style="--reveal-delay:80ms"><p class="stat__value t-display-stat">Quit early</p><p class="stat__text t-caption">Reddit communities: with no real-time performance standard, patients stop rehab early</p></li>
-            <li class="stat" data-reveal style="--reveal-delay:160ms"><p class="stat__value t-display-stat">At home</p><p class="stat__text t-caption">Literature and communities: no professional guidance for fine motor recovery after discharge</p></li>
-            <li class="stat" data-reveal><p class="stat__value t-display-stat">1:1 interviews</p><p class="stat__text t-caption">In-depth interviews with stroke survivors and caregivers</p></li>
-            <li class="stat" data-reveal style="--reveal-delay:80ms"><p class="stat__value t-display-stat">Too late</p><p class="stat__text t-caption">Interviews: a summary after exercise can’t help correct movement</p></li>
-            <li class="stat" data-reveal style="--reveal-delay:160ms"><p class="stat__value t-display-stat">In the moment</p><p class="stat__text t-caption">Interviews: patients wanted correction during the exercise itself</p></li>
-          </ul>
-        </div>
-        <div class="stack-md">
-          <blockquote class="quote t-body-lg-italic" data-reveal>Background: patients want full recovery for daily life but have no real-time standard to judge their own movements.</blockquote>
-          <blockquote class="quote t-body-lg-italic" data-reveal>Interviews: a summary after exercise is not enough; patients need correction while they exercise.</blockquote>
-        </div>
-        <div class="callout callout--dark" data-reveal>
-          <p class="callout__label t-overline-sm">Insight</p>
-          <p class="callout__body t-body-lg">Patients aim for full recovery yet cannot judge their own movements, so the real problem is the lack of real-time correction during exercise.</p>
-        </div>
+    <section class="v7-sec v7-bg-white" id="synthesis" data-section="Synthesis" aria-labelledby="synthesis-t">
+      <div class="v7-in">
+      <div class="v7-head" data-reveal><p class="v7-eyebrow">03 / Synthesis &amp; scope</p><h2 class="v7-title" id="synthesis-t">Synthesis showed that home practice stalls exactly where guidance ends</h2></div>
+      <p class="v7-skills" data-reveal>SKILLS  ·  AFFINITY MAPPING  ·  SCOPE PRIORITIZATION (IMPACT · LEVERAGE · RESOURCES)</p>
+      <p class="v7-lead" data-reveal>Mapping discharge to work revealed two moments: practicing less with no one to correct posture, and guessing when to use more force.</p>
+      <div class="v7-quotes" data-reveal>
+        <div class="v7-quote"><h3>Practice fades without a guide</h3><p>“There was no one to help me with my posture or exercise with me, so I gradually stopped doing it.”</p></div>
+        <div class="v7-quote"><h3>Force is a guess</h3><p>“I was curious about when I should use more force, so I looked it up on Google.”</p></div>
       </div>
+      <figure class="v7-fig v7-fig--narrow" data-reveal><img src="img/v7/affinity-mapping.png" alt="Affinity mapping session: sticky notes grouped on a whiteboard" loading="lazy" style="object-fit:cover"></figure>
+      <p class="v7-cap" data-reveal>Affinity mapping (photo)</p>
+      <div class="v7-cards" data-reveal><div class="v7-card"><h3>01 / Practice process</h3><p>Primary scope: live cues during practice, reviewable afterward.</p></div><div class="v7-card"><h3>02 / Emotional experience</h3><p>Clearer cues and self-comparison could ease doubt and frustration.</p></div><div class="v7-card"><h3>03 / Hand function</h3><p>Everyday hand actions inform the task. Recovery stays a long-term goal.</p></div></div>
+      <p class="v7-body" data-reveal>Scope decision · Weighed user importance, product leverage and outside resources. Recurrence anxiety and local care access fall outside scope.</p>
+      <p class="v7-next" data-reveal>Scope: the decisions people face mid-practice. Next: a problem statement and three HMWs.</p></div>
     </section>
 
-    <!-- Affinity mapping -->
-    <section class="section section--band" id="insights" data-section="Insights" aria-labelledby="affinity-label">
-      <div class="container section__inner">
-        <div class="section-header" data-reveal>
-          <p class="section-header__label t-overline" id="affinity-label">Affinity mapping &amp; insights</p>
-          <h2 class="section-header__title t-h1">From research notes to design priorities.</h2>
-        </div>
-        <p class="prose t-body-lg" data-reveal>I grouped research notes into recurring themes, then translated them into priorities for the home rehabilitation experience.</p>
-        <div class="aff-grid">
-          <figure class="photo" data-reveal>
-            <img src="img/affinity-session.jpg" alt="Grouping research notes on a whiteboard during an affinity mapping session" width="656" height="492">
-            <figcaption class="t-label">Process documentation · grouping research notes on the whiteboard</figcaption>
-          </figure>
-          <div class="pcards">
-            <article class="pcard-s" data-reveal><div class="pcard-s__row"><h3 class="t-card">Support at home</h3><span class="t-meta">01</span></div><p class="t-body-sm">Design priority: provide a clear starting point and manageable tasks for home practice.</p></article>
-            <article class="pcard-s" data-reveal style="--reveal-delay:80ms"><div class="pcard-s__row"><h3 class="t-card">Feedback during practice</h3><span class="t-meta">02</span></div><p class="t-body-sm">Design priority: make the effect of each touch visible while shaping the virtual clay.</p></article>
-            <article class="pcard-s" data-reveal style="--reveal-delay:160ms"><div class="pcard-s__row"><h3 class="t-card">Visible progress</h3><span class="t-meta">03</span></div><p class="t-body-sm">Design priority: show task completion and practice history to support an ongoing routine.</p></article>
-          </div>
-        </div>
-        <div class="callout callout--dark" data-reveal>
-          <p class="callout__label t-overline-sm">Synthesis</p>
-          <p class="callout__body t-body-lg">A simple pottery task brings guidance, immediate visual responses and a sense of progress into one experience.</p>
-        </div>
-        <div class="stack-sm" data-reveal>
-          <h3 class="t-overline" style="color:var(--text-secondary)">Design principles</h3>
-          <ul class="principles t-body-sm">
-            <li>Keep each task simple and focused</li>
-            <li>Use clear, approachable instructions</li>
-            <li>Make touch responses easy to understand</li>
-            <li>Show achievable steps and visible progress</li>
-          </ul>
-        </div>
-      </div>
+    <section class="v7-sec v7-bg-green" id="pov-hmw" data-section="POV &amp; HMW" aria-labelledby="pov-hmw-t">
+      <div class="v7-in">
+      <div class="v7-head" data-reveal><p class="v7-eyebrow">04 / Problem definition</p><h2 class="v7-title" id="pov-hmw-t">I framed the problem as a missing reference point and split it into three How-Might-We questions</h2></div>
+      <p class="v7-skills" data-reveal>SKILLS  ·  POV STATEMENT  ·  HOW-MIGHT-WE FRAMING</p>
+      <p class="v7-lead" data-reveal>A stroke survivor practicing at home needs a way to tell whether their effort is working, because clinic guidance fades and small gains go unnoticed.</p>
+      <div class="v7-cards" data-reveal><div class="v7-card"><h3>HMW 01 / In the moment</h3><p>How might people check what their action does as they move?</p></div><div class="v7-card"><h3>HMW 02 / After a session</h3><p>How might a session summary guide the next attempt?</p></div><div class="v7-card"><h3>HMW 03 / Over weeks</h3><p>How might small personal gains become visible?</p></div></div>
+      <p class="v7-next" data-reveal>Next: a journey map to pinpoint where these three questions arise.</p></div>
     </section>
 
-    <!-- Primary persona -->
-    <section class="section" id="users" data-section="Persona" aria-labelledby="persona-label">
-      <div class="container section__inner">
-        <div class="section-header" data-reveal>
-          <p class="section-header__label t-overline" id="persona-label">Target user &amp; POV</p>
-          <h2 class="section-header__title t-h1">Who I designed for</h2>
-        </div>
-        <p class="prose t-body-lg" data-reveal>The research pointed to one person: someone who has just come home after intensive hospital rehab and now has to rebuild fine motor control by herself.</p>
-        <article class="persona2" data-reveal>
-          <div class="persona2__visual">
-            <img src="img/persona.jpg" alt="Illustration of Seoyeon practicing with a tablet" onerror="this.remove()">
-            <div class="persona2__id">
-              <h3 class="t-card">Seoyeon Kim</h3>
-              <dl class="persona2__meta t-body-sm">
-                <div><dt>Age</dt><dd>34</dd></div>
-                <div><dt>Gender</dt><dd>Female</dd></div>
-                <div><dt>Condition</dt><dd>Left-side hemiparesis</dd></div>
-                <div><dt>Stage</dt><dd>Post-discharge, at home</dd></div>
-              </dl>
+    <section class="v7-sec v7-bg-white" id="persona" data-section="Persona" aria-labelledby="persona-t">
+      <div class="v7-in">
+      <div class="v7-head" data-reveal><p class="v7-eyebrow">User understanding · Persona &amp; journey</p><h2 class="v7-title" id="persona-t">A persona and journey map showed that practice loses direction when people must judge their own progress</h2></div>
+      <p class="v7-skills" data-reveal>SKILLS  ·  DESIGN PERSONA  ·  USER JOURNEY MAP  ·  FOCUS-AREA SELECTION</p>
+      <div class="v7-persona" data-reveal>
+        <div class="v7-persona__id"><p class="v7-micro">DESIGN PERSONA</p><p class="v7-persona__name">Seoyeon Kim</p><p class="v7-persona__meta">30s · stroke survivor · hand rehab at home</p></div>
+        <div class="v7-persona__quote"><p class="v7-micro">IN THEIR OWN WORDS</p><p>“I want to use it again in daily life and get back to my work and the roles I had.”</p></div>
+        <div class="v7-persona__needs"><p class="v7-micro">CORE NEEDS</p><p>• See how each movement connects to the task goal</p><p>• See objectively how performance changes over time</p><p class="v7-micro v7-micro--rust">PAIN POINT</p><p>No one to check posture or effort when practicing alone</p></div>
+      </div>
+      <p class="v7-focus" data-reveal>★ KEY FOCUS · stages 3–4: the moment judgment shifts from therapist to the person</p>
+      <ol class="v7-journey" data-reveal><li class="v7-stage" style="background:#e8f3ff"><div class="v7-stage__head" style="background:#b8dcff"><span>STAGE 01</span><b>Settling in at home</b></div><div class="v7-stage__body"><p>Unsure how to respond if symptoms return</p><span class="v7-emo">Anxious</span></div></li><li class="v7-stage" style="background:#e9f7f3"><div class="v7-stage__head" style="background:#b7eadf"><span>STAGE 02</span><b>Rebuilding routines</b></div><div class="v7-stage__body"><p>Swallowing feels risky; unfamiliar territory</p><span class="v7-emo">Unfamiliar</span></div></li><li class="v7-stage v7-stage--key" style="background:#f1ebfb"><div class="v7-stage__head" style="background:#dccffa"><span>STAGE 03</span><b>Practicing with familiar tools</b></div><div class="v7-stage__body"><p>Can’t tell if method and effort are right</p><span class="v7-emo v7-emo--key">Frustrated</span></div></li><li class="v7-stage v7-stage--key" style="background:#fff6d6"><div class="v7-stage__head" style="background:#fdeaa0"><span>STAGE 04</span><b>No yardstick to keep going</b></div><div class="v7-stage__body"><p>Can’t tell if practice works; compares with others</p><span class="v7-emo v7-emo--key">Lost · discouraged</span></div></li><li class="v7-stage" style="background:#fdebe3"><div class="v7-stage__head" style="background:#fbc8b2"><span>STAGE 05</span><b>Back at work</b></div><div class="v7-stage__body"><p>Misses key presses; two-handed tasks feel awkward</p><span class="v7-emo">Feeling the limit</span></div></li></ol>
+      <div class="v7-insight" data-reveal><p class="v7-micro">WHY STAGES 3–4?</p><p>At home, people must judge alone whether a movement met the goal and how to continue. This project focuses on that judgment.</p></div>
+      <p class="v7-note" data-reveal>Basis: one 1:1 interview (~64 min, KakaoTalk text). Design persona, not a composite; emotion tags are illustrative.</p></div>
+    </section>
+
+    <section class="v7-sec v7-bg-white" id="competitive" data-section="Competitors" aria-labelledby="competitive-t">
+      <div class="v7-in">
+      <div class="v7-head" data-reveal><p class="v7-eyebrow">05 / Competitive review</p><h2 class="v7-title" id="competitive-t">Competitive analysis showed that existing tools cover only part of the picture</h2></div>
+      <p class="v7-skills" data-reveal>SKILLS  ·  COMPETITIVE ANALYSIS  ·  OPPORTUNITY MAPPING</p>
+      <p class="v7-lead" data-reveal>Compared through the three HMWs: what is sensed, when feedback appears, what users can do with it.</p>
+      <div class="v7-cards" data-reveal><div class="v7-card"><h3>GripAble</h3><p>Grip sensing, game input and separate assessments. Needs equipment and supervision.</p></div><div class="v7-card"><h3>MusicGlove</h3><p>Finger contact drives rhythm feedback, with little beyond hit or miss.</p></div><div class="v7-card"><h3>ReHand</h3><p>Tablet touch exercises and progress tracking. Guided input, less feedback on task performance.</p></div></div>
+      <p class="v7-next v7-next--lg" data-reveal>Opportunity · One hand task linking live response, session result and personal record.</p>
+      <p class="v7-next" data-reveal>Next: ideating against the three HMWs.</p></div>
+    </section>
+
+    <section class="v7-sec v7-bg-green" id="ideation" data-section="Ideation" aria-labelledby="ideation-t">
+      <div class="v7-in">
+      <div class="v7-head" data-reveal><p class="v7-eyebrow">06 / Ideation &amp; convergence</p><h2 class="v7-title" id="ideation-t">I generated ideas for each HMW, then converged on virtual clay using three criteria</h2></div>
+      <p class="v7-skills" data-reveal>SKILLS  ·  DIVERGENT IDEATION  ·  CRITERIA-BASED CONVERGENCE</p>
+      <p class="v7-lead" data-reveal>Ideated broadly across all three HMWs, then converged on one concept using three criteria.</p>
+      <figure class="v7-fig" data-reveal><img src="img/v7/ideation-whiteboard.png" alt="Whiteboard photo of ideation across the three HMWs and convergence" loading="lazy" style="object-fit:cover"></figure>
+      <p class="v7-cap" data-reveal>Ideation across all three HMWs, then convergence (whiteboard photo)</p>
+      <div class="v7-cards" data-reveal><div class="v7-card"><h3>Action fit</h3><p>Therapy putty inspired it: gathering and spreading fingers reshapes virtual clay.</p></div><div class="v7-card"><h3>Observable input</h3><p>Camera, sensors or touch? The tablet concept uses touch contact and movement.</p></div><div class="v7-card"><h3>Readable feedback</h3><p>Kept: live clay response, session summary, record across attempts. One per HMW.</p></div></div>
+      <p class="v7-decision" data-reveal>Decision: virtual clay, where the gesture is the task</p>
+      <p class="v7-next" data-reveal>Next: structuring the concept as an information architecture and task flow.</p></div>
+    </section>
+
+    <section class="v7-sec v7-bg-mist" id="ia" data-section="Information architecture" aria-labelledby="ia-t">
+      <div class="v7-in">
+      <div class="v7-head v7-head--lg" data-reveal><p class="v7-eyebrow v7-eyebrow--rust">Deft · 02 Information architecture</p><h2 class="v7-title v7-title--lg" id="ia-t">I structured the concept into a three-level architecture around today’s practice</h2><p class="v7-sub">First-time users set a goal and check their hand range; returning users reach today's practice and their records from Home</p></div>
+      <div class="v7-scroll" data-reveal><svg class="v7-svg" viewBox="-4 0 1208 980" width="1208" height="980" role="img" aria-label="Information architecture in three depth levels">
+  <rect x="0" y="40" width="190" height="920" rx="14" fill="#f4f9f5" stroke="none" stroke-width="0"/><rect x="250" y="40" width="270" height="920" rx="14" fill="#f4f9f5" stroke="none" stroke-width="0"/><rect x="590" y="40" width="290" height="920" rx="14" fill="#f4f9f5" stroke="none" stroke-width="0"/>
+  <rect x="59.5" y="0" width="71" height="30" rx="15" fill="#14382e" /><text x="95" y="20.5" text-anchor="middle" font-size="13" font-weight="700" fill="#fff"><tspan x="95" dy="0">Depth 1</tspan></text><rect x="348" y="0" width="74" height="30" rx="15" fill="#14382e" /><text x="385" y="20.5" text-anchor="middle" font-size="13" font-weight="700" fill="#fff"><tspan x="385" dy="0">Depth 2</tspan></text><rect x="698" y="0" width="74" height="30" rx="15" fill="#14382e" /><text x="735" y="20.5" text-anchor="middle" font-size="13" font-weight="700" fill="#fff"><tspan x="735" dy="0">Depth 3</tspan></text>
+  <rect x="950" y="0" width="230" height="30" rx="15" fill="#fff" stroke="#14382e" stroke-dasharray="4 3"/><text x="1065" y="18" text-anchor="middle" font-size="12" font-weight="700" fill="#14382e"><tspan x="1065" dy="0">System process · outside hierarchy</tspan></text>
+  <path d="M180 500H215" fill="none" stroke="#14382e" stroke-width="1.8"/><path d="M215 185V835" fill="none" stroke="#14382e" stroke-width="1.8"/><path d="M215 185H260" fill="none" stroke="#14382e" stroke-width="1.8"/><path d="M215 430H260" fill="none" stroke="#14382e" stroke-width="1.8"/><path d="M215 615H260" fill="none" stroke="#14382e" stroke-width="1.8"/><path d="M215 835H260" fill="none" stroke="#14382e" stroke-width="1.8"/><path d="M510 185H600" fill="none" stroke="#14382e" stroke-width="1.8"/><path d="M510 615H600" fill="none" stroke="#14382e" stroke-width="1.8"/><path d="M870 185H930" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <rect x="10" y="440" width="170" height="120" rx="14" fill="#14382e" stroke="#14382e" stroke-width="1.5"/><text x="95" y="504" text-anchor="middle" font-size="20" font-weight="700" fill="#fff"><tspan x="95" dy="0">Deft app</tspan></text><text x="95" y="530" text-anchor="middle" font-size="12" font-weight="400" fill="#cce5d9"><tspan x="95" dy="0">Depth 1 · logical root</tspan></text>
+  <rect x="260" y="130" width="250" height="110" rx="14" fill="#a8d1ba" stroke="#14382e" stroke-width="1.5"/><text x="385" y="178" text-anchor="middle" font-size="20" font-weight="700" fill="#14382e"><tspan x="385" dy="0">First-run onboarding</tspan></text><text x="385" y="205" text-anchor="middle" font-size="12" font-weight="400" fill="#61736b"><tspan x="385" dy="0">Set goal, check hand range</tspan></text><rect x="270" y="116" width="110" height="27" rx="13.5" fill="#9e6140" /><text x="325" y="134" text-anchor="middle" font-size="11" font-weight="700" fill="#fff"><tspan x="325" dy="0">First launch only</tspan></text>
+  <rect x="260" y="370" width="250" height="120" rx="14" fill="#fff" stroke="#14382e" stroke-width="1.5"/><text x="385" y="409" text-anchor="middle" font-size="20" font-weight="700" fill="#14382e"><tspan x="385" dy="0">Home</tspan></text><text x="385" y="436" text-anchor="middle" font-size="12" font-weight="400" fill="#61736b"><tspan x="385" dy="0">Entry to practice and records</tspan></text><rect x="278" y="445" width="214" height="27" rx="13.5" fill="#9e6140" /><text x="385" y="463" text-anchor="middle" font-size="11" font-weight="700" fill="#fff"><tspan x="385" dy="0">Start today’s practice · primary CTA</tspan></text>
+  <rect x="260" y="560" width="250" height="110" rx="14" fill="#a8d1ba" stroke="#14382e" stroke-width="1.5"/><text x="385" y="608" text-anchor="middle" font-size="20" font-weight="700" fill="#14382e"><tspan x="385" dy="0">Today’s practice</tspan></text><text x="385" y="635" text-anchor="middle" font-size="12" font-weight="400" fill="#61736b"><tspan x="385" dy="0">Set up → Play → Review</tspan></text>
+  <rect x="260" y="740" width="250" height="190" rx="14" fill="#fff" stroke="#14382e" stroke-width="1.5"/><text x="385" y="781" text-anchor="middle" font-size="20" font-weight="700" fill="#14382e"><tspan x="385" dy="0">My records</tspan></text><text x="385" y="807" text-anchor="middle" font-size="12" font-weight="400" fill="#61736b"><tspan x="385" dy="0">Shown inside the report</tspan></text>
+  <rect x="295" y="817" width="181" height="28" rx="8" fill="#f4f9f5" stroke="#61736b" stroke-width="1" stroke-dasharray="5 4"/><text x="385.5" y="835" text-anchor="middle" font-size="12" font-weight="700" fill="#14382e"><tspan x="385.5" dy="0">Performance by movement</tspan></text><rect x="335" y="849" width="100" height="28" rx="8" fill="#f4f9f5" stroke="#61736b" stroke-width="1" stroke-dasharray="5 4"/><text x="385" y="867" text-anchor="middle" font-size="12" font-weight="700" fill="#14382e"><tspan x="385" dy="0">Weekly trend</tspan></text><rect x="299" y="881" width="173" height="28" rx="8" fill="#f4f9f5" stroke="#61736b" stroke-width="1" stroke-dasharray="5 4"/><text x="385.5" y="899" text-anchor="middle" font-size="12" font-weight="700" fill="#14382e"><tspan x="385.5" dy="0">Adaptive difficulty history</tspan></text>
+  <rect x="600" y="55" width="270" height="300" rx="16" fill="none" stroke="#14382e" stroke-dasharray="5 4"/><rect x="600" y="520" width="270" height="230" rx="16" fill="none" stroke="#14382e" stroke-dasharray="5 4"/>
+  <rect x="615" y="75" width="240" height="82" rx="14" fill="#fff" stroke="#14382e" stroke-width="1.5"/><text x="735" y="109" text-anchor="middle" font-size="15" font-weight="700" fill="#14382e"><tspan x="735" dy="0">Goal selection (ADL)</tspan></text><text x="735" y="131" text-anchor="middle" font-size="12" font-weight="400" fill="#61736b"><tspan x="735" dy="0">Everyday activity to regain</tspan></text><rect x="615" y="167" width="240" height="82" rx="14" fill="#fff" stroke="#14382e" stroke-width="1.5"/><text x="735" y="201" text-anchor="middle" font-size="15" font-weight="700" fill="#14382e"><tspan x="735" dy="0">Hand status check</tspan></text><text x="735" y="223" text-anchor="middle" font-size="12" font-weight="400" fill="#61736b"><tspan x="735" dy="0">How the hand moves today</tspan></text>
+  <rect x="615" y="259" width="240" height="82" rx="14" fill="#fff" stroke="#14382e" stroke-width="1.5"/><text x="735" y="284" text-anchor="middle" font-size="15" font-weight="700" fill="#14382e"><tspan x="735" dy="0">Touch-range calibration</tspan></text><text x="735" y="304" text-anchor="middle" font-size="12" font-weight="400" fill="#61736b"><tspan x="735" dy="0">Reachable spots and movement</tspan><tspan x="735" dy="17">range</tspan></text>
+  <rect x="615" y="540" width="240" height="96" rx="14" fill="#d6ebde" stroke="#14382e" stroke-width="1.5"/><text x="735" y="572" text-anchor="middle" font-size="16" font-weight="700" fill="#14382e"><tspan x="735" dy="0">Clay play</tspan></text><text x="735" y="594" text-anchor="middle" font-size="12" font-weight="400" fill="#61736b"><tspan x="735" dy="0">Warm-up guide: a state inside play</tspan><tspan x="735" dy="17">(to confirm)</tspan></text>
+  <rect x="615" y="650" width="240" height="82" rx="14" fill="#fff" stroke="#14382e" stroke-width="1.5"/><text x="735" y="684" text-anchor="middle" font-size="16" font-weight="700" fill="#14382e"><tspan x="735" dy="0">Session result</tspan></text><text x="735" y="706" text-anchor="middle" font-size="12" font-weight="400" fill="#61736b"><tspan x="735" dy="0">What I did and how it went</tspan></text>
+  <rect x="930" y="130" width="270" height="130" rx="14" fill="#d6ebde" stroke="#14382e" stroke-width="1.5" stroke-dasharray="5 4"/><rect x="944" y="116" width="64" height="25" rx="12.5" fill="#14382e" /><text x="976" y="132.5" text-anchor="middle" font-size="10" font-weight="700" fill="#fff"><tspan x="976" dy="0">SYSTEM</tspan></text><text x="1065" y="182" text-anchor="middle" font-size="16" font-weight="700" fill="#14382e"><tspan x="1065" dy="0">Auto-set starting difficulty</tspan></text><text x="1065" y="208" text-anchor="middle" font-size="12" font-weight="400" fill="#61736b"><tspan x="1065" dy="0">Goal and calibration results feed</tspan><tspan x="1065" dy="17">the practice settings</tspan></text>
+  <text x="930" y="277" text-anchor="start" font-size="11" font-weight="400" fill="#61736b"><tspan x="930" dy="0">Lines without arrowheads show hierarchy.</tspan><tspan x="930" dy="16.5">Movement between screens is shown in the</tspan><tspan x="930" dy="16.5">user flow.</tspan></text>
+  <rect x="930" y="740" width="270" height="110" rx="14" fill="#fff" stroke="#61736b" stroke-width="1.5" stroke-dasharray="5 4"/><text x="1065" y="772" text-anchor="middle" font-size="15" font-weight="700" fill="#14382e"><tspan x="1065" dy="0">Secondary menu</tspan></text><text x="1065" y="794" text-anchor="middle" font-size="12" font-weight="400" fill="#61736b"><tspan x="1065" dy="0">Collection · Settings. Outside the core</tspan><tspan x="1065" dy="17">practice path; details only where</tspan><tspan x="1065" dy="17">confirmed</tspan></text>
+</svg></div>
+      <div class="v7-principle" data-reveal><p class="v7-micro v7-micro--rust">DESIGN PRINCIPLE</p><p>What to practice follows the everyday activity a person wants back. Where to start follows what their hand can do today.</p></div>
+      <div class="v7-legend" data-reveal><p><b>Depth means information-hierarchy level, not number of taps. Solid line = hierarchy · Dashed line = system process or secondary area.</b></p><p>To confirm: whether the warm-up guide is its own screen, and whether adaptive difficulty history has a detail view. Onboarding screen names follow the product flow defined for this version.</p></div></div>
+    </section>
+
+    <section class="v7-sec v7-bg-mist" id="task-flow" data-section="Task flow" aria-labelledby="task-flow-t">
+      <div class="v7-in">
+      <div class="v7-head v7-head--lg" data-reveal><p class="v7-eyebrow v7-eyebrow--rust">Deft · 03 Task-driven user flow</p><h2 class="v7-title v7-title--lg" id="task-flow-t">I mapped one task flow, from first-run setup to results, so each HMW has a place on screen</h2><p class="v7-sub v7-sub--sm">Read top to bottom: Entry → First-run setup → Clay practice → Results and records. The first-visit path is the main flow; the returning-user path is the short branch at the top.</p></div>
+      <div class="v7-principle" data-reveal><p class="v7-micro v7-micro--rust">DESIGN PRINCIPLE</p><p>What to practice follows the everyday activity a person wants back. Where to start follows what their hand can do today.</p></div>
+      <div class="v7-scroll" data-reveal><svg class="v7-svg" viewBox="-6 0 1216 1740" width="1216" height="1740" role="img" aria-label="Task-driven user flow from entry to results, with exception paths">
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#14382e"/></marker></defs>
+  <rect x="0" y="0" width="1200" height="200" rx="14" fill="#f4f9f5" stroke="none" stroke-width="0"/><rect x="0" y="230" width="1200" height="330" rx="14" fill="#f4f9f5" stroke="none" stroke-width="0"/><rect x="0" y="590" width="1200" height="280" rx="14" fill="#f4f9f5" stroke="none" stroke-width="0"/><rect x="0" y="900" width="1200" height="220" rx="14" fill="#f4f9f5" stroke="none" stroke-width="0"/>
+  <text x="16" y="20" text-anchor="start" font-size="12" font-weight="700" fill="#9e6140"><tspan x="16" dy="0">01 · Entry</tspan></text><text x="130" y="250" text-anchor="start" font-size="12" font-weight="700" fill="#9e6140"><tspan x="130" dy="0">02 · First-run onboarding and starting difficulty  (main path)</tspan></text><text x="16" y="610" text-anchor="start" font-size="12" font-weight="700" fill="#9e6140"><tspan x="16" dy="0">03 · Clay practice</tspan></text><text x="16" y="920" text-anchor="start" font-size="12" font-weight="700" fill="#9e6140"><tspan x="16" dy="0">04 · Results and records</tspan></text>
+  <!-- row 1 -->
+  <path d="M170 110H206" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/><path d="M376 110H412" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/><path d="M582 110H618" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/><path d="M788 110H824" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/><path d="M994 110H1098" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/>
+  <rect x="0" y="75" width="170" height="70" rx="35" fill="#14382e" stroke="#14382e" stroke-width="1.6"/><text x="85" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#fff"><tspan x="85" dy="0">Launch app</tspan></text>
+  <polygon points="291,55 376,110 291,165 206,110" fill="#f7e8d9" stroke="#14382e" stroke-width="1.6"/><text x="291" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="291" dy="0">First visit?</tspan></text>
+  <rect x="412" y="75" width="170" height="70" rx="10" fill="#fff" stroke="#14382e" stroke-width="1.6" stroke-dasharray="5 4"/><text x="497" y="107" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="497" dy="0">Home</tspan></text><text x="497" y="123.5" text-anchor="middle" font-size="10.5" font-weight="400" fill="#61736b"><tspan x="497" dy="0">To confirm</tspan></text>
+  <polygon points="632,75 788,75 774,145 618,145" fill="#d6ebde" stroke="#14382e" stroke-width="1.6"/><text x="703" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="703" dy="0">Start practice</tspan></text>
+  <rect x="824" y="70" width="170" height="80" rx="10" fill="#a8d1ba" stroke="#14382e" stroke-width="1.6" stroke-dasharray="5 4"/><text x="909" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="#14382e"><tspan x="909" dy="0">Load saved goal</tspan><tspan x="909" dy="15">and difficulty</tspan></text>
+  <circle cx="1115" cy="110" r="17" fill="#14382e"/><text x="1115" y="117" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="1115" dy="0">R</tspan></text>
+  <text x="379" y="67" text-anchor="start" font-size="11" font-weight="700" fill="#61736b"><tspan x="379" dy="0">No · returning</tspan></text><rect x="931" y="58" width="60" height="20" rx="10" fill="#14382e" /><text x="961" y="72" text-anchor="middle" font-size="10" font-weight="700" fill="#fff"><tspan x="961" dy="0">SYSTEM</tspan></text><rect x="918" y="154" width="73" height="22" rx="11" fill="#fff" stroke="#14382e" stroke-dasharray="4 3" stroke-width="1"/><text x="954.5" y="169" text-anchor="middle" font-size="10" font-weight="700" fill="#14382e"><tspan x="954.5" dy="0">To confirm</tspan></text>
+  <circle cx="497" cy="28" r="17" fill="#14382e"/><text x="497" y="35" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="497" dy="0">H</tspan></text><path d="M497 45V73" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/><text x="519" y="31" text-anchor="start" font-size="11" font-weight="700" fill="#61736b"><tspan x="519" dy="0">Back to Home</tspan></text>
+  <path d="M291 165V215H85V310" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/><text x="299" y="180" text-anchor="start" font-size="12" font-weight="700" fill="#14382e"><tspan x="299" dy="0">Yes · first visit</tspan></text>
+  <!-- row 2 -->
+  <path d="M170 345H206" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/><path d="M376 345H412" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/><path d="M582 345H613" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/><path d="M793 345H824" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/><path d="M994 345H1098" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/>
+  <polygon points="14,310 170,310 156,380 0,380" fill="#d6ebde" stroke="#14382e" stroke-width="1.6"/><text x="85" y="342" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="85" dy="0">Choose an activity</tspan><tspan x="85" dy="16">to regain</tspan></text>
+  <rect x="206" y="310" width="170" height="70" rx="10" fill="#fff" stroke="#14382e" stroke-width="1.6"/><text x="291" y="350" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="291" dy="0">Hand status check</tspan></text>
+  <polygon points="426,310 582,310 568,380 412,380" fill="#d6ebde" stroke="#14382e" stroke-width="1.6"/><text x="497" y="342" text-anchor="middle" font-size="12" font-weight="700" fill="#14382e"><tspan x="497" dy="0">Place and move</tspan><tspan x="497" dy="15">fingers as guided</tspan></text>
+  <polygon points="703,280 793,345 703,410 613,345" fill="#f7e8d9" stroke="#14382e" stroke-width="1.6"/><text x="703" y="342" text-anchor="middle" font-size="11" font-weight="700" fill="#14382e"><tspan x="703" dy="0">Calibration input</tspan><tspan x="703" dy="14">detected?</tspan></text>
+  <rect x="824" y="305" width="170" height="80" rx="10" fill="#a8d1ba" stroke="#14382e" stroke-width="1.6"/><text x="909" y="342" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="909" dy="0">Auto-set</tspan><tspan x="909" dy="16">starting difficulty</tspan></text>
+  <circle cx="1115" cy="345" r="17" fill="#14382e"/><text x="1115" y="352" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="1115" dy="0">S</tspan></text>
+  <text x="799" y="332" text-anchor="start" font-size="13" font-weight="700" fill="#61736b"><tspan x="799" dy="0">Yes</tspan></text><rect x="931" y="289" width="60" height="20" rx="10" fill="#14382e" /><text x="961" y="303" text-anchor="middle" font-size="10" font-weight="700" fill="#fff"><tspan x="961" dy="0">SYSTEM</tspan></text><rect x="285" y="297" width="88" height="20" rx="10" fill="#9e6140" /><text x="329" y="311" text-anchor="middle" font-size="10" font-weight="700" fill="#fff"><tspan x="329" dy="0">HMW 1 · setup</tspan></text>
+  <circle cx="703" cy="245" r="17" fill="#14382e"/><text x="703" y="252" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="703" dy="0">E</tspan></text><path d="M703 262V280" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/>
+  <rect x="802" y="407" width="214" height="64" rx="10" fill="#fff" stroke="#61736b" stroke-width="1" stroke-dasharray="5 4"/><text x="812" y="427" text-anchor="start" font-size="12" font-weight="700" fill="#14382e"><tspan x="812" dy="0">Activity goal → clay task</tspan></text><text x="812" y="445" text-anchor="start" font-size="12" font-weight="700" fill="#14382e"><tspan x="812" dy="0">Calibration result →</tspan><tspan x="812" dy="15">starting difficulty</tspan></text>
+  <path d="M703 410V452" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/><text x="711" y="429" text-anchor="start" font-size="12" font-weight="700" fill="#61736b"><tspan x="711" dy="0">No</tspan></text>
+  <rect x="618" y="459" width="170" height="62" rx="10" fill="#fff" stroke="#14382e" stroke-width="1.6" stroke-dasharray="5 4"/><text x="703" y="487.5" text-anchor="middle" font-size="11.5" font-weight="700" fill="#14382e"><tspan x="703" dy="0">Re-check touch spots</tspan><tspan x="703" dy="14">or movement guide</tspan></text>
+  <rect x="717" y="524" width="70" height="22" rx="11" fill="#fff" stroke="#14382e" stroke-dasharray="4 3" stroke-width="1"/><text x="752" y="539" text-anchor="middle" font-size="10" font-weight="700" fill="#14382e"><tspan x="752" dy="0">Proposed</tspan></text>
+  <path d="M618 490H552" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/><polygon points="416,459 552,459 538,521 402,521" fill="#d6ebde" stroke="#14382e" stroke-width="1.6"/><text x="477" y="494" text-anchor="middle" font-size="12" font-weight="700" fill="#14382e"><tspan x="477" dy="0">Try again</tspan></text>
+  <path d="M402 490H308" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/><circle cx="291" cy="490" r="17" fill="#14382e"/><text x="291" y="497" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="291" dy="0">E</tspan></text>
+  <!-- row 3 -->
+  <circle cx="85" cy="706" r="17" fill="#14382e"/><text x="85" y="713" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="85" dy="0">S</tspan></text><circle cx="85" cy="754" r="17" fill="#14382e"/><text x="85" y="761" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="85" dy="0">R</tspan></text><path d="M102 706H126V730H150" fill="none" stroke="#14382e" stroke-width="1.8"/><path d="M102 754H126V730H150" fill="none" stroke="#14382e" stroke-width="1.8"/><path d="M150 730H206" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/>
+  <rect x="206" y="695" width="170" height="70" rx="10" fill="#fff" stroke="#14382e" stroke-width="1.6"/><text x="291" y="735" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="291" dy="0">Enter clay play</tspan></text>
+  <path d="M376 730H412" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/><rect x="412" y="695" width="170" height="70" rx="10" fill="#fff" stroke="#14382e" stroke-width="1.6"/><text x="497" y="713" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="497" dy="0">Warm-up and finger</tspan><tspan x="497" dy="16">placement guide</tspan></text><text x="497" y="744.5" text-anchor="middle" font-size="10.5" font-weight="400" fill="#61736b"><tspan x="497" dy="0">Same state as calibration?</tspan><tspan x="497" dy="13">To confirm</tspan></text>
+  <path d="M582 730H618" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/><polygon points="632,688 788,688 774,772 618,772" fill="#d6ebde" stroke="#14382e" stroke-width="1.6"/><text x="703" y="713" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="703" dy="0">Complete clay mission</tspan></text><text x="703" y="744.5" text-anchor="middle" font-size="10.5" font-weight="400" fill="#61736b"><tspan x="703" dy="0">Close the clay body with</tspan><tspan x="703" dy="13">a 3-point pinch</tspan></text>
+  <path d="M788 730H824" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/><rect x="824" y="688" width="170" height="84" rx="10" fill="#fff" stroke="#14382e" stroke-width="1.6"/><text x="909" y="713" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="909" dy="0">Clay reshapes,</tspan><tspan x="909" dy="16">target shown</tspan></text><text x="909" y="744.5" text-anchor="middle" font-size="10.5" font-weight="400" fill="#61736b"><tspan x="909" dy="0">Finger touch and move →</tspan><tspan x="909" dy="13">shape change</tspan></text>
+  <path d="M994 730H1025" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/><polygon points="1115,672 1205,730 1115,788 1025,730" fill="#f7e8d9" stroke="#14382e" stroke-width="1.6"/><text x="1115" y="735" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="1115" dy="0">Task complete?</tspan></text>
+  <path d="M1115 672V645H728V688" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/><text x="839" y="634" text-anchor="start" font-size="12" font-weight="700" fill="#61736b"><tspan x="839" dy="0">In progress · back to the same mission</tspan></text>
+  <rect x="938" y="674" width="53" height="20" rx="10" fill="#9e6140" /><text x="964.5" y="688" text-anchor="middle" font-size="10" font-weight="700" fill="#fff"><tspan x="964.5" dy="0">HMW 1</tspan></text><rect x="691" y="674" width="94" height="20" rx="10" fill="#14382e" /><text x="738" y="688" text-anchor="middle" font-size="10" font-weight="700" fill="#fff"><tspan x="738" dy="0">Seen on screen</tspan></text>
+  <circle cx="658" cy="648" r="17" fill="#14382e"/><text x="658" y="655" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="658" dy="0">B</tspan></text><path d="M658 665V692" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/>
+  <path d="M668 772V812" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/><path d="M738 772V812" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/><circle cx="668" cy="829" r="17" fill="#14382e"/><text x="668" y="836" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="668" dy="0">A</tspan></text><circle cx="738" cy="829" r="17" fill="#14382e"/><text x="738" y="836" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="738" dy="0">C</tspan></text><text x="668" y="862" text-anchor="middle" font-size="11" font-weight="700" fill="#61736b"><tspan x="668" dy="0">Touch lost</tspan></text><text x="738" y="862" text-anchor="middle" font-size="11" font-weight="700" fill="#61736b"><tspan x="738" dy="0">Quit</tspan></text>
+  <path d="M1115 788V818" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/><text x="1123" y="804" text-anchor="start" font-size="12" font-weight="700" fill="#14382e"><tspan x="1123" dy="0">Done</tspan></text><circle cx="1115" cy="835" r="17" fill="#14382e"/><text x="1115" y="842" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="1115" dy="0">F</tspan></text>
+  <!-- row 4 -->
+  <circle cx="85" cy="1010" r="17" fill="#14382e"/><text x="85" y="1017" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="85" dy="0">F</tspan></text><path d="M102 1010H206" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/>
+  <rect x="206" y="970" width="170" height="80" rx="10" fill="#fff" stroke="#14382e" stroke-width="1.6"/><text x="291" y="1007" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="291" dy="0">Session result</tspan></text><text x="291" y="1022.5" text-anchor="middle" font-size="10.5" font-weight="400" fill="#61736b"><tspan x="291" dy="0">What I did and how it went</tspan></text>
+  <path d="M376 1010H407" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/><polygon points="497,950 587,1010 497,1070 407,1010" fill="#f7e8d9" stroke="#14382e" stroke-width="1.6"/><text x="497" y="1014.5" text-anchor="middle" font-size="11.5" font-weight="700" fill="#14382e"><tspan x="497" dy="0">Open my records?</tspan></text>
+  <path d="M587 1010H618" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/><text x="593" y="997" text-anchor="start" font-size="13" font-weight="700" fill="#61736b"><tspan x="593" dy="0">Yes</tspan></text>
+  <rect x="618" y="970" width="170" height="80" rx="10" fill="#fff" stroke="#14382e" stroke-width="1.6"/><text x="703" y="1001" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="703" dy="0">Performance report</tspan></text><text x="703" y="1016.5" text-anchor="middle" font-size="10.5" font-weight="400" fill="#61736b"><tspan x="703" dy="0">Trend by period and</tspan><tspan x="703" dy="13">movement</tspan></text>
+  <path d="M788 1010H824" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/><rect x="824" y="970" width="170" height="80" rx="10" fill="#fff" stroke="#14382e" stroke-width="1.6"/><text x="909" y="993" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="909" dy="0">Adaptive</tspan><tspan x="909" dy="16">difficulty history</tspan></text><text x="909" y="1024.5" text-anchor="middle" font-size="10.5" font-weight="400" fill="#61736b"><tspan x="909" dy="0">Separate from the</tspan><tspan x="909" dy="13">starting difficulty</tspan></text>
+  <path d="M994 1010H1030" fill="none" stroke="#14382e" stroke-width="1.8" marker-end="url(#ah)"/><rect x="1030" y="975" width="170" height="70" rx="35" fill="#14382e" stroke="#14382e" stroke-width="1.6"/><text x="1115" y="1015" text-anchor="middle" font-size="13" font-weight="700" fill="#fff"><tspan x="1115" dy="0">End</tspan></text>
+  <path d="M497 1070V1092" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/><text x="505" y="1084" text-anchor="start" font-size="12" font-weight="700" fill="#61736b"><tspan x="505" dy="0">No</tspan></text><circle cx="497" cy="1109" r="17" fill="#14382e"/><text x="497" y="1116" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="497" dy="0">H</tspan></text><text x="521" y="1105" text-anchor="start" font-size="11" font-weight="700" fill="#61736b"><tspan x="521" dy="0">To Home · behavior</tspan><tspan x="521" dy="14">to confirm</tspan></text>
+  <rect x="318" y="954" width="55" height="20" rx="10" fill="#9e6140" /><text x="345.5" y="968" text-anchor="middle" font-size="10" font-weight="700" fill="#fff"><tspan x="345.5" dy="0">HMW 2</tspan></text><rect x="730" y="954" width="55" height="20" rx="10" fill="#9e6140" /><text x="757.5" y="968" text-anchor="middle" font-size="10" font-weight="700" fill="#fff"><tspan x="757.5" dy="0">HMW 3</tspan></text><rect x="936" y="954" width="55" height="20" rx="10" fill="#9e6140" /><text x="963.5" y="968" text-anchor="middle" font-size="10" font-weight="700" fill="#fff"><tspan x="963.5" dy="0">HMW 3</tspan></text><rect x="795" y="1054" width="196" height="22" rx="11" fill="#fff" stroke="#14382e" stroke-dasharray="4 3" stroke-width="1"/><text x="893" y="1069" text-anchor="middle" font-size="10" font-weight="700" fill="#14382e"><tspan x="893" dy="0">To confirm · when and why it adjusts</tspan></text>
+  <!-- exceptions -->
+  <text x="0" y="1163" text-anchor="start" font-size="13" font-weight="700" fill="#9e6140" letter-spacing="0.78"><tspan x="0" dy="0">EXCEPTION PATHS</tspan></text><rect x="0" y="1180" width="1200" height="1" fill="#d1ded6"/>
+  <text x="0" y="1209" text-anchor="start" font-size="14" font-weight="700" fill="#14382e"><tspan x="0" dy="0">Touch input is lost during play</tspan></text><rect x="260" y="1198" width="70" height="22" rx="11" fill="#fff" stroke="#14382e" stroke-dasharray="4 3" stroke-width="1"/><text x="295" y="1213" text-anchor="middle" font-size="10" font-weight="700" fill="#14382e"><tspan x="295" dy="0">Proposed</tspan></text>
+  <circle cx="17" cy="1265" r="17" fill="#14382e"/><text x="17" y="1272" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="17" dy="0">A</tspan></text><path d="M34 1265H100" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/><rect x="100" y="1234" width="170" height="62" rx="10" fill="#fff" stroke="#14382e" stroke-width="1.6" stroke-dasharray="5 4"/><text x="185" y="1270" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="185" dy="0">Re-guide touch spots</tspan></text>
+  <path d="M270 1265H325" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/><polygon points="339,1234 495,1234 481,1296 325,1296" fill="#d6ebde" stroke="#14382e" stroke-width="1.6"/><text x="410" y="1270" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="410" dy="0">Reposition fingers</tspan></text>
+  <path d="M495 1265H560" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/><circle cx="577" cy="1265" r="17" fill="#14382e"/><text x="577" y="1272" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="577" dy="0">B</tspan></text>
+  <text x="0" y="1318" text-anchor="start" font-size="11" font-weight="400" fill="#61736b"><tspan x="0" dy="0">Returns to play once input is detected. Resume vs. restart: to confirm.</tspan></text>
+  <text x="0" y="1364" text-anchor="start" font-size="14" font-weight="700" fill="#14382e"><tspan x="0" dy="0">User chooses to quit</tspan></text><rect x="260" y="1353" width="70" height="22" rx="11" fill="#fff" stroke="#14382e" stroke-dasharray="4 3" stroke-width="1"/><text x="295" y="1368" text-anchor="middle" font-size="10" font-weight="700" fill="#14382e"><tspan x="295" dy="0">Proposed</tspan></text>
+  <circle cx="17" cy="1440" r="17" fill="#14382e"/><text x="17" y="1447" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="17" dy="0">C</tspan></text><path d="M34 1440H100" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/><polygon points="185,1390 270,1440 185,1490 100,1440" fill="#f7e8d9" stroke="#14382e" stroke-width="1.6"/><text x="185" y="1445" text-anchor="middle" font-size="13" font-weight="700" fill="#14382e"><tspan x="185" dy="0">End session?</tspan></text>
+  <path d="M270 1440H360" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/><text x="285" y="1426" text-anchor="start" font-size="12" font-weight="700" fill="#61736b"><tspan x="285" dy="0">Continue</tspan></text><circle cx="377" cy="1440" r="17" fill="#14382e"/><text x="377" y="1447" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="377" dy="0">B</tspan></text>
+  <path d="M185 1490V1525" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ah)"/><text x="197" y="1507" text-anchor="start" font-size="12" font-weight="700" fill="#61736b"><tspan x="197" dy="0">End</tspan></text><circle cx="185" cy="1542" r="17" fill="#14382e"/><text x="185" y="1549" text-anchor="middle" font-size="14" font-weight="700" fill="#fff"><tspan x="185" dy="0">H</tspan></text>
+  <text x="225" y="1545" text-anchor="start" font-size="11" font-weight="400" fill="#61736b"><tspan x="225" dy="0">Whether an interrupted session is saved, and where the user lands: to confirm.</tspan></text>
+  <!-- symbols -->
+  <text x="0" y="1627" text-anchor="start" font-size="11" font-weight="700" fill="#9e6140"><tspan x="0" dy="0">SYMBOLS</tspan></text>
+  <rect x="0" y="1652" width="64" height="28" rx="14" fill="#14382e" stroke="#14382e" stroke-width="1.4"/><text x="74" y="1669" text-anchor="start" font-size="12" font-weight="700" fill="#14382e"><tspan x="74" dy="0">Start / End</tspan></text>
+  <rect x="190" y="1652" width="64" height="28" rx="6" fill="#fff" stroke="#14382e" stroke-width="1.4"/><text x="264" y="1661" text-anchor="start" font-size="12" font-weight="700" fill="#14382e"><tspan x="264" dy="0">Screen / system</tspan><tspan x="264" dy="15">response</tspan></text>
+  <polygon points="394,1652 444,1652 430,1680 380,1680" fill="#d6ebde" stroke="#14382e" stroke-width="1.4"/><text x="454" y="1669" text-anchor="start" font-size="12" font-weight="700" fill="#14382e"><tspan x="454" dy="0">User input / choice</tspan></text>
+  <polygon points="602,1650 632,1666 602,1682 572,1666" fill="#f7e8d9" stroke="#14382e" stroke-width="1.4"/><text x="644" y="1669" text-anchor="start" font-size="12" font-weight="700" fill="#14382e"><tspan x="644" dy="0">Decision</tspan></text>
+  <rect x="760" y="1652" width="64" height="28" rx="6" fill="#a8d1ba" stroke="#14382e" stroke-width="1.4"/><text x="834" y="1669" text-anchor="start" font-size="12" font-weight="700" fill="#14382e"><tspan x="834" dy="0">System process</tspan></text>
+  <circle cx="982" cy="1666" r="13" fill="#14382e"/><text x="1024" y="1661" text-anchor="start" font-size="12" font-weight="700" fill="#14382e"><tspan x="1024" dy="0">Same code =</tspan><tspan x="1024" dy="15">connected</tspan></text>
+  <path d="M0 1712H60" fill="none" stroke="#14382e" stroke-width="1.8"/><text x="72" y="1715" text-anchor="start" font-size="12" font-weight="700" fill="#14382e"><tspan x="72" dy="0">Confirmed in screens or the defined product flow</tspan></text>
+  <path d="M460 1712H520" fill="none" stroke="#14382e" stroke-width="1.8" stroke-dasharray="5 4"/><text x="532" y="1715" text-anchor="start" font-size="12" font-weight="700" fill="#14382e"><tspan x="532" dy="0">Proposed or to confirm</tspan></text>
+</svg></div>
+      <p class="v7-note" data-reveal>HMW = How Might We question. HMW 1 · during a movement / HMW 2 · after a session / HMW 3 · over days. 'Seen on screen' = mission confirmed in the provided screens. Returning-user policy, error handling and quit behavior stay marked as proposals until confirmed.</p></div>
+    </section>
+
+    <section class="v7-sec v7-bg-white" id="sketches" data-section="Sketches" aria-labelledby="sketches-t">
+      <div class="v7-in">
+      <div class="v7-head" data-reveal><p class="v7-eyebrow">07 / Low-fidelity exploration</p><h2 class="v7-title" id="sketches-t">I sketched the flow as screens to decide where the hand goes and what users see</h2></div>
+      <p class="v7-skills" data-reveal>SKILLS  ·  LOW-FIDELITY SKETCHING  ·  FLOW-TO-SCREEN TRANSLATION</p>
+      <p class="v7-lead" data-reveal>Sketches translate the flow into screens: where the hand goes, what changes on screen, and what is readable afterward.</p>
+      <figure class="v7-fig" data-reveal><img src="img/v7/sketches.png" alt="Hand-drawn sketches of the flow as screens" loading="lazy" style="object-fit:contain"></figure>
+      <p class="v7-cap" data-reveal>Hand-drawn sketches (redrawn).</p></div>
+    </section>
+
+    <section class="v7-sec v7-bg-green" id="prototype" data-section="Prototype" aria-labelledby="prototype-t">
+      <div class="v7-in">
+      <div class="v7-head" data-reveal><p class="v7-eyebrow">08 / Pre-test prototype</p><h2 class="v7-title" id="prototype-t">I built a pre-test prototype so the three riskiest steps could be tested</h2></div>
+      <p class="v7-skills" data-reveal>SKILLS  ·  PROTOTYPING  ·  TEST-READY DESIGN</p>
+      <p class="v7-lead" data-reveal>Early studies tried one-, two- and three-point touch. The pre-test flow: setup, shaping, result, history.</p>
+      <div class="v7-proto" data-reveal><figure><h3>01 / Personal setup</h3><img src="img/v7/proto-1-setup.png" alt="01 / Personal setup prototype screen" loading="lazy"><figcaption>Pick a hand and see where fingers start.</figcaption></figure><figure><h3>02 / Shape the clay</h3><img src="img/v7/proto-2-clay.png" alt="02 / Shape the clay prototype screen" loading="lazy"><figcaption>See the modeled response as you touch.</figcaption></figure><figure><h3>03 / Session result</h3><img src="img/v7/proto-3-result.png" alt="03 / Session result prototype screen" loading="lazy"><figcaption>Review the finished piece and example outcomes.</figcaption></figure><figure><h3>04 / Personal record</h3><img src="img/v7/proto-4-record.png" alt="04 / Personal record prototype screen" loading="lazy"><figcaption>See a session in a weekly record.</figcaption></figure></div>
+      <p class="v7-cap" data-reveal>Illustrative data · Scores, pressure labels and rank are placeholders.</p>
+      <p class="v7-next v7-next--lg" data-reveal>Three steps to test: finding the start, understanding the clay response, locating the result.</p></div>
+    </section>
+
+    <section class="v7-sec v7-bg-green" id="walkthrough" data-section="Walkthrough" aria-labelledby="walkthrough-t">
+      <div class="v7-in">
+      <div class="v7-head v7-head--wt" data-reveal><p class="v7-eyebrow v7-eyebrow--sm">09 / Core feature walkthrough</p><h2 class="v7-title v7-title--wt" id="walkthrough-t">Three features turn home practice into a guided experience</h2><p class="v7-lead v7-lead--sm">I translated the post-discharge guidance gap into three interface directions: choose a suitable starting point, understand movement while practicing, and make gradual progress visible.</p><p class="v7-skills v7-skills--sm">SKILLS  ·  INTERACTION DESIGN  ·  FEEDBACK DESIGN  ·  INFORMATION VISUALIZATION</p></div>
+      <div class="zc-list">
+        <article class="zc" id="feat-01" aria-labelledby="feat-01-h">
+          <script type="application/json">{"w":1180,"h":820,"worldH":820,"kfs":[{"img":0,"cx":590,"cy":410,"s":1},{"img":1,"cx":590,"cy":170,"s":1.9,"hl":[335,147,510,52]},{"img":2,"cx":590,"cy":340,"s":1.55,"hl":[484,147,212,372]},{"img":3,"cx":590,"cy":437,"s":1.9,"hl":[373,352,434,171]}],"textFor":[0,1,1,2]}</script>
+          <div class="zc__stage">
+            <div class="zc__device">
+              <div class="zc__bezel"><div class="zc__screen" role="img" aria-label="Onboarding · hand and everyday action. Safety check · how does the hand feel today?. Clay-kneading assessment · spread, squeeze, hold. Result · starting level and suggested touch">
+                <div class="zc__world" style="height:820px"><img class="zc__layer" src="img/v7/feat/c1-onboarding.jpg" alt=""  style="opacity:1"><img class="zc__layer" src="img/v7/feat/c2-safety.jpg" alt="" loading="lazy" style="opacity:0"><img class="zc__layer" src="img/v7/feat/c3b-knead-squeeze.jpg" alt="" loading="lazy" style="opacity:0"><img class="zc__layer" src="img/v7/feat/c4-result.jpg" alt="" loading="lazy" style="opacity:0"><div class="zc__ring"></div></div>
+              </div></div>
+              <div class="zc__capbar"><div class="zc__cap"><span class="on">Onboarding · hand and everyday action</span><span>Safety check · how does the hand feel today?</span><span>Clay-kneading assessment · spread, squeeze, hold</span><span>Result · starting level and suggested touch</span></div><div class="zc__dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div></div>
             </div>
-          </div>
-          <div class="persona2__body">
-            <h3 class="persona2__name">Seoyeon Kim</h3>
-            <p class="persona2__quote">“I can move my arm after discharge, but my left fingers won’t move the way I want. I can’t tell whether I’m doing it right, or even getting better, so I lose the will to keep going.”</p>
-            <p class="persona2__bio t-body-md">A stroke survivor preparing for independence in daily activities (ADL). She regained shoulder and arm movement in early rehab, but pinch and precision in her left wrist and fingers are still weak. She is in the “golden time” of small-muscle rehab and looking for ways to train on her own.</p>
-            <div class="persona2__cols">
-              <div>
-                <h4 class="t-overline-sm">Goals</h4>
-                <ul class="persona2__list t-body-sm">
-                  <li><b>See her recovery objectively (core).</b> Real-time touch feedback as a heatmap, and a weekly dashboard of pressure, precision and performance to keep her motivated.</li>
-                  <li><b>Do daily activities on her own.</b> Recover fine motor sense in her left hand, such as holding a cup or handling her belongings.</li>
-                </ul>
+            <div class="zc__text">
+              <p class="zc__tag">01  /  ADAPTIVE DIAGNOSTIC CALIBRATION</p>
+              <h3 id="feat-01-h">Set a starting point that fits today</h3>
+              <div class="zc__blocks">
+                <div class="zc__t on"><h4>THE PROBLEM</h4><p>After discharge, people must judge their hand’s daily range and choose a difficulty on their own. A fixed level may feel too easy or too demanding.</p></div>
+                <div class="zc__t"><h4>HOW THE INTERFACE RESPONDS</h4><p>A short readiness check samples finger range, response speed and hold stability, then proposes a touch target, tolerance and starting level for that session.</p></div>
+                <div class="zc__t"><h4>WHY IT MATTERS</h4><p>Gives practice a more considered starting point instead of asking users to guess.</p></div>
               </div>
-              <div>
-                <h4 class="t-overline-sm">Pain points</h4>
-                <ul class="persona2__list t-body-sm">
-                  <li><b>Unclear recovery, lost persistence (core).</b> Alone, she can’t track progress or proper technique, and motivation drops.</li>
-                  <li><b>Limits in fine daily tasks.</b> Weak grasp and stiffness make even holding a water cup hard.</li>
-                  <li><b>Monotonous rehab.</b> Simple repeated exercises are boring.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="persona2__meters">
-              <div class="meter"><div class="meter__top t-label"><span>Digital proficiency</span><span>8/10</span></div><div class="meter__bar"><span style="width:80%"></span></div><p class="t-caption">Highly proficient with a smartphone and tablet.</p></div>
-              <div class="meter"><div class="meter__top t-label"><span>Adaptability to new apps</span><span>9/10</span></div><div class="meter__bar"><span style="width:90%"></span></div><p class="t-caption">Understands gamification and intuitive UI, with no resistance.</p></div>
+              <p class="zc__status">CONCEPT DIRECTION  ·  CALIBRATION THRESHOLDS NEED OT + USER VALIDATION</p>
+              <p class="zc__hint" aria-hidden="true">Scroll to zoom in ↓</p>
             </div>
           </div>
         </article>
-        <!-- TODO (author): the board says "late 30s" in the background but 34 in the title; confirm the age. Add the illustration as site/img/persona.jpg. -->
-      </div>
-    </section>
-
-    <!-- Usability testing & iteration -->
-    <section class="section" id="testing" data-section="Testing" aria-labelledby="journey-label">
-      <div class="container section__inner">
-        <div class="section-header" data-reveal><p class="section-header__label t-overline" id="journey-label">Usability testing &amp; iteration</p></div>
-        <p class="prose t-body-lg" data-reveal>How testing with a real stroke survivor and an occupational therapist reshaped the interaction and the metrics.</p>
-        <ol class="journey" data-reveal>
-          <li class="stage stage--blue" tabindex="0">
-            <p class="stage__name t-overline-sm">Pilot UT</p><p class="stage__action t-caption">Validated onboarding flows</p>
-            <div class="stage__block"><p class="stage__label t-overline-sm">Finding</p><p class="stage__finding t-caption">Layout bugs; stiff touch guides</p></div>
-            <hr class="stage__divider">
-            <div class="stage__block"><p class="stage__label t-overline-sm">Result</p><p class="stage__result t-caption">Fixed bugs; curved hand paths</p></div>
-          </li>
-          <li class="journey__arrow t-caption" aria-hidden="true">→</li>
-          <li class="stage stage--red" tabindex="0">
-            <p class="stage__name t-overline-sm">1st Main UT</p><p class="stage__action t-caption">Tested with a stroke survivor</p>
-            <div class="stage__block"><p class="stage__label t-overline-sm">Finding</p><p class="stage__finding t-caption">Flat screen clashed with full-grab motion</p></div>
-            <hr class="stage__divider">
-            <div class="stage__block"><p class="stage__label t-overline-sm">Result</p><p class="stage__result t-caption">Tracking friction exposed</p></div>
-          </li>
-          <li class="journey__arrow t-caption" aria-hidden="true">→</li>
-          <li class="stage stage--yellow" tabindex="0">
-            <p class="stage__name t-overline-sm">Pivot</p><p class="stage__action t-caption">Reworked the interaction</p>
-            <div class="stage__block"><p class="stage__label t-overline-sm">Finding</p><p class="stage__finding t-caption">Multi-finger dragging was high-friction</p></div>
-            <hr class="stage__divider">
-            <div class="stage__block"><p class="stage__label t-overline-sm">Result</p><p class="stage__result t-caption">Snap-based touch logic</p></div>
-          </li>
-          <li class="journey__arrow t-caption" aria-hidden="true">→</li>
-          <li class="stage stage--purple" tabindex="0">
-            <p class="stage__name t-overline-sm">Onboarding</p><p class="stage__action t-caption">Added a multi-level system</p>
-            <div class="stage__block"><p class="stage__label t-overline-sm">Finding</p><p class="stage__finding t-caption">Needs differ across users</p></div>
-            <hr class="stage__divider">
-            <div class="stage__block"><p class="stage__label t-overline-sm">Result</p><p class="stage__result t-caption">Guided entry for every level</p></div>
-          </li>
-          <li class="journey__arrow t-caption" aria-hidden="true">→</li>
-          <li class="stage stage--green" tabindex="0">
-            <p class="stage__name t-overline-sm">Expert UT</p><p class="stage__action t-caption">Tested with an occupational therapist</p>
-            <div class="stage__block"><p class="stage__label t-overline-sm">Finding</p><p class="stage__finding t-caption">Praised weekly trends and finger hold stability</p></div>
-            <hr class="stage__divider">
-            <div class="stage__block"><p class="stage__label t-overline-sm">Result</p><p class="stage__result t-caption">SUS score: 70</p></div>
-          </li>
-          <li class="journey__arrow t-caption" aria-hidden="true">→</li>
-          <li class="stage stage--blue" tabindex="0">
-            <p class="stage__name t-overline-sm">Refinement</p><p class="stage__action t-caption">Reviewed metrics for clinical use</p>
-            <div class="stage__block"><p class="stage__label t-overline-sm">Finding</p><p class="stage__finding t-caption">Recovery-date estimate could mislead</p></div>
-            <hr class="stage__divider">
-            <div class="stage__block"><p class="stage__label t-overline-sm">Result</p><p class="stage__result t-caption">Removed it; split flexion and extension</p></div>
-          </li>
-        </ol>
-        <div class="callout" data-reveal style="max-width:var(--text-width)">
-          <p class="callout__label t-overline-sm">Takeaway</p>
-          <p class="callout__body t-body-lg">Rather than abandoning the concept, I pivoted the interaction from high-friction dragging to snap-based touch.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Solution landscape -->
-    <section class="section" id="landscape" data-section="Landscape" aria-labelledby="landscape-label">
-      <div class="container section__inner">
-        <div class="section-header" data-reveal><p class="section-header__label t-overline" id="landscape-label">Solution landscape</p></div>
-        <div class="landscape">
-          <article class="row" data-reveal>
-            <header class="row__name"><h3 class="row__title t-h2">Hospital rehabilitation</h3><p class="row__descriptor t-overline-sm">Ends at discharge</p></header>
-            <div class="row__col"><p class="row__col-label t-overline-sm">Strengths</p>
-              <ul class="row__list row__list--plus t-body-sm"><li>Professional therapist guidance</li><li>Structured clinical care</li><li>Gross motor recovery support</li></ul></div>
-            <div class="row__col"><p class="row__col-label t-overline-sm">Weaknesses</p>
-              <ul class="row__list row__list--minus t-body-sm"><li>Ends at discharge</li><li>No fine motor support at home</li><li>Patients left on their own</li></ul></div>
-          </article>
-          <article class="row" data-reveal>
-            <header class="row__name"><h3 class="row__title t-h2">Existing homecare apps</h3><p class="row__descriptor t-overline-sm">Passive end-of-day summary</p></header>
-            <div class="row__col"><p class="row__col-label t-overline-sm">Strengths</p>
-              <ul class="row__list row__list--plus t-body-sm"><li>Usable at home</li><li>Logs completed sessions</li><li>Self-paced routines</li></ul></div>
-            <div class="row__col"><p class="row__col-label t-overline-sm">Weaknesses</p>
-              <ul class="row__list row__list--minus t-body-sm"><li>Only a summary after the fact</li><li>No real-time correction</li><li>Can’t answer “am I doing it right?”</li></ul></div>
-          </article>
-          <article class="row row--ours" data-reveal>
-            <header class="row__name"><h3 class="row__title t-h2">Deft</h3><p class="row__descriptor t-overline-sm">Real-time pottery biofeedback</p></header>
-            <div class="row__col"><p class="row__col-label t-overline-sm">Strengths</p>
-              <ul class="row__list row__list--plus t-body-sm"><li>Instant visual, haptic and tactile feedback</li><li>3D pottery-shaping interaction</li><li>Adaptive diagnostic calibration</li></ul></div>
-            <div class="row__col"><p class="row__col-label t-overline-sm">Weaknesses</p>
-              <ul class="row__list row__list--minus t-body-sm"><li>Flat tablet limits full-grab motion</li><li>Needs multi-level onboarding</li><li>—</li></ul></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Problem definition -->
-    <section class="section section--band" id="hmw" data-section="HMW" aria-labelledby="hmw-title">
-      <div class="container section__inner">
-        <div class="section-header" data-reveal>
-          <p class="section-header__label t-overline">Problem definition</p>
-          <h2 class="section-header__title t-h1" id="hmw-title">How Might We</h2>
-        </div>
-        <ol class="hmw">
-          <li class="hmw__item" data-reveal><span class="hmw__num t-overline-sm">01</span><p class="t-body-sm">HMW make the effect of a hand interaction clear during practice?</p></li>
-          <li class="hmw__item" data-reveal style="--reveal-delay:60ms"><span class="hmw__num t-overline-sm">02</span><p class="t-body-sm">HMW translate repeated hand actions into an intuitive task?</p></li>
-          <li class="hmw__item" data-reveal style="--reveal-delay:120ms"><span class="hmw__num t-overline-sm">03</span><p class="t-body-sm">HMW give users a clear next step after each session?</p></li>
-          <li class="hmw__item" data-reveal style="--reveal-delay:180ms"><span class="hmw__num t-overline-sm">04</span><p class="t-body-sm">HMW make small changes and task progress visible over time?</p></li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- Ideation -->
-    <section class="section" id="ideation" data-section="Ideation" aria-labelledby="ide-title">
-      <div class="container section__inner">
-        <div class="section-header" data-reveal>
-          <p class="section-header__label t-overline">Ideation / Explore → Select</p>
-          <h2 class="section-header__title t-h1" id="ide-title">From many possibilities to one pottery experience.</h2>
-        </div>
-        <div class="ide-grid">
-          <figure class="photo" data-reveal>
-            <img src="img/ideation-board.jpg" alt="Whiteboard covered in sticky notes from the ideation and selection session" width="656" height="492">
-            <figcaption class="t-label">Actual ideation session · candidates, questions and selection criteria.</figcaption>
-          </figure>
-          <div class="wiw">
-            <div data-reveal><p class="t-overline-sm">What I did</p><p class="t-body-sm">Expanded ideas across three moments—during practice, after a session and over time—then compared hand-action fit, observable inputs and readable feedback.</p></div>
-            <div data-reveal style="--reveal-delay:80ms"><p class="t-overline-sm">What I learned</p><p class="t-body-sm">An engaging response was not enough. Users needed to understand what their action changed and see progress beyond a completion mark.</p></div>
-            <div data-reveal style="--reveal-delay:160ms"><p class="t-overline-sm">What I chose</p><p class="t-body-sm">A tablet pottery task: gathering and spreading touches reshape the clay, with immediate visual responses, session summaries and personal records.</p></div>
+        <article class="zc zc--flip" id="feat-02" aria-labelledby="feat-02-h">
+          <script type="application/json">{"w":1180,"h":820,"worldH":820,"kfs":[{"img":0,"cx":590,"cy":410,"s":1},{"img":1,"cx":590,"cy":420,"s":1.5,"hl":[466,265,251,325]},{"img":2,"cx":590,"cy":150,"s":2.1,"hl":[441,146,296,44]},{"img":3,"cx":235,"cy":100,"s":2.5,"hl":[18,74,395,50]}],"textFor":[0,1,1,2]}</script>
+          <div class="zc__stage">
+            <div class="zc__device">
+              <div class="zc__bezel"><div class="zc__screen" role="img" aria-label="Training screen · three touch points around the clay. The clay and the target outline respond to the fingers. A text cue says what to do next. Progress gauge and score update with every touch">
+                <div class="zc__world" style="height:820px"><img class="zc__layer" src="img/v7/feat/p1-start.jpg" alt=""  style="opacity:1"><img class="zc__layer" src="img/v7/feat/p2-inband.jpg" alt="" loading="lazy" style="opacity:0"><img class="zc__layer" src="img/v7/feat/p3-over.jpg" alt="" loading="lazy" style="opacity:0"><img class="zc__layer" src="img/v7/feat/p4-clear.jpg" alt="" loading="lazy" style="opacity:0"><div class="zc__ring"></div></div>
+              </div></div>
+              <div class="zc__capbar"><div class="zc__cap"><span class="on">Training screen · three touch points around the clay</span><span>The clay and the target outline respond to the fingers</span><span>A text cue says what to do next</span><span>Progress gauge and score update with every touch</span></div><div class="zc__dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div></div>
+            </div>
+            <div class="zc__text">
+              <p class="zc__tag">02  /  REAL-TIME VIRTUAL-CLAY FEEDBACK</p>
+              <h3 id="feat-02-h">Make movement legible while it happens</h3>
+              <div class="zc__blocks">
+                <div class="zc__t on"><h4>THE PROBLEM</h4><p>A completion message arrives after the exercise. It does not help users understand the movement as they practice.</p></div>
+                <div class="zc__t"><h4>HOW THE INTERFACE RESPONDS</h4><p>Virtual clay makes finger movement visible. After drag proved difficult in testing, the interaction pivoted to guided point-touch with an immediate cue. Additional force, direction and haptic cues remain to be validated.</p></div>
+                <div class="zc__t"><h4>WHY IT MATTERS</h4><p>Connects an action to an in-session response, rather than relying on an end-of-session summary.</p></div>
+              </div>
+              <p class="zc__status">INTERACTION PIVOT RECORDED  ·  BIOFEEDBACK SIGNALS STILL NEED VALIDATION</p>
+              <p class="zc__hint" aria-hidden="true">Scroll to zoom in ↓</p>
+            </div>
           </div>
-        </div>
-        <div class="stack-sm" data-reveal>
-          <p class="t-overline-sm" style="color:var(--text-secondary)">Core experience</p>
-          <p class="t-body-lg">Personal setup → Virtual pottery → Session results → Practice history</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sketches -->
-    <section class="section" id="sketches" data-section="Sketches" aria-labelledby="sk-title">
-      <div class="container section__inner">
-        <div class="section-header" data-reveal>
-          <p class="section-header__label t-overline">Early exploration / Sketches</p>
-          <h2 class="section-header__title t-h1" id="sk-title">Turning the direction into a first experience.</h2>
-        </div>
-        <p class="prose t-body-md" data-reveal>The next step was to sketch the task sequence: preparing, shaping the clay and reviewing the result. This section will show the service’s first screen ideas before digital prototyping.</p>
-        <figure class="media" data-reveal>
-          <div class="ph ratio-sketch"><p class="ph__title">Sketches</p><p class="ph__note">Add the project’s own sketch photos here.</p></div>
-        </figure>
-        <!-- Note from the Figma frame: the reference image used there shows another service, not the project's sketches, so it is not used. -->
-      </div>
-    </section>
-
-    <!-- Initial prototype -->
-    <section class="section section--band" id="prototype" data-section="Prototype" aria-labelledby="proto-title">
-      <div class="container section__inner">
-        <div class="section-header" data-reveal>
-          <p class="section-header__label t-overline">Initial prototype</p>
-          <h2 class="section-header__title t-h1" id="proto-title">Making the sketches testable.</h2>
-        </div>
-        <p class="prose t-body-lg" data-reveal>The first digital prototype made the task sequence and touch instructions testable. Present this version as a baseline, so the later changes are easy to understand.</p>
-        <div class="proto-grid">
-          <div class="ph" data-reveal><p class="ph__title">First digital prototype</p><p class="ph__note">배치할 자료: 초안 화면 3–4개 또는 초기 작동 영상. 각 화면에는 버전과 수행 과업을 표시.</p></div>
-          <div class="proto-q" data-reveal style="--reveal-delay:100ms">
-            <p class="t-overline-sm">Questions to test</p>
-            <p class="proto-q__big">Can users get started? Can they understand the gesture? Can they recognize task progress?</p>
-            <p class="t-body-sm">여기에는 당시 확인하려던 질문을 적습니다. 테스트에서 나온 결과와 분리해 보여줍니다.</p>
+        </article>
+        <article class="zc" id="feat-03" aria-labelledby="feat-03-h">
+          <script type="application/json">{"w":1180,"h":820,"worldH":1900,"kfs":[{"img":0,"cx":590,"cy":410,"s":1},{"img":0,"cx":857,"cy":475,"s":1.7,"hl":[554,342,605,263]},{"img":0,"cx":636,"cy":1290,"s":1.75,"hl":[465,1119,341,351]},{"img":0,"cx":240,"cy":237,"s":2.2,"hl":[112,142,254,185]}],"textFor":[0,1,1,2]}</script>
+          <div class="zc__stage">
+            <div class="zc__device">
+              <div class="zc__bezel"><div class="zc__screen" role="img" aria-label="Progress dashboard · one scrollable page. Weekly trend of both movements. Training level history · difficulty across sessions. Overall recovery score against the baseline">
+                <div class="zc__world" style="height:1900px"><img class="zc__layer" src="img/v7/feat/d1-dashboard.jpg" alt=""  style="opacity:1"><div class="zc__ring"></div></div>
+              </div></div>
+              <div class="zc__capbar"><div class="zc__cap"><span class="on">Progress dashboard · one scrollable page</span><span>Weekly trend of both movements</span><span>Training level history · difficulty across sessions</span><span>Overall recovery score against the baseline</span></div><div class="zc__dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div></div>
+            </div>
+            <div class="zc__text">
+              <p class="zc__tag">03  /  REHABILITATION PROGRESS INSIGHTS</p>
+              <h3 id="feat-03-h">Show change across sessions</h3>
+              <div class="zc__blocks">
+                <div class="zc__t on"><h4>THE PROBLEM</h4><p>Fine-motor progress can be gradual and difficult to notice from one session’s completion time alone.</p></div>
+                <div class="zc__t"><h4>HOW THE INTERFACE RESPONDS</h4><p>A progress view can chart task precision, response time, touch persistence and changes in difficulty across sessions. These are candidate interaction signals, not clinical outcome measures.</p></div>
+                <div class="zc__t"><h4>WHY IT MATTERS</h4><p>Helps users review practice trends while keeping the meaning of each measure transparent.</p></div>
+              </div>
+              <p class="zc__status">CONCEPT DIRECTION  ·  METRIC QUALITY + INTERPRETATION NEED VALIDATION</p>
+              <p class="zc__hint" aria-hidden="true">Scroll to zoom in ↓</p>
+            </div>
           </div>
-        </div>
-      </div>
+        </article></div>
+      <p class="v7-note v7-note--wt" data-reveal>Evidence note · The interface concepts show intended design responses. Only the point-touch interaction pivot is described as a response to user testing; calibration logic and progress metrics remain hypotheses to validate. Screens show the prototype with example data.</p></div>
     </section>
 
-    <!-- Validation -->
-    <section class="section" id="validation" data-section="Validation" aria-labelledby="val-title">
-      <div class="container section__inner">
-        <div class="section-header" data-reveal>
-          <p class="section-header__label t-overline">Validation</p>
-          <h2 class="section-header__title t-h1" id="val-title">Where the first interaction broke down.</h2>
-        </div>
-        <p class="prose t-body-lg" data-reveal>Show the observations that triggered a design change. Keep user testing and expert review distinct, and connect each observation to the affected screen or gesture.</p>
-        <div class="cards3">
-          <article class="card3" data-reveal><h3 class="t-card">01 / Pilot test</h3><p class="t-body-sm">기존 기록: 온보딩 흐름과 터치 안내의 사용성 점검.</p><p class="t-body-sm">추가할 근거: 테스트 과업, 참여자 정보, 문제가 드러난 초안 화면. 실명 대신 참여자 코드 사용.</p></article>
-          <article class="card3" data-reveal style="--reveal-delay:80ms"><h3 class="t-card">02 / User test</h3><p class="t-body-sm">기존 기록: 평평한 태블릿에서 사용자가 기대한 쥐기 동작과 다중 손가락 드래그 사이의 마찰.</p><p class="t-body-sm">추가할 근거: 관찰 장면·실제 발언·과업 결과.</p></article>
-          <article class="card3" data-reveal style="--reveal-delay:160ms"><h3 class="t-card">03 / Expert review</h3><p class="t-body-sm">기존 기록: 작업치료사 검토.</p><p class="t-body-sm">추가할 근거: 검토 범위, 제안 사항과 반영 여부. 사용성 평가와 임상 효과 검증을 구분.</p></article>
-        </div>
-      </div>
+    <section class="v7-sec v7-bg-green" id="testing" data-section="User testing" aria-labelledby="testing-t">
+      <div class="v7-in">
+      <div class="v7-head" data-reveal><p class="v7-eyebrow">10 / User testing</p><h2 class="v7-title" id="testing-t">Two user rounds exposed a mismatch between natural finger movement and flat-screen touch</h2></div>
+      <p class="v7-skills" data-reveal>SKILLS  ·  USABILITY TESTING  ·  EXPERT REVIEW (OT)</p>
+      <p class="v7-lead" data-reveal>Two one-person user rounds and one OT expert review tested distinct questions: early need and setup, physical interaction, and clinical fit.</p>
+      <div class="v7-cards" data-reveal><div class="v7-card"><h3>01 · PILOT USER (n=1)</h3><p>Onboarding → two unaffected-hand plays → report. A left-side setting error limited the physical test.</p></div><div class="v7-card"><h3>02 · FOLLOW-UP USER (n=1)</h3><p>A revised game went into the next round. Multi-finger touch-drag remained difficult; the session ended early.</p></div><div class="v7-card"><h3>03 · OT REVIEW (n=1)</h3><p>Game replay → dashboard → adapted ratings. Exploratory expert input, not clinical validation.</p></div></div>
+      <div class="v7-matrix" data-reveal>
+        <p class="v7-skills">EVIDENCE  →  INSIGHT  →  PRIORITY  →  NEXT DESIGN MOVE</p>
+        <div class="v7-matrix__scroll"><div class="v7-matrix__grid" role="table" aria-label="Evidence, insight, priority and next design move">
+          <div class="v7-mx-h" role="row"><span>WHAT WE SAW</span><span>WHAT IT MEANS</span><span class="c">RANK</span><span>NEXT DESIGN MOVE</span></div>
+          <div class="v7-mx-r" role="row"><div role="cell"><small>PILOT · n=1</small><p>Left-hand setting failed to move the guide; play shifted to the unaffected hand.</p></div><div role="cell"><b>Affected-hand control and natural guide placement were not validated.</b></div><div role="cell" class="c"><i class="v7-pr v7-pr--P0">P0</i></div><div role="cell"><p>Fix side mapping; verify hand side and guide placement before play.</p></div></div><div class="v7-mx-r" role="row"><div role="cell"><small>FOLLOW-UP · n=1</small><p>Touch contact broke as fingers curled during multi-finger drag; the session stopped early.</p></div><div role="cell"><b>Basic touch ability did not predict the compound movement task.</b></div><div role="cell" class="c"><i class="v7-pr v7-pr--P0">P0</i></div><div role="cell"><p>Test the complete gesture; compare touch patterns and immediate feedback.</p></div></div><div class="v7-mx-r" role="row"><div role="cell"><small>OT REVIEW · n=1</small><p>Compensation detection 1/7; safety 4/7. One expert's exploratory ratings.</p></div><div role="cell"><b>Touch data alone cannot establish full-body form or clinical safety.</b></div><div role="cell" class="c"><i class="v7-pr v7-pr--P0">P0</i></div><div role="cell"><p>Clarify measurement limits; review safe-use guidance with clinical expertise.</p></div></div><div class="v7-mx-r" role="row"><div role="cell"><small>PILOT + OT</small><p>Progress feedback resonated; dashboard task SEQ was 6/7 in the OT review.</p></div><div role="cell"><b>Progress cues have promise; comprehension and clinical meaning remain open.</b></div><div role="cell" class="c"><i class="v7-pr v7-pr--P1">P1</i></div><div role="cell"><p>Test trend comprehension and define meaningful progress signals.</p></div></div><div class="v7-mx-r" role="row"><div role="cell"><small>PILOT · n=1</small><p>The participant asked for more varied everyday rehabilitation goals.</p></div><div role="cell"><b>Goal choice may need to reflect individual routines and priorities.</b></div><div role="cell" class="c"><i class="v7-pr v7-pr--P1">P1</i></div><div role="cell"><p>Explore more flexible goal selection and test whether choices fit user needs.</p></div></div><div class="v7-mx-r" role="row"><div role="cell"><small>PILOT + OT</small><p>The pilot asked for game variety; therapist workflow items scored 3/7.</p></div><div role="cell"><b>Patient motivation and clinician workflow are distinct product needs.</b></div><div role="cell" class="c"><i class="v7-pr v7-pr--P2">P2</i></div><div role="cell"><p>Explore content variety and therapist workflows as separate opportunities.</p></div></div>
+        </div></div>
+        <p class="v7-note">Two user rounds (n=1 each) + one OT review (n=1). Priorities are proposed responses; the reported score adaptations are exploratory, not standardized measures.</p>
+      </div></div>
     </section>
 
-    <!-- Iterations -->
-    <section class="section section--band" id="iteration" data-section="Iteration" aria-labelledby="iter-title">
-      <div class="container section__inner">
-        <div class="section-header" data-reveal>
-          <p class="section-header__label t-overline">Iteration</p>
-          <h2 class="section-header__title t-h1" id="iter-title">Changing the interaction, not just the visuals.</h2>
-        </div>
-        <p class="prose t-body-lg" data-reveal>Make the change visible: show the original design, the observed friction and the revised behaviour together. Explain the decision before revealing the final interface.</p>
-        <div class="ba-grid">
-          <div class="ph" data-reveal><p class="ph__title">Before / Initial interaction</p><p class="ph__note">배치할 자료: 수정 전 다중 손가락 드래그 화면·영상. 문제가 생긴 터치 지점과 안내를 표시.</p></div>
-          <div class="ph" data-reveal style="--reveal-delay:100ms"><p class="ph__title">After / Revised interaction</p><p class="ph__note">배치할 자료: 스냅 기반 터치와 단계별 온보딩 화면·영상. 같은 과업을 나란히 비교.</p></div>
-        </div>
-        <p class="t-overline-sm" style="color:var(--text-secondary)" data-reveal>Observation → Design change → Recheck</p>
-        <div class="cards3 cards3--white">
-          <article class="card3" data-reveal><h3 class="t-card">Touch interaction</h3><p class="t-body-sm">Original: continuous multi-finger dragging.<br>Change: snap-based touch logic.</p><p class="t-body-sm">재검증 결과는 후속 테스트 근거가 있는 범위만 추가.</p></article>
-          <article class="card3" data-reveal style="--reveal-delay:80ms"><h3 class="t-card">Onboarding</h3><p class="t-body-sm">Original: early touch instructions.<br>Change: multi-level onboarding and clearer touch guidance.</p><p class="t-body-sm">어떤 안내를 어느 단계로 옮겼는지 화면에 표시.</p></article>
-          <article class="card3" data-reveal style="--reveal-delay:160ms"><h3 class="t-card">What changed after testing?</h3><p class="t-body-sm">최종본이 달라졌다는 설명 대신, 과업 수행이나 이해에 어떤 차이가 관찰됐는지 제시.</p><p class="t-body-sm">아직 확인하지 않은 효과는 다음 검증 과제로 분리.</p></article>
-        </div>
-      </div>
+    <section class="v7-sec v7-bg-green" id="iteration" data-section="Iteration" aria-labelledby="iteration-t">
+      <div class="v7-in">
+      <div class="v7-head" data-reveal><p class="v7-eyebrow">11 / Iteration</p><h2 class="v7-title" id="iteration-t">Testing turned setup errors into a point-touch interaction pivot</h2></div>
+      <p class="v7-skills" data-reveal>SKILLS  ·  ITERATION  ·  PROTOTYPE REFINEMENT</p>
+      <p class="v7-lead" data-reveal>Two one-person survivor sessions and one occupational therapist review moved the concept from setup correction to interaction redesign. Each card links a reported finding to a design response or next validation.</p>
+      <div class="v7-icards" data-reveal><article class="v7-icard"><p class="v7-icard__k">01 · PILOT → UI FIX</p><h3>Correct hand mapping and guide placement</h3><div class="v7-icard__box"><small>OBSERVED  ·  LEFT HAND SELECTED</small><b>Guide remained on the right</b><small class="g">RESPONSE</small><span>Fix hand mapping + curve guide to finger ROM</span></div><p>The pilot’s left-hand setting did not update the guide, so affected-hand play could not be observed. The wrap-up records a mapping fix and curved guide.</p></article><article class="v7-icard"><p class="v7-icard__k">02 · SURVIVOR UT → PIVOT</p><h3>Replace continuous drag with point-based touch</h3><div class="v7-icard__box"><small>BEFORE  ·  COMPOUND DRAG</small><b>Hold contact while curling</b><small class="g">PIVOT</small><span>Snap to guide point → immediate cue</span></div><p>Basic touch screening did not predict multi-finger movement. The follow-up participant still struggled to keep contact while curling fingers.</p></article><article class="v7-icard"><p class="v7-icard__k">03 · OT REVIEW → CONTENT REFINEMENT</p><h3>Make the feedback clinically interpretable</h3><div class="v7-icard__box"><small>REMOVE  ·  UNSUPPORTED ESTIMATE</small><b>Estimated ADL duration</b><small class="g">REFINE THE REPORT</small><span>Separate opening / closing; clarify labels</span></div><p>The OT review challenged an estimated ADL-duration metric and highlighted the limits of touch-only compensation detection; I revised the report accordingly.</p></article></div>
+      <h3 class="v7-decision" data-reveal>Next: validate the revised interaction and signals</h3>
+      <p class="v7-lead" data-reveal>Retest point-touch with stroke survivors across affected hands; track completion, errors and perceived effort. Review safety and signal meaning with OTs. Formative rounds surface usability issues; they do not establish clinical effectiveness.</p></div>
     </section>
 
-    <!-- Final interface -->
-    <section class="section" id="final" data-section="Final" aria-labelledby="final-title">
-      <div class="container section__inner">
-        <div class="section-header" data-reveal>
-          <p class="section-header__label t-overline">Final experience</p>
-          <h2 class="section-header__title t-h1" id="final-title">See the refined experience in motion.</h2>
-        </div>
-        <p class="prose t-body-lg" data-reveal>The final interface brings the revised interactions together: preparing a session, shaping virtual clay, reviewing results and returning to practice.</p>
-        <div class="solve-list">
-          <article class="solve" data-reveal>
-            <div class="solve__text stack-sm">
-              <p class="t-overline-sm solve__label">01 · Start with confidence</p>
-              <h3 class="t-card">How does the app know how hard today should be?</h3>
-              <p class="t-body-md">Before training, a “knead the clay” assessment measures finger range of motion, reaction speed and how steadily the user can hold force. The result sets the touch-circle size, the judging range and the starting level automatically, so each session fits the user’s condition that day.</p>
-              <ul class="solve__points t-body-sm"><li>Onboarding and a daily safety check</li><li>Spread, squeeze and hold: three short moves</li><li>Result: ROM, reaction speed, hold stability, starting level</li></ul>
-            </div>
-            <figure class="solve__media"><video src="video/deft-1-calibration.mp4" muted loop playsinline controls preload="metadata" aria-label="Onboarding, clay-kneading assessment and result screen"></video><figcaption class="t-label">Assessment flow · prototype recording</figcaption></figure>
-          </article>
-          <article class="solve solve--flip" data-reveal>
-            <div class="solve__text stack-sm">
-              <p class="t-overline-sm solve__label">02 · Shape and see the response</p>
-              <h3 class="t-card">How can users correct themselves without a therapist?</h3>
-              <p class="t-body-md">The pottery wheel turns finger force and direction into immediate feedback at the moment of movement: the clay reshapes, a target outline guides the hand, a text cue says what to do next, and a progress gauge rises or falls with every touch.</p>
-              <ul class="solve__points t-body-sm"><li>Clay responds live to the fingers</li><li>Text feedback: “Just right, hold for 3 seconds”</li><li>Gauge rises inside the target range, falls outside it</li></ul>
-            </div>
-            <figure class="solve__media"><video src="video/deft-2-play.mp4" muted loop playsinline controls preload="metadata" aria-label="Pottery wheel training with live clay, text feedback and progress gauge"></video><figcaption class="t-label">Training screen · prototype recording</figcaption></figure>
-          </article>
-          <article class="solve" data-reveal>
-            <div class="solve__text stack-sm">
-              <p class="t-overline-sm solve__label">03 · Finish and return</p>
-              <h3 class="t-card">How can small recovery become something users believe?</h3>
-              <p class="t-body-md">Tiny daily changes are hard to feel, so the dashboard turns them into data: an overall recovery score, weekly accuracy and reaction-speed trends, hold stability and the adaptive level history. Seeing progress builds confidence and keeps self-rehab going.</p>
-              <ul class="solve__points t-body-sm"><li>Current state first, then growth trend, then detail</li><li>Level history shows when difficulty rose</li><li>Weekly pottery pieces support the routine</li></ul>
-            </div>
-            <figure class="solve__media"><video src="video/deft-3-dashboard.mp4" muted loop playsinline controls preload="metadata" aria-label="Recovery dashboard zooming through score, weekly trend, reaction speed and level history"></video><figcaption class="t-label">Recovery dashboard · prototype recording</figcaption></figure>
-          </article>
-        </div>
-        <p class="t-caption" style="color:var(--text-secondary)" data-reveal>Recordings show the prototype with example data; touch is simulated.</p>
-        <script>
-          (function(){var v=[].slice.call(document.querySelectorAll('.solve__media video'));if(!('IntersectionObserver'in window)||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-            var io=new IntersectionObserver(function(es){es.forEach(function(e){var x=e.target;if(e.isIntersecting){var p=x.play();if(p&&p.catch)p.catch(function(){})}else{x.pause()}})},{threshold:.5});v.forEach(function(x){io.observe(x)})})();
-        </script>
-        <p class="t-overline-sm disclaimer" data-reveal>Concept &amp; prototype · This case study presents a design exploration; clinical effectiveness has not been established.</p>
+    <section class="v7-sec v7-bg-green" id="review" data-section="Project review" aria-labelledby="review-t">
+      <div class="v7-in">
+      <div class="v7-head" data-reveal><p class="v7-eyebrow">12 / Project review</p><h2 class="v7-title" id="review-t">From a home-practice gap to a testable concept—with clear limits</h2></div>
+      <p class="v7-skills" data-reveal>SKILLS  ·  PROJECT REVIEW  ·  REFLECTION</p>
+      <p class="v7-lead" data-reveal>User and expert feedback helped refine the concept. The work established a design direction, not evidence of rehabilitation efficacy.</p>
+      <div class="v7-icards" data-reveal>
+        <article class="v7-icard"><p class="v7-icard__k">WHAT THE STUDIES ESTABLISHED</p><h3>From research gap to testable concept</h3><div class="v7-icard__box"><small>EVIDENCE → DESIGN DIRECTION</small><b class="stack">Research + interview<br>↓<br>Missing in-the-moment reference<br>↓<br>Virtual-clay concept</b></div><p>Early feedback informed iteration; the study did not establish a rehabilitation outcome.</p></article>
+        <article class="v7-icard"><p class="v7-icard__k">EVIDENCE LIMITS</p><h3>Touch data leaves a posture blind spot</h3><div class="v7-icard__box"><small>WHAT TOUCH DATA CAN / CAN’T SHOW</small><span class="can"><b>CAN</b>  ·  finger contact / movement</span><span class="cant"><b>CAN’T</b>  ·  shoulder / trunk compensation</span></div><p>Two survivor sessions and one OT review were exploratory. They cannot establish safety, recovery or efficacy.</p></article>
+        <article class="v7-icard"><p class="v7-icard__k">NEXT VALIDATION</p><h3>Three directions to validate next</h3><div class="v7-icard__box"><small>FUTURE CONCEPTS  ·  TO VALIDATE</small><b class="stack">01  Adaptive setup<br>02  Real-time guidance<br>03  Progress insights</b></div><p>Clinicians should help define calibration thresholds; sensor cues need testing; trend metrics need reliability and comprehension checks.</p></article>
       </div>
+      <h3 class="v7-decision" data-reveal>Designer reflection</h3>
+      <p class="v7-lead" data-reveal>I learned to test the full physical action, not a proxy like basic touch; keep usability and clinical suitability as separate questions; and revise the concept when a core interaction prevents valid observation. Next, I would bring accessibility and safety checks into the earliest prototype criteria.</p></div>
     </section>
   </main>
 
@@ -494,5 +403,6 @@
   </footer>
 
   <script src="js/main.js" defer></script>
+  <script src="js/zoomscroll.js" defer></script>
 </body>
 </html>
