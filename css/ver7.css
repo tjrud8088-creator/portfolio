@@ -208,3 +208,20 @@
 .zc-list { width: min(1300px, calc(100vw - 96px)); position: relative; left: 50%; transform: translateX(-50%); }
 @media (max-width: 900px) { .zc-list { width: 100%; left: 0; transform: none; } }
 @media (max-width: 900px) { .zc__capbar { min-height: 44px; align-items: flex-start; } }
+
+/* ---- consistency pass: same device size in every chapter, calmer text swap ---- */
+.zc__stage { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); height: calc(100vh - var(--zc-top) - 12px); height: calc(100svh - var(--zc-top) - 12px); }
+.zc--flip .zc__stage { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); }
+.zc--flip .zc__device { order: 0; }
+.zc--flip .zc__text { order: -1; }
+.zc__device { width: min(100%, calc((100vh - var(--zc-top) - 120px) * 1.4390 + 24px)); width: min(100%, calc((100svh - var(--zc-top) - 120px) * 1.4390 + 24px)); }
+.zc__t { transition: opacity .2s ease, transform .2s ease; }
+.zc__t.on { transition: opacity .35s ease .2s, transform .35s ease .2s; }
+.zc__cap span { transition: opacity .2s; }
+.zc__cap span.on { transition: opacity .3s .15s; }
+.zc__world, .zc__layer { backface-visibility: hidden; }
+@media (max-width: 900px) {
+  .zc__stage, .zc--flip .zc__stage { grid-template-columns: minmax(0, 1fr); }
+  .zc--flip .zc__text { order: 0; }
+  .zc__device { width: 100%; }
+}

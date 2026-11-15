@@ -22,7 +22,7 @@
     const dots = [...root.querySelectorAll('.zc__dots i')];
     const hint = root.querySelector('.zc__hint');
     const K = cfg.kfs, n = K.length, SW = cfg.w, WH = cfg.worldH;
-    let target = 0, cur = 0, raf = 0, live = false, lastNear = -1;
+    let target = 0, cur = 0, raf = 0, live = false, lastNear = -1, lastT = 0;
 
     if (reduce) { root.classList.add('is-static'); }
 
@@ -37,7 +37,7 @@
       const x = p * (n - 1);
       const i = Math.min(n - 2, Math.floor(x));
       const u = x - i;
-      const a = ease(clamp((u - 0.22) / 0.56, 0, 1));
+      const x0 = clamp((u - 0.1) / 0.8, 0, 1), a = x0 * x0 * x0 * (x0 * (x0 * 6 - 15) + 10);
       const A = K[i], B = K[i + 1];
       let hl = null, hlo = 0;
       if (A.hl && B.hl) { hl = A.hl.map((v, j) => lerp(v, B.hl[j], a)); hlo = 1; }
@@ -58,7 +58,7 @@
       world.style.transform = `translate(${tx.toFixed(2)}px,${ty.toFixed(2)}px) scale(${S.toFixed(4)})`;
       layers.forEach((l, j) => {
         const o = (c.A.img === j ? 1 - c.a : 0) + (c.B.img === j ? c.a : 0);
-        l.style.opacity = clamp(o, 0, 1).toFixed(3);
+        const q = clamp((o - 0.3) / 0.4, 0, 1); l.style.opacity = (q * q * (3 - 2 * q)).toFixed(3);
       });
       if (c.hl) {
         const bw = 3 / S;
@@ -76,11 +76,13 @@
       if (hint) hint.style.opacity = cur < 0.03 ? 1 : 0;
     }
 
-    function tick() {
+    function tick(t) {
       raf = 0;
+      const dt = Math.min(0.05, ((t || 0) - lastT) / 1000 || 0.016);
+      lastT = t || 0;
       target = progress();
       const d = target - cur;
-      cur = Math.abs(d) < 0.0004 ? target : cur + d * 0.16;
+      cur = Math.abs(d) < 0.0003 ? target : cur + d * (1 - Math.exp(-dt * 9));
       render();
       if (live && cur !== target) raf = requestAnimationFrame(tick);
     }

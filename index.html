@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/landing.css">
   <script>document.documentElement.classList.add('js');try{if(sessionStorage.getItem('from')==='work'){document.documentElement.classList.add('from-work');sessionStorage.removeItem('from');}}catch(e){}</script>
 </head>
 <body class="home">
@@ -54,51 +55,37 @@
       </div>
     </section>
 
-    <!-- Selected work: three stacking case-study cards -->
-    <section class="stack-section" id="work" aria-labelledby="work-label">
-      <div class="container">
-        <div class="stack-head">
-          <h2 class="section-header__title t-h1" id="work-label" data-reveal>Selected work</h2>
-          <a class="stack-head__all t-label" href="work.html" data-reveal>All case studies →</a>
-        </div>
-        <div class="stack" data-stack>
-          <div class="stack__item" style="--i:0">
-            <a class="scard" href="case-study.html" style="--c:#ffa8db" aria-label="Case study 01: Deft">
-              <div class="scard__text">
-                <span class="scard__idx t-overline">01 /</span>
-                <h3 class="scard__title">Deft</h3>
-                <p class="scard__desc t-body-lg">Real-time pottery biofeedback that helps stroke survivors rehab fine motor skills safely at home.</p>
-                <ul class="chips"><li class="chip t-chip">Fine motor rehab</li><li class="chip t-chip">Biofeedback</li><li class="chip t-chip">Usability testing</li></ul>
-                <span class="scard__cta t-label">View case study <span aria-hidden="true">→</span></span>
-              </div>
-              <div class="scard__media"><img src="img/hero-project.jpg" alt="Deft key image" style="object-position:50% 35%"></div>
-            </a>
+    <!-- Selected work: scroll story (work 01 expands in place, 02 and 03 follow) -->
+    <section class="works" id="work" aria-labelledby="work-label">
+      <div class="container works__head">
+        <h2 class="section-header__title t-h1" id="work-label" data-reveal>Selected work</h2>
+        <a class="stack-head__all t-label" href="work.html" data-reveal>All case studies →</a>
+      </div>
+      <div class="works__list">
+        <article class="story" id="work-01" data-story data-steps="9" aria-label="Case study 01: Deft">
+          <div class="story__stage">
+            <div class="story__top"><span class="st__num" aria-hidden="true">01</span><div><p class="t-overline st__eyebrow">Case study 01 / 03</p><h3 class="st__name">Deft</h3></div><a class="st__all t-label" href="case-study.html">Full case study →</a></div>
+            <div class="story__grid">
+              <div class="story__texts"><div class="st__t" data-step-text="0"><p class="st__k">01 · Overview</p><h3>Deft helps stroke survivors see whether their home practice is working</h3><p class="st__p">A tablet app where virtual clay responds to every hand movement and personal records show progress over time.</p><ul class="chips"><li class="chip t-chip">Fine motor rehab</li><li class="chip t-chip">Biofeedback</li><li class="chip t-chip">Usability testing</li></ul><p class="st__meta">Lead UX/UI Designer · Solo · Aug–Nov 2026</p></div><div class="st__t" data-step-text="1"><p class="st__k">02 · The problem</p><h3>Practicing at home, unsure of each movement</h3><p class="st__p">Desk research showed that support thins out once survivors leave the hospital. Literature and community posts point to gaps in follow-up, guidance and participation.</p></div><div class="st__t" data-step-text="2"><p class="st__k">03 · Research &amp; insight</p><h3>Practice stalls exactly where guidance ends</h3><p class="st__p">A 64-minute interview and affinity mapping revealed two moments: practicing less with no one to correct posture, and guessing when to use more force.</p></div><div class="st__t" data-step-text="3"><p class="st__k">04 · Define &amp; ideate</p><h3>A missing reference point, three How-Might-We questions</h3><p class="st__p">In the moment · after a session · over weeks. Ideas for each were converged on one concept using three criteria: action fit, observable input, readable feedback.</p></div><div class="st__t" data-step-text="4"><p class="st__k">05 · Feature 01 · Calibration</p><h3>Set a starting point that fits today</h3><p class="st__p">A short readiness check samples finger range, response speed and hold stability, then proposes a touch target, tolerance and starting level.</p></div><div class="st__t" data-step-text="5"><p class="st__k">06 · Feature 02 · Live feedback</p><h3>Make movement legible while it happens</h3><p class="st__p">Virtual clay makes finger movement visible. A text cue and a progress gauge answer every touch, so users can correct themselves in the moment.</p></div><div class="st__t" data-step-text="6"><p class="st__k">07 · Feature 03 · Progress</p><h3>Show change across sessions</h3><p class="st__p">A progress view charts precision, response time, touch persistence and difficulty across sessions, so small gains become visible.</p></div><div class="st__t" data-step-text="7"><p class="st__k">08 · Testing</p><h3>Two user rounds and one OT review</h3><p class="st__p">A left-side setting error, multi-finger drag friction and the limits of touch-only measurement led to a point-touch pivot. Exploratory findings, not clinical validation.</p></div><div class="st__t" data-step-text="8"><p class="st__k">09 · Read on</p><h3>The full case study</h3><p class="st__p">Research, journey map, information architecture, task flow, prototypes, testing and iteration.</p><a class="st__link" href="case-study.html">Read the full case study →</a></div></div>
+              <div class="story__medias"><div class="st__media" data-step-media="0" data-zoom="1,1.12"><div class="st__shot"><img src="img/hero-project.jpg" alt="" style="object-position:50% 38%"></div></div><div class="st__media st__media--plain" data-step-media="1" data-zoom="1,1.45" data-org="30% 40%"><div class="st__shot"><img src="img/v7/desk-research-board.png" alt=""></div></div><div class="st__media" data-step-media="2" data-zoom="1.15,1"><div class="st__shot"><img src="img/v7/affinity-mapping.png" alt="" loading="lazy" style="object-position:50% 40%"></div></div><div class="st__media" data-step-media="3" data-zoom="1,1.3" data-org="50% 50%"><div class="st__shot"><img src="img/v7/ideation-whiteboard.png" alt="" loading="lazy"></div></div><div class="st__media st__media--dev" data-step-media="4" data-zoom="1,1.55" data-org="50% 62%"><div class="st__bezel"><div class="st__screen"><img src="img/v7/feat/c4-result.jpg" alt="" loading="lazy" style=""></div></div></div><div class="st__media st__media--dev" data-step-media="5" data-zoom="1,1.5" data-org="50% 40%"><div class="st__bezel"><div class="st__screen"><img src="img/v7/feat/p2-inband.jpg" alt="" loading="lazy" style=""></div></div></div><div class="st__media st__media--dev" data-step-media="6" data-zoom="1,1.25" data-pan="0,36"><div class="st__bezel"><div class="st__screen"><img src="img/v7/feat/d1-dashboard.jpg" alt="" loading="lazy" style="object-position:50% 0%;"></div></div></div><div class="st__media st__media--plain st__media--big" data-step-media="7" data-zoom="1,1"><div class="st__bignum" aria-hidden="true">70</div><p class="st__bignote">SUS score · expert review</p></div><div class="st__media st__media--plain" data-step-media="8" data-zoom="1,1"><a class="st__cta" href="case-study.html">Read the full case study <span aria-hidden="true">→</span></a></div></div>
+            </div>
+            <div class="story__rail" aria-hidden="true"><i class="story__bar"></i><ol><li data-dot="0"><span>Overview</span></li><li data-dot="1"><span>The problem</span></li><li data-dot="2"><span>Research &amp; insight</span></li><li data-dot="3"><span>Define &amp; ideate</span></li><li data-dot="4"><span>Feature 01 · Calibration</span></li><li data-dot="5"><span>Feature 02 · Live feedback</span></li><li data-dot="6"><span>Feature 03 · Progress</span></li><li data-dot="7"><span>Testing</span></li><li data-dot="8"><span>Read on</span></li></ol></div>
           </div>
-          <div class="stack__item" style="--i:1">
-            <a class="scard" href="case-study-2.html" style="--c:#ffe299" aria-label="Case study 02">
-              <div class="scard__text">
-                <span class="scard__idx t-overline">02 /</span>
-                <h3 class="scard__title">Case study 02</h3>
-                <p class="scard__desc t-body-lg">A redesign of an existing social platform. Details coming soon.</p>
-                <ul class="chips"><li class="chip t-chip">Redesign</li><li class="chip t-chip">Social</li></ul>
-                <span class="scard__cta t-label">View case study <span aria-hidden="true">→</span></span>
-              </div>
-              <div class="scard__media"><img src="img/case-02.jpg" alt="Case study 02 key image"></div>
-            </a>
-          </div>
-          <div class="stack__item" style="--i:2">
-            <a class="scard" href="case-study-3.html" style="--c:#b3f4ef" aria-label="Case study 03">
-              <div class="scard__text">
-                <span class="scard__idx t-overline">03 /</span>
-                <h3 class="scard__title">Case study 03</h3>
-                <p class="scard__desc t-body-lg">Details coming soon.</p>
-                <ul class="chips"><li class="chip t-chip">Coming soon</li></ul>
-                <span class="scard__cta t-label">View case study <span aria-hidden="true">→</span></span>
-              </div>
-              <div class="scard__media"><img src="img/case-03.jpg" alt="Case study 03 key image"></div>
-            </a>
-          </div>
-        </div>
+        </article>
+        <article class="teaser" id="work-02" style="--c:#ffe299" data-teaser aria-label="Case study 02">
+          <a class="teaser__in" href="case-study-2.html">
+            <span class="teaser__num" aria-hidden="true">02</span>
+            <div class="teaser__text"><p class="t-overline st__eyebrow">Case study 02 / 03</p><h3>Case study 02</h3><p class="st__p">A redesign of an existing social platform. Details coming soon.</p><ul class="chips"><li class="chip t-chip">Redesign</li><li class="chip t-chip">Social</li></ul><span class="st__link">Open case study →</span></div>
+            <div class="teaser__media"><img src="img/case-02.jpg" alt="" loading="lazy"></div>
+          </a>
+        </article>
+        <article class="teaser" id="work-03" style="--c:#b3f4ef" data-teaser aria-label="Case study 03">
+          <a class="teaser__in" href="case-study-3.html">
+            <span class="teaser__num" aria-hidden="true">03</span>
+            <div class="teaser__text"><p class="t-overline st__eyebrow">Case study 03 / 03</p><h3>Case study 03</h3><p class="st__p">Details coming soon.</p><ul class="chips"><li class="chip t-chip">Coming soon</li></ul><span class="st__link">Open case study →</span></div>
+            <div class="teaser__media"><img src="img/case-03.jpg" alt="" loading="lazy"></div>
+          </a>
+        </article>
       </div>
     </section>
 
@@ -151,5 +138,6 @@
     </div>
   </footer>
   <script src="js/main.js" defer></script>
+  <script src="js/story.js" defer></script>
 </body>
 </html>
