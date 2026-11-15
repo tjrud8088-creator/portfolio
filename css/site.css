@@ -856,3 +856,18 @@ a.plist__row:hover .plist__arrow, a.plist__row:focus-visible .plist__arrow { tra
   *, *::before, *::after { transition-duration: 0.01ms !important; }
   .stat:hover, .insight:hover, .stage:hover, .hmw__item:hover, .chip:hover { transform: none; }
 }
+
+/* Deft — final experience: problem → solution → recording */
+.solve-list { display: flex; flex-direction: column; gap: var(--space-xl); }
+.solve { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); gap: var(--space-xl); align-items: center; }
+.solve--flip { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); }
+.solve--flip .solve__text { order: 2; }
+.solve__label { color: var(--emotion-positive); }
+.solve__points { margin: 0; padding-left: 1.1rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: var(--space-2xs); }
+.solve__media { margin: 0; display: flex; flex-direction: column; gap: var(--space-xs); min-width: 0; }
+.solve__media video { width: 100%; height: auto; aspect-ratio: 1180 / 820; border-radius: var(--radius-lg); background: var(--surface-subtle); border: 1px solid var(--border-default); display: block; }
+.solve__media figcaption { color: var(--text-meta); }
+@media (max-width: 960px) {
+  .solve, .solve--flip { grid-template-columns: 1fr; gap: var(--space-md); }
+  .solve--flip .solve__text { order: 0; }
+}
