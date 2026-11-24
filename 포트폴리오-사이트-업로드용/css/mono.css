@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+/* ==========================================================================
+   Mono · Möbius-style black & white design system (white background)
+   Load LAST. Only white, black, one secondary grey (#888) and 1px hairlines.
+   Photos and app screenshots are shown in their original colours.
+   ========================================================================== */
+:root {
+  --mono-bg: #ffffff;
+  --mono-ink: #000000;
+  --mono-sub: #888888;
+  --mono-line: rgba(0, 0, 0, 0.1);
+  --mono-line-strong: rgba(0, 0, 0, 0.22);
+  --mono-soft: #f4f4f4;
+  color-scheme: light;
+
+  /* existing token names → mono (white) */
+  --text-primary: #000; --text-statement: #000; --text-nav: #000; --text-caption: #000;
+  --text-secondary: #888; --text-meta: #888; --text-inverse: #fff; --text-inverse-secondary: #bbb;
+  --surface-page: #fff; --surface-subtle: #f4f4f4; --surface-callout: #fff; --surface-band: #fff;
+  --surface-card: #fff; --surface-card-muted: #fff; --surface-placeholder: #f4f4f4;
+  --surface-inverse: #000; --surface-inverse-subtle: #000;
+  --border-default: rgba(0, 0, 0, 0.1); --border-strong: rgba(0, 0, 0, 0.22); --border-quote: rgba(0, 0, 0, 0.22);
+  --emotion-positive: #000; --emotion-negative: #000; --emotion-caution: #000; --emotion-hopeful: #000; --emotion-relief: #000;
+
+  /* case-study (ver7) variables */
+  --v7-green: #fff; --v7-mist: #fff; --v7-ink: #000; --v7-deep: #000; --v7-body: #000;
+  --v7-accent: #888; --v7-forest: #000; --v7-rust: #888; --v7-muted: #888; --v7-line: rgba(0, 0, 0, 0.1);
+}
+
+html, body { background: #fff; color: #000; }
+body { font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; font-weight: 300; -webkit-font-smoothing: antialiased; }
+::selection { background: #000; color: #fff; }
+
+/* ---------- typography: heavy headings, light body ---------- */
+h1, h2, h3, h4, .t-h1, .t-card, .t-h2, .t-display-stat, .t-display-statement, .section-header__title,
+.hero2__title, .home-statement, .home-footer__big, .scard__title, .do-row__title, .num__value,
+.v7-title, .v7-persona__name, .v7-decision, .fx__text h3, .st__t h3, .st__name, .st__num, .teaser__text h3, .teaser__num, .st__bignum, .witem__title {
+  font-weight: 800; letter-spacing: -0.025em; color: #000;
+}
+.t-body-lg, .t-body-md, .t-body-sm, .prose, .home-statement-sub, .home-intro, .do-row__text, p, li, dd, figcaption, blockquote,
+.v7-lead, .v7-body, .v7-card p, .st__p, .fx__text p { font-weight: 300; }
+strong, b, .t-nav, .t-label, .t-chip, .t-overline, .t-overline-sm, .nav__link, .menu-panel a { font-weight: 600; }
+.home-intro strong { font-weight: 800; }
+.t-overline, .t-overline-sm, .section-header__label, .v7-eyebrow, .st__k, .st__eyebrow, .fx__tag, .fx__text h4, .v7-micro { color: #888; }
+.v7-title, .v7-title--lg, .v7-title--wt, .fx__text h3, .st__t h3, .teaser__text h3, .v7-decision { letter-spacing: -0.02em; }
+.v7 h3, .v7 h4, .v7-card h3, .v7-quote h3, .v7-evi h3, .v7-icard h3, .fx__text h3 { letter-spacing: -0.012em; }
+
+/* ---------- surfaces, hairlines, no shadows ---------- */
+*, *::before, *::after { box-shadow: none !important; text-shadow: none !important; }
+.section--band, .v7-bg-green, .v7-bg-mist, .v7-bg-white { background: #fff !important; }
+.v7-sec { border-top: 1px solid var(--mono-line); }
+.site-header, .menu-panel, .site-footer, .home-footer { background: #fff; border-color: var(--mono-line); }
+.site-header.is-scrolled { border-bottom-color: var(--mono-line); }
+.subnav { background: rgba(255, 255, 255, 0.92); border-color: var(--mono-line); }
+.progress { background: #000; }
+.menu-btn { background: #fff; color: #000; border: 1px solid var(--mono-line-strong); }
+.menu-btn:hover { background: #000; color: #fff; }
+hr, .stage__divider { border-color: var(--mono-line); background: var(--mono-line); }
+
+.panel, .card, .card3, .stat, .insight, .stage, .hmw__item, .pcard-s, .callout, .callout--white, .meta__item, .persona2, .persona2__visual, .persona2__id,
+.row, .loopbox__box, .dircard, .designgoal, .proc, .num, .do-row, .ph, .proto-q, .photo, .quote,
+.v7-card, .v7-evi, .v7-quote, .v7-persona, .v7-stage, .v7-insight, .v7-principle, .v7-mx-r, .v7-icard, .v7-icard__box, .fx__bezel, .teaser__media, .st__shot {
+  background: transparent !important; border: 1px solid var(--mono-line) !important; color: #000;
+}
+.v7-cards--plain .v7-card { border-color: transparent !important; }
+.callout--dark, .v7-insight { background: #000 !important; color: #fff !important; }
+.callout--dark *, .v7-insight * { color: #fff !important; }
+.callout--dark .callout__label, .v7-insight .v7-micro { color: #bbb !important; }
+.chip, .chips li, .v7-emo, .st__t .chips li { background: transparent !important; color: #000 !important; border: 1px solid var(--mono-line-strong) !important; }
+.v7-emo--key { background: #000 !important; color: #fff !important; }
+
+/* buttons: solid black, white label */
+.btn, .scard__cta, .st__cta, .st__figma, .fx-btn, .witem__arrow, .pile-cursor, .home-hero2 .cta { background: #000 !important; color: #fff !important; border: 1px solid #000; }
+.btn:hover, .st__figma:hover, .fx-btn:hover, .st__cta:hover { background: #fff !important; color: #000 !important; }
+.pile-cursor span { color: #fff; }
+a { color: inherit; }
+.st__link, .stack-head__all, .st__all { color: #000; border-color: #000; }
+
+/* ---------- landing: hero pile, scenes, work ---------- */
+.pcard--b1, .pcard--b2, .pcard--b3 { background: #e9e9e9 !important; }
+.hero2__title, .home-hero2__title { color: #000; }
+.hero2__copy, .home-hero2 .role, .role { color: #888 !important; }
+.scenes, .scenes[data-scene] { --bg: #fff !important; --word: #f0f0f0 !important; --ink: #000 !important; }
+.assemble, .stack-section, .works, .home-footer { background: #fff; }
+.scard, .witem, .witem[style] { background: #f4f4f4 !important; color: #000 !important; }
+.scard .chip { background: transparent !important; color: #000 !important; }
+.scard__media .media__img, .wph { background: #f4f4f4 !important; color: #888 !important; }
+.teaser__num { color: #ececec !important; opacity: 1 !important; }
+.teaser__in { border-top: 1px solid var(--mono-line); }
+.teaser__media, .st__shot { background: #f4f4f4 !important; }
+.st__media--plain .st__shot img { background: #fff; }
+.story__rail .story__bar { background: var(--mono-line-strong); }
+.story__rail .story__bar::after, .story__rail li.is-on { background: #000; }
+.story__rail li { background: rgba(0, 0, 0, 0.2); }
+
+/* tablet frames stay dark so the screen reads as a device */
+.st__bezel, .fx__bezel { background: #111 !important; border: 0 !important; }
+.st__screen, .fx__screen { background: #fff; }
+.fx__device figcaption, .v7-cap, .v7-note, .v7-skills, .fx__status, .fx__text h4 { color: #888; }
+
+/* ---------- case study (ver7) ---------- */
+.v7 .v7-title, .v7 .v7-title--lg, .v7 .v7-title--wt, .v7 .v7-card h3, .v7 .v7-quote h3, .v7 .v7-evi h3, .v7 .v7-proto h3,
+.v7 .v7-icard h3, .v7 .v7-persona__name, .v7 .v7-decision, .v7 .fx__text h3 { color: #000; }
+.v7 p, .v7 li, .v7 b, .v7 small, .v7 .v7-lead, .v7 .v7-card p, .v7 .v7-quote p, .v7 .v7-body, .v7 .v7-next, .v7 .v7-evi figcaption,
+.v7 .v7-proto figcaption, .v7 .v7-mx-r p, .v7 .v7-mx-r b, .v7 .v7-icard p, .v7 .fx__text p { color: #000; }
+.v7 .v7-eyebrow, .v7 .v7-eyebrow--rust, .v7 .v7-skills, .v7 .v7-note, .v7 .v7-cap, .v7 .v7-micro, .v7 .v7-micro--rust, .v7 .v7-focus, .v7 .v7-sub,
+.v7 .v7-persona__meta, .v7 .v7-mx-h, .v7 .v7-mx-r small, .v7 .v7-icard__k, .v7 .v7-icard__box small, .v7 .fx__tag, .v7 .fx__status, .v7 .fx__text h4,
+.v7 .v7-stage__head span { color: #888; }
+.v7 .v7-next, .v7 .v7-sublead { font-weight: 600; }
+.v7-stage__head { background: transparent !important; border-bottom: 1px solid var(--mono-line); }
+.v7-stage__head b { color: #000; }
+.v7-stage--key { border-color: #000 !important; }
+.v7-pr { background: transparent !important; border: 1px solid #000; color: #000 !important; }
+.v7-pr--P0 { background: #000 !important; color: #fff !important; }
+.v7-pr--P2 { border-color: #888; color: #888 !important; }
+.v7 .v7-persona__needs p:not(.v7-micro), .v7 .v7-persona__quote p:last-child { color: #000 !important; }
+.v7 .v7-persona__needs .v7-micro--rust { color: #888 !important; }
+.v7-icard__box .can, .v7-icard__box .cant { color: #000; }
+.v7-svg { filter: grayscale(1) contrast(1.05); }   /* diagrams are drawn UI, so they stay monochrome; photos are untouched */
+.v7-matrix__grid { color: #000; }
+
+/* other pages that used pastel / dark blocks */
+.persona2__name, .persona2__quote { color: #000; }
+.meter__bar { background: var(--mono-line); }
+.meter__bar span { background: #000; }
+.journey .stage, .stage--blue, .stage--red, .stage--yellow, .stage--purple, .stage--green { background: transparent !important; border: 1px solid var(--mono-line) !important; color: #000; }
+.row--ours { border-color: #000 !important; }
+.next__title, .next__arrow { color: #000; }
+.next { border-top: 1px solid var(--mono-line); }
+.v7 .v7-sublead, .v7 .v7-next--lg { color: #000; }
+.v7-sublead { color: #000 !important; }

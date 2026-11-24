@@ -1,0 +1,92 @@
+/* Landing · branding area + Selected work (Möbius-style scroll scenes)
+   Every scene is a sticky stage. Scroll position (0-1) is smoothed in JS and written as CSS custom properties /
+   inline transforms, so scrolling back up replays the same motion in reverse. Normal scrolling is never intercepted. */
+
+/* ---------- shared cursor (fine pointers only) ---------- */
+.cur { position: fixed; left: 0; top: 0; z-index: 9999; pointer-events: none; opacity: 0; mix-blend-mode: difference; }
+.cur.is-on { opacity: 1; }
+.cur__dot { position: absolute; left: 0; top: 0; width: 12px; height: 12px; margin: -6px 0 0 -6px; border-radius: 50%; background: #fff; display: grid; place-items: center; color: #000; font-size: 0; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; transition: width .3s var(--ease-out), height .3s var(--ease-out), margin .3s var(--ease-out), background .2s, color .2s; }
+.cur.is-link .cur__dot { width: 40px; height: 40px; margin: -20px 0 0 -20px; background: #fff; }
+.cur.is-label { mix-blend-mode: normal; }
+.cur.is-label .cur__dot { width: 76px; height: 76px; margin: -38px 0 0 -38px; background: #000; color: #fff; font-size: .75rem; }
+.cur.is-down .cur__dot { width: 8px; height: 8px; margin: -4px 0 0 -4px; }
+.pile-cursor { display: none !important; }
+@media (pointer: coarse), (hover: none) { .cur { display: none; } }
+
+/* ---------- 1 · words ---------- */
+.words { position: relative; height: 380vh; }
+.words__stage { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; }
+.words__label { position: absolute; left: clamp(1.25rem, .6rem + 2.8vw, 2.5rem); top: 22%; margin: 0; }
+.words__scatter span { position: absolute; left: var(--x); top: 0; font-size: clamp(2rem, 1.2rem + 3.4vw, 4.5rem); font-weight: 700; letter-spacing: -.035em; line-height: 1; white-space: nowrap; opacity: 0; will-change: transform, opacity; transform: translate3d(0, 110vh, 0); }
+.words__text { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; gap: clamp(20px, 4vh, 44px); padding: 0 clamp(1.25rem, .6rem + 2.8vw, 2.5rem) 0 max(clamp(1.25rem, .6rem + 2.8vw, 2.5rem), 12vw); max-width: 1440px; margin: 0 auto; pointer-events: none; }
+.words__statement { margin: 0; max-width: 24ch; font-size: clamp(1.9rem, 1.1rem + 3.2vw, 4.25rem); font-weight: 800; line-height: 1.08; letter-spacing: -.035em; opacity: 0; will-change: transform, opacity; }
+.words__sub { margin: 0; max-width: 46ch; font-size: clamp(1rem, .9rem + .45vw, 1.3rem); font-weight: 300; line-height: 1.55; opacity: 0; will-change: transform, opacity; }
+
+/* ---------- 2 · reel (empty media slot) ---------- */
+.reel { position: relative; height: 300vh; }
+.reel__stage { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; display: grid; place-items: center; }
+.reel__rows { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; gap: .05em; pointer-events: none; font-size: clamp(5.5rem, 17vw, 15rem); }
+.reel__row { overflow: hidden; line-height: .95; }
+.reel__row > div { display: flex; gap: .4em; white-space: nowrap; width: max-content; font-weight: 800; letter-spacing: -.05em; will-change: transform; }
+.reel__row--echo { color: #ececec; }
+.reel__row--main { color: #000; }
+.reel__slot { position: relative; z-index: 2; width: var(--slot-w, 28vw); aspect-ratio: 16 / 9; background: #f4f4f4; border: 1px solid rgba(0, 0, 0, .1); overflow: hidden; }
+.reel__slot > video, .reel__slot > img, .reel__slot > iframe { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border: 0; display: block; }
+
+/* ---------- 3 · Selected work ("Our Services" pattern) ---------- */
+.svc { position: relative; height: calc(100vh + (var(--n, 3) - 1) * 100vh); border-top: 1px solid rgba(0, 0, 0, .1); --pad: clamp(1.25rem, .6rem + 2.8vw, 2.5rem); }
+.svc__stage { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; display: grid; grid-template-columns: minmax(220px, 4fr) minmax(0, 8fr); gap: clamp(20px, 4vw, 64px); max-width: 1440px; margin: 0 auto; padding: 0 var(--pad); }
+.svc__left { position: relative; display: flex; align-items: center; }
+.svc__label { margin: 0; font-size: clamp(1rem, .9rem + .5vw, 1.375rem); font-weight: 600; letter-spacing: -.01em; }
+.svc__foot { position: absolute; left: 0; right: 0; bottom: clamp(24px, 6vh, 56px); display: grid; gap: 14px; font-size: .8125rem; }
+.svc__count { margin: 0; font-weight: 300; color: #888; }
+.svc__count b { font-weight: 800; color: #000; }
+.svc__line { display: block; height: 1px; background: rgba(0, 0, 0, .15); position: relative; overflow: hidden; max-width: 220px; }
+.svc__line i { position: absolute; inset: 0; background: #000; transform: scaleX(var(--p, 0)); transform-origin: 0 50%; }
+.svc__all { font-weight: 600; width: max-content; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
+.svc__right { position: relative; }
+.svc__item { position: absolute; left: 0; right: 0; top: 18vh; opacity: 0; will-change: transform, opacity; pointer-events: none; }
+.svc__item.is-on { pointer-events: auto; }
+.svc__head { display: flex; align-items: baseline; gap: 14px; margin-bottom: clamp(14px, 2.6vh, 28px); }
+.svc__idx { font-size: .875rem; font-weight: 600; letter-spacing: .06em; color: #888; }
+.svc__head h3 { margin: 0; font-size: clamp(2rem, 1.2rem + 3vw, 4rem); font-weight: 800; letter-spacing: -.04em; line-height: 1; }
+.svc__cols { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(20px, 3vw, 48px); align-items: start; }
+.svc__text { display: flex; flex-direction: column; gap: clamp(12px, 2vh, 20px); }
+.svc__desc { margin: 0; font-size: clamp(1.0625rem, .95rem + .55vw, 1.5rem); font-weight: 300; line-height: 1.4; letter-spacing: -.01em; max-width: 30ch; }
+.svc__facts { margin: 0; display: grid; gap: 8px; }
+.svc__facts div { display: grid; grid-template-columns: 6.25rem 1fr; gap: 10px; padding-bottom: 8px; border-bottom: 1px solid rgba(0, 0, 0, .1); }
+.svc__facts dt { color: #888; font-size: .8125rem; font-weight: 600; }
+.svc__facts dd { margin: 0; font-size: .9375rem; font-weight: 300; }
+.svc__text .chips { margin: 0; }
+.svc__link { display: inline-flex; gap: 8px; width: max-content; font-weight: 600; border-bottom: 2px solid currentColor; padding-bottom: 2px; }
+.svc__media { display: block; position: relative; overflow: hidden; aspect-ratio: 4 / 3; background: #f4f4f4; transform: perspective(1000px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); transform-style: preserve-3d; will-change: transform; }
+.svc__media img { position: absolute; inset: -6%; width: 112%; height: 112%; max-width: none; object-fit: cover; display: block; transform: translate3d(var(--tx, 0px), var(--ty, 0px), 0); will-change: transform; }
+
+@media (max-width: 900px) {
+  .words__text { padding-left: clamp(1.25rem, .6rem + 2.8vw, 2.5rem); }
+  .words__label { top: 14%; }
+  .reel__slot { --slot-w: 62vw; }
+  .svc__stage { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); gap: 8px; padding-top: 76px; }
+  .svc__left { align-items: flex-start; }
+  .svc__foot { top: 20px; bottom: auto; grid-auto-flow: column; justify-content: space-between; align-items: center; }
+  .svc__line { display: none; }
+  .svc__item { top: 8vh; }
+  .svc__cols { grid-template-columns: minmax(0, 1fr); }
+  .svc__media { aspect-ratio: 16 / 10; }
+  .svc__facts { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .words, .reel, .svc { height: auto; }
+  .words__stage, .reel__stage, .svc__stage { position: static; height: auto; overflow: visible; }
+  .words__stage { padding: 80px var(--pad, 2rem); display: grid; gap: 28px; }
+  .words__label, .words__text { position: static; padding: 0; }
+  .words__scatter { display: none; }
+  .words__statement, .words__sub { opacity: 1 !important; transform: none !important; }
+  .reel__stage { padding: 64px 0; display: block; }
+  .reel__rows { position: static; margin-bottom: 24px; }
+  .reel__slot { margin: 0 auto; --slot-w: min(80vw, 640px); }
+  .svc__stage { display: block; padding-block: 64px; }
+  .svc__right { display: grid; gap: 64px; margin-top: 32px; }
+  .svc__item { position: static; opacity: 1 !important; transform: none !important; }
+  .svc__foot { position: static; margin-top: 16px; }
+}

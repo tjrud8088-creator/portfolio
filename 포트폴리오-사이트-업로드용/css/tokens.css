@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Design tokens — mirrored from the Figma file (Color / Spacing variables
+   and the 19 text styles). Line-height is unitless and letter-spacing is in
+   em, so every style scales with its own font-size. Sizes are rem + clamp()
+   so type stays proportional across breakpoints.
+   ========================================================================== */
+
+:root {
+  /* Font */
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+
+  /* Color — text */
+  --text-primary: #1a1a1a;
+  --text-statement: #3a3a3a;
+  --text-nav: #333333;
+  --text-caption: #444444;
+  --text-secondary: #666666;
+  --text-meta: #888888;
+  --text-inverse: #ffffff;
+  --text-inverse-secondary: #bdbdbd;
+
+  /* Color — surface */
+  --surface-page: #ffffff;
+  --surface-subtle: #f2f2f2;
+  --surface-callout: #f5f5f7;
+  --surface-band: #f5f5f7;
+  --surface-card: #ffffff;
+  --surface-card-muted: #f7f7f8;
+  --surface-placeholder: #ededed;
+  --surface-inverse: #2b2b2b;
+  --surface-inverse-subtle: #454545;
+
+  /* Color — border */
+  --border-default: #e6e6e6;
+  --border-strong: #d9d9d9;
+  --border-quote: #cccccc;
+
+  /* Color — emotion */
+  --emotion-positive: #2f6feb;
+  --emotion-negative: #d93636;
+  --emotion-caution: #d9a400;
+  --emotion-hopeful: #8b5cf6;
+  --emotion-relief: #2e9e5b;
+
+  /* Spacing (px from Figma → rem) */
+  --space-2xs: 0.25rem;  /* 4  */
+  --space-xs: 0.5rem;    /* 8  */
+  --space-sm: 1rem;      /* 16 */
+  --space-md: 1.5rem;    /* 24 */
+  --space-card: 2rem;    /* 32 */
+  --space-lg: 2.5rem;    /* 40 */
+  --space-xl: 4rem;      /* 64 */
+  --space-section-y: clamp(4rem, 3rem + 3.2vw, 6rem); /* 96 at desktop */
+
+  /* Layout */
+  --content-width: 1146px;
+  --text-width: 754px;
+  --gutter: 30px;
+  --page-pad: clamp(1.25rem, 0.6rem + 2.8vw, 2.5rem); /* min side padding on small screens */
+
+  /* Radius */
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 999px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 180ms;
+  --dur-base: 420ms;
+  --dur-slow: 700ms;
+}
+
+/* ==========================================================================
+   Typography — one class per Figma text style
+   ========================================================================== */
+
+/* Display */
+.t-display-statement { font-size: clamp(1.375rem, 1.1rem + 0.9vw, 1.75rem); font-weight: 400; line-height: 1.4;  letter-spacing: -0.01em; }
+.t-display-stat      { font-size: clamp(1.625rem, 1.2rem + 1vw, 2rem);      font-weight: 500; line-height: 1.2;  letter-spacing: -0.01em; }
+
+/* Heading */
+.t-h1   { font-size: clamp(1.375rem, 1.1rem + 0.9vw, 1.75rem); font-weight: 700; line-height: 1.25; letter-spacing: -0.01em; }
+.t-card { font-size: clamp(1.25rem, 1.05rem + 0.6vw, 1.5rem);  font-weight: 600; line-height: 1.3;  letter-spacing: -0.01em; }
+.t-h2   { font-size: clamp(1.125rem, 1rem + 0.4vw, 1.25rem);   font-weight: 600; line-height: 1.35; letter-spacing: -0.005em; }
+
+/* Body */
+.t-body-lg        { font-size: clamp(1.0625rem, 0.95rem + 0.4vw, 1.25rem); font-weight: 400; line-height: 1.5; letter-spacing: -0.005em; }
+.t-body-lg-italic { font-size: clamp(1.0625rem, 0.95rem + 0.4vw, 1.25rem); font-weight: 400; line-height: 1.5; letter-spacing: -0.005em; font-style: italic; }
+.t-body-md        { font-size: clamp(1rem, 0.93rem + 0.25vw, 1.125rem);     font-weight: 400; line-height: 1.5; letter-spacing: -0.005em; }
+.t-body-md-strong { font-size: clamp(1rem, 0.93rem + 0.25vw, 1.125rem);     font-weight: 600; line-height: 1.5; letter-spacing: -0.005em; }
+.t-body-sm        { font-size: 1rem; font-weight: 400; line-height: 1.5; letter-spacing: 0; }
+.t-body-sm-strong { font-size: 1rem; font-weight: 600; line-height: 1.5; letter-spacing: 0; }
+
+/* UI */
+.t-nav          { font-size: 1rem;     font-weight: 600; line-height: 1.4; letter-spacing: 0; }
+.t-overline     { font-size: 0.875rem; font-weight: 500; line-height: 1.4; letter-spacing: 0.08em; text-transform: uppercase; }
+.t-overline-sm  { font-size: 0.75rem;  font-weight: 500; line-height: 1.4; letter-spacing: 0.08em; text-transform: uppercase; }
+.t-label        { font-size: 0.875rem; font-weight: 500; line-height: 1.4; letter-spacing: 0; }
+.t-chip         { font-size: 0.875rem; font-weight: 400; line-height: 1.4; letter-spacing: 0; }
+.t-caption      { font-size: 0.875rem; font-weight: 400; line-height: 1.5; letter-spacing: 0; }
+.t-meta         { font-size: 0.75rem;  font-weight: 400; line-height: 1.5; letter-spacing: 0; }
