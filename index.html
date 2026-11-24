@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/site.css">
-  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/works.css">
   <link rel="stylesheet" href="css/mono.css">
   <script>document.documentElement.classList.add('js');try{if(sessionStorage.getItem('from')==='work'){document.documentElement.classList.add('from-work');sessionStorage.removeItem('from');}}catch(e){}</script>
 </head>
@@ -45,48 +45,80 @@
       <p class="hero2__copy t-meta">© 2026</p>
     </section>
 
-    <!-- About: big statement -->
-    <section class="assemble" id="about" data-assemble aria-labelledby="about-label">
-      <div class="assemble__sticky">
-        <div class="container">
-          <p class="section-header__label t-overline" id="about-label">About</p>
-          <p class="home-statement" data-assemble-text>Seogyeong Jang brings research and design together, turning complexity into clarity and curiosity into craft.</p>
-          <p class="home-statement-sub t-body-md" data-assemble-sub>I like problems that look complicated at first. I research widely, narrow down with evidence, and keep testing until the design is clear enough for anyone to follow.</p>
+    
+    <!-- Branding 1: words rise and settle into the About statement (scroll-linked, reversible) -->
+    <section class="words" id="about" data-words aria-labelledby="about-label">
+      <div class="words__stage">
+        <p class="section-header__label t-overline words__label" id="about-label">About</p>
+        <div class="words__scatter" aria-hidden="true"><span data-w style="--x:46%">clarity</span><span data-w style="--x:58%">research</span><span data-w style="--x:34%">curiosity</span><span data-w style="--x:64%">craft</span><span data-w style="--x:50%">design</span></div>
+        <div class="words__text">
+          <p class="words__statement" data-w-statement>Seogyeong Jang brings research and design together, turning complexity into clarity and curiosity into craft.</p>
+          <p class="words__sub" data-w-sub>I like problems that look complicated at first. I research widely, narrow down with evidence, and keep testing until the design is clear enough for anyone to follow.</p>
         </div>
       </div>
     </section>
 
-    <!-- Selected work: scroll story (work 01 expands in place, 02 and 03 follow) -->
-    <section class="works" id="work" aria-labelledby="work-label">
-      <div class="container works__head">
-        <h2 class="section-header__title t-h1" id="work-label" data-reveal>Selected work</h2>
-        <a class="stack-head__all t-label" href="work.html" data-reveal>All case studies →</a>
+    <!-- Branding 2: sideways type; the centre box is intentionally empty (drop a <video> or <img> inside .reel__slot later) -->
+    <section class="reel" id="reel" data-reel aria-label="Seogyeong Jang, Product Designer">
+      <div class="reel__stage">
+        <div class="reel__rows" aria-hidden="true">
+          <div class="reel__row reel__row--echo" data-row="-1"><div><span>Seogyeong Jang</span><span>Seogyeong Jang</span><span>Seogyeong Jang</span><span>Seogyeong Jang</span><span>Seogyeong Jang</span><span>Seogyeong Jang</span><span>Seogyeong Jang</span><span>Seogyeong Jang</span></div></div>
+          <div class="reel__row reel__row--main" data-row="1"><div><span>Seogyeong Jang</span><span>Seogyeong Jang</span><span>Seogyeong Jang</span><span>Seogyeong Jang</span><span>Seogyeong Jang</span><span>Seogyeong Jang</span><span>Seogyeong Jang</span><span>Seogyeong Jang</span></div></div>
+          <div class="reel__row reel__row--echo" data-row="-1"><div><span>Product Designer</span><span>Product Designer</span><span>Product Designer</span><span>Product Designer</span><span>Product Designer</span><span>Product Designer</span><span>Product Designer</span><span>Product Designer</span></div></div>
+        </div>
+        <div class="reel__slot" data-cursor="play" data-slot="video"></div>
       </div>
-      <div class="works__list">
-        <article class="story" id="work-01" data-story data-steps="9" aria-label="Case study 01: Deft">
-          <div class="story__stage">
-            <div class="story__top"><span class="st__num" aria-hidden="true">01</span><div><p class="t-overline st__eyebrow">Case study 01 / 03</p><h3 class="st__name">Deft</h3></div><a class="st__all t-label" href="case-study.html">Full case study →</a></div>
-            <div class="story__grid">
-              <div class="story__texts"><div class="st__t" data-step-text="0"><p class="st__k">01 · Overview</p><h3>Deft helps stroke survivors see whether their home practice is working</h3><p class="st__p">A tablet app where virtual clay responds to every hand movement and personal records show progress over time.</p><ul class="chips"><li class="chip t-chip">Fine motor rehab</li><li class="chip t-chip">Biofeedback</li><li class="chip t-chip">Usability testing</li></ul><p class="st__meta">Lead UX/UI Designer · Solo · Aug–Nov 2026</p></div><div class="st__t" data-step-text="1"><p class="st__k">02 · The problem</p><h3>Practicing at home, unsure of each movement</h3><p class="st__p">Desk research showed that support thins out once survivors leave the hospital. Literature and community posts point to gaps in follow-up, guidance and participation.</p></div><div class="st__t" data-step-text="2"><p class="st__k">03 · Research &amp; insight</p><h3>Practice stalls exactly where guidance ends</h3><p class="st__p">A 64-minute interview and affinity mapping revealed two moments: practicing less with no one to correct posture, and guessing when to use more force.</p></div><div class="st__t" data-step-text="3"><p class="st__k">04 · Define &amp; ideate</p><h3>A missing reference point, three How-Might-We questions</h3><p class="st__p">In the moment · after a session · over weeks. Ideas for each were converged on one concept using three criteria: action fit, observable input, readable feedback.</p></div><div class="st__t" data-step-text="4"><p class="st__k">05 · Feature 01 · Calibration</p><h3>Set a starting point that fits today</h3><p class="st__p">A short readiness check samples finger range, response speed and hold stability, then proposes a touch target, tolerance and starting level.</p></div><div class="st__t" data-step-text="5"><p class="st__k">06 · Feature 02 · Live feedback</p><h3>Make movement legible while it happens</h3><p class="st__p">Virtual clay makes finger movement visible. A text cue and a progress gauge answer every touch, so users can correct themselves in the moment.</p></div><div class="st__t" data-step-text="6"><p class="st__k">07 · Feature 03 · Progress</p><h3>Show change across sessions</h3><p class="st__p">A progress view charts precision, response time, touch persistence and difficulty across sessions, so small gains become visible.</p></div><div class="st__t" data-step-text="7"><p class="st__k">08 · Testing</p><h3>Two user rounds and one OT review</h3><p class="st__p">A left-side setting error, multi-finger drag friction and the limits of touch-only measurement led to a point-touch pivot. Exploratory findings, not clinical validation.</p></div><div class="st__t" data-step-text="8"><p class="st__k">09 · Read on</p><h3>The full case study</h3><p class="st__p">Research, journey map, information architecture, task flow, prototypes, testing and iteration.</p><a class="st__link" href="case-study.html">Read the full case study →</a></div></div>
-              <div class="story__medias"><div class="st__media" data-step-media="0"><div class="st__shot"><img src="img/hero-project.jpg" alt="" style="object-position:50% 38%"></div></div><div class="st__media st__media--plain" data-step-media="1"><div class="st__shot"><img src="img/v7/desk-research-board.png" alt=""></div></div><div class="st__media" data-step-media="2"><div class="st__shot"><img src="img/v7/affinity-mapping.png" alt="" loading="lazy" style="object-position:50% 40%"></div></div><div class="st__media" data-step-media="3"><div class="st__shot"><img src="img/v7/ideation-whiteboard.png" alt="" loading="lazy"></div></div><div class="st__media st__media--dev" data-step-media="4"><div class="st__device"><div class="st__bezel"><div class="st__screen"><img src="img/v7/feat/c4-result.jpg" alt="" loading="lazy"></div></div><a class="st__figma" href="https://www.figma.com/design/Yjykegk1fvSeEREtOBu3Zf/44%EA%B8%B0_%EC%9E%A5%EC%84%9C%EA%B2%BD_4%EC%B0%A8?node-id=377-1603" target="_blank" rel="noopener noreferrer">실제 프로토타입 체험하기 (Figma) <span aria-hidden="true">↗</span></a></div></div><div class="st__media st__media--dev" data-step-media="5"><div class="st__device"><div class="st__bezel"><div class="st__screen"><img src="img/v7/feat/p2-inband.jpg" alt="" loading="lazy"></div></div><a class="st__figma" href="https://www.figma.com/design/Yjykegk1fvSeEREtOBu3Zf/44%EA%B8%B0_%EC%9E%A5%EC%84%9C%EA%B2%BD_4%EC%B0%A8?node-id=377-1603" target="_blank" rel="noopener noreferrer">실제 프로토타입 체험하기 (Figma) <span aria-hidden="true">↗</span></a></div></div><div class="st__media st__media--dev" data-step-media="6"><div class="st__device"><div class="st__bezel"><div class="st__screen"><img src="img/v7/feat/d1-dashboard.jpg" alt="" loading="lazy"></div></div><a class="st__figma" href="https://www.figma.com/design/Yjykegk1fvSeEREtOBu3Zf/44%EA%B8%B0_%EC%9E%A5%EC%84%9C%EA%B2%BD_4%EC%B0%A8?node-id=377-1603" target="_blank" rel="noopener noreferrer">실제 프로토타입 체험하기 (Figma) <span aria-hidden="true">↗</span></a></div></div><div class="st__media st__media--plain st__media--big" data-step-media="7"><div class="st__bignum" aria-hidden="true">70</div><p class="st__bignote">SUS score · expert review</p></div><div class="st__media st__media--plain" data-step-media="8"><a class="st__cta" href="case-study.html">Read the full case study <span aria-hidden="true">→</span></a></div></div>
-            </div>
-            <div class="story__rail" aria-hidden="true"><i class="story__bar"></i><ol><li data-dot="0"><span>Overview</span></li><li data-dot="1"><span>The problem</span></li><li data-dot="2"><span>Research &amp; insight</span></li><li data-dot="3"><span>Define &amp; ideate</span></li><li data-dot="4"><span>Feature 01 · Calibration</span></li><li data-dot="5"><span>Feature 02 · Live feedback</span></li><li data-dot="6"><span>Feature 03 · Progress</span></li><li data-dot="7"><span>Testing</span></li><li data-dot="8"><span>Read on</span></li></ol></div>
+    </section>
+
+    <!-- Selected work: Möbius "Our Services" pattern. Left title stays; the three projects roll up on the right. -->
+    <section class="svc" id="work" data-svc style="--n:3" aria-labelledby="work-label">
+      <div class="svc__stage">
+        <div class="svc__left">
+          <h2 class="svc__label" id="work-label">Selected work</h2>
+          <div class="svc__foot">
+            <p class="svc__count"><b data-svc-no>01</b> / 03</p>
+            <span class="svc__line" aria-hidden="true"><i data-svc-line></i></span>
+            <a class="svc__all" href="work.html">All case studies <span aria-hidden="true">→</span></a>
           </div>
-        </article>
-        <article class="teaser" id="work-02" style="--c:#ffe299" data-teaser aria-label="Case study 02">
-          <a class="teaser__in" href="case-study-2.html">
-            <span class="teaser__num" aria-hidden="true">02</span>
-            <div class="teaser__text"><p class="t-overline st__eyebrow">Case study 02 / 03</p><h3>Case study 02</h3><p class="st__p">A redesign of an existing social platform. Details coming soon.</p><ul class="chips"><li class="chip t-chip">Redesign</li><li class="chip t-chip">Social</li></ul><span class="st__link">Open case study →</span></div>
-            <div class="teaser__media"><img src="img/case-02.jpg" alt="" loading="lazy"></div>
-          </a>
-        </article>
-        <article class="teaser" id="work-03" style="--c:#b3f4ef" data-teaser aria-label="Case study 03">
-          <a class="teaser__in" href="case-study-3.html">
-            <span class="teaser__num" aria-hidden="true">03</span>
-            <div class="teaser__text"><p class="t-overline st__eyebrow">Case study 03 / 03</p><h3>Case study 03</h3><p class="st__p">Details coming soon.</p><ul class="chips"><li class="chip t-chip">Coming soon</li></ul><span class="st__link">Open case study →</span></div>
-            <div class="teaser__media"><img src="img/case-03.jpg" alt="" loading="lazy"></div>
-          </a>
-        </article>
+        </div>
+        <div class="svc__right">
+          <article class="svc__item" data-svc-i="0" aria-label="Case study 01: Deft">
+            <header class="svc__head"><span class="svc__idx">01 /</span><h3>Deft</h3></header>
+            <div class="svc__cols">
+              <div class="svc__text">
+                <p class="svc__desc">Real-time pottery biofeedback that helps stroke survivors rehab fine motor skills safely at home.</p>
+                <dl class="svc__facts"><div><dt>Role</dt><dd>Lead UX/UI Designer · Solo</dd></div><div><dt>Platform</dt><dd>Tablet · Interactive concept</dd></div><div><dt>Timeline</dt><dd>Aug–Nov 2026</dd></div></dl>
+                <ul class="chips"><li class="chip t-chip">Fine motor rehab</li><li class="chip t-chip">Biofeedback</li><li class="chip t-chip">Usability testing</li></ul>
+                <a class="svc__link" href="case-study.html">View case study <span aria-hidden="true">→</span></a>
+              </div>
+              <a class="svc__media" href="case-study.html" data-cursor="view" data-tilt tabindex="-1" aria-hidden="true"><img src="img/hero-project.jpg" alt="Deft key image" ></a>
+            </div>
+          </article>
+          <article class="svc__item" data-svc-i="1" aria-label="Case study 02: X Premium Redesign">
+            <header class="svc__head"><span class="svc__idx">02 /</span><h3>X Premium Redesign</h3></header>
+            <div class="svc__cols">
+              <div class="svc__text">
+                <p class="svc__desc">Exploring how X’s mobile experience could make Premium more relevant to people who primarily browse rather than post.</p>
+                <dl class="svc__facts"><div><dt>Type</dt><dd>Independent Mobile App Redesign</dd></div><div><dt>Duration</dt><dd>8 Weeks</dd></div><div><dt>Status</dt><dd>Iterating Based on User Testing Findings</dd></div></dl>
+                <ul class="chips"><li class="chip t-chip">User Research</li><li class="chip t-chip">UX/UI Design</li><li class="chip t-chip">Prototyping</li><li class="chip t-chip">Usability Testing</li></ul>
+                <a class="svc__link" href="case-study-2.html">View case study <span aria-hidden="true">→</span></a>
+              </div>
+              <a class="svc__media" href="case-study-2.html" data-cursor="view" data-tilt tabindex="-1" aria-hidden="true"><img src="img/case-02.jpg" alt="X Premium Redesign key image" loading="lazy"></a>
+            </div>
+          </article>
+          <article class="svc__item" data-svc-i="2" aria-label="Case study 03: Case study 03">
+            <header class="svc__head"><span class="svc__idx">03 /</span><h3>Case study 03</h3></header>
+            <div class="svc__cols">
+              <div class="svc__text">
+                <p class="svc__desc">Details coming soon.</p>
+                
+                <ul class="chips"><li class="chip t-chip">Coming soon</li></ul>
+                <a class="svc__link" href="case-study-3.html">View case study <span aria-hidden="true">→</span></a>
+              </div>
+              <a class="svc__media" href="case-study-3.html" data-cursor="view" data-tilt tabindex="-1" aria-hidden="true"><img src="img/case-03.jpg" alt="Case study 03 key image" loading="lazy"></a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -139,6 +171,6 @@
     </div>
   </footer>
   <script src="js/main.js" defer></script>
-  <script src="js/story.js" defer></script>
+  <script src="js/works.js" defer></script>
 </body>
 </html>

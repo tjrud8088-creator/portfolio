@@ -3,19 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Case study 2 — Seogyeong Jang</title>
-  <meta name="description" content="Case study 2 by Seogyeong Jang. Coming soon.">
+  <title>X Premium Redesign — Case Study</title>
+  <meta name="description" content="This independent project explores how X’s mobile experience could make Premium more relevant to people who primarily browse rather than post.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/ver7.css">
   <link rel="stylesheet" href="css/mono.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
   <a class="skip-link t-label" href="#main">Skip to content</a>
   <div class="progress" aria-hidden="true"></div>
+
+  <!-- Header -->
   <header class="site-header">
     <nav class="container nav" aria-label="Primary">
       <a class="nav__brand t-nav" href="index.html">Seogyeong Jang</a>
@@ -23,27 +26,64 @@
       <div class="nav__links" id="nav-links">
         <a class="nav__link t-nav" href="index.html">Home</a>
         <a class="nav__link t-nav" href="about.html">About</a>
-        <a class="nav__link t-nav" href="case-studies.html" aria-current="page">Case Studies</a>
+        <a class="nav__link t-nav" href="work.html" aria-current="page">Case Studies</a>
         <a class="nav__link t-nav" href="index.html#contact">Contact</a>
       </div>
     </nav>
   </header>
-  <main id="main">
-    <section class="hero" aria-labelledby="t">
-      <div class="container section__inner">
-        <div class="section-header" data-reveal>
-          <p class="section-header__label t-overline">Case study 2</p>
-          <h1 class="section-header__title t-h1" id="t">Coming soon</h1>
-        </div>
-        <p class="statement t-display-statement" data-reveal style="--reveal-delay:80ms">This case study is being written. Check back soon.</p>
-        <figure class="media" data-reveal style="--reveal-delay:120ms"><div class="media__img ratio-hero t-label" role="img" aria-label="Cover placeholder">Image</div></figure>
-        <div class="cta" data-reveal><a class="button t-label" href="index.html#work">← Back to selected work</a></div>
+
+  <main id="main" class="v7">
+
+    <section class="v7-sec v7-bg-white" id="overview" data-section="Overview" aria-labelledby="overview-t">
+      <div class="v7-in">
+      <div class="v7-head" data-reveal><p class="v7-eyebrow">Case study 02</p><h1 class="v7-title" id="overview-t">X Premium Redesign</h1></div>
+      <p class="v7-eyebrow" data-reveal>PROJECT OVERVIEW</p>
+      <div class="cs2-ov" data-reveal>
+        <div class="cs2-ov__copy"><p>This independent project explores how X’s mobile experience could make Premium more relevant to people who primarily browse rather than post.</p><p>The proposed redesign focuses on two activities: finding previously seen posts and revisiting saved content. It explores how improved search and bookmark experiences could address readers’ needs and give them a clearer reason to consider Premium.</p><p>I conducted surveys and interviews, defined the design direction, and developed the proposed experience. User testing is planned to evaluate usability, perceived value, and willingness to subscribe.</p></div>
+        <dl class="cs2-ov__meta"><div><dt>PROJECT TYPE</dt><dd>Independent Mobile App Redesign</dd></div><div><dt>DURATION</dt><dd>8 Weeks</dd></div><div><dt>ROLE</dt><dd>User Research, User Interviews, UX/UI Design, Prototyping, Usability Testing</dd></div><div><dt>TOOLS</dt><dd>Figma, FigJam, Google Forms</dd></div><div><dt>STATUS</dt><dd>Iterating Based on User Testing Findings</dd></div></dl>
+      </div></div>
+    </section>
+
+    <section class="v7-sec v7-bg-green" id="problem" data-section="Problem" aria-labelledby="problem-t">
+      <div class="v7-in">
+      <div class="v7-head" data-reveal><p class="v7-eyebrow">PROBLEM</p><h2 class="v7-title" id="problem-t">What makes Premium worth paying for when you mainly browse?</h2></div>
+      <p class="v7-lead" data-reveal>Many people use X without posting, while Premium accounts show a substantial advantage in post reach. This raised a question: what could make Premium worth considering for people who mainly browse?</p>
+      <div class="cs2-pair" data-reveal>
+        <figure class="v7-fig"><img src="img/v2/buffer-reach.png" alt="Buffer analysis: Premium accounts saw around 10x the reach per post of regular accounts" loading="lazy"></figure>
+        <figure class="v7-fig"><img src="img/v2/pew-nonposting.png" alt="Pew Research Center: 65% of surveyed X users did not post" loading="lazy"></figure>
+      </div>
+      <p class="v7-cap" data-reveal>Pew Research Center · U.S. adult X users · March 2024<br>Buffer · 18.8M posts, 71K accounts · Aug 2024–Aug 2025</p></div>
+    </section>
+
+    <section class="v7-sec v7-bg-white" id="feedback" data-section="User feedback" aria-labelledby="feedback-t">
+      <div class="v7-in">
+      <div class="v7-head" data-reveal><p class="v7-eyebrow">PUBLIC USER FEEDBACK</p><h2 class="v7-title" id="feedback-t">Paying for Premium did not always mean seeing its value.</h2></div>
+      <p class="v7-lead" data-reveal>Public posts revealed accounts of subscribing to avoid limits, uncertainty about benefits, and hesitation about cancelling. These experiences raised a question: what would make Premium a choice users actively wanted to make?</p></div>
+    </section>
+    <section class="cs2-band" aria-label="Public posts: three observations">
+      <img src="img/v2/public-posts.png" alt="" loading="lazy">
+      <div class="cs2-band__dim"></div>
+      <div class="cs2-band__in">
+        <div class="cs2-band__obs" data-reveal><div><h3>01 · Subscribing to avoid limits</h3><p>Some posts described paying to continue activities interrupted by limits.</p></div><div><h3>02 · Questioning the value after paying</h3><p>Others expressed uncertainty about what their subscription actually offered.</p></div><div><h3>03 · Paying for specific needs</h3><p>Features such as bookmark folders and editing gave some users a concrete reason to subscribe.</p></div></div>
+        <p class="cs2-band__cap">Exploratory review of selected public posts on X.</p>
       </div>
     </section>
+
+    <section class="v7-sec v7-bg-green" id="challenge" data-section="Design challenge" aria-labelledby="challenge-t">
+      <div class="v7-in">
+      <div class="v7-head" data-reveal><p class="v7-eyebrow">DESIGN CHALLENGE</p><h2 class="v7-title" id="challenge-t">How might we give readers a meaningful reason to choose Premium?</h2></div></div>
+    </section>
   </main>
-  <footer class="site-footer--simple">
-    <div class="container t-meta"><span>© 2026 Seogyeong Jang</span><a href="#top" class="t-meta">Back to top ↑</a></div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a class="next" href="case-study.html" aria-label="Next project: Deft">
+        <span class="next__label t-overline">Next project</span>
+        <span class="next__row"><span class="next__title t-h1">Deft</span><span class="next__arrow t-h1" aria-hidden="true">→</span></span>
+      </a>
+    </div>
   </footer>
+
   <script src="js/main.js" defer></script>
 </body>
 </html>

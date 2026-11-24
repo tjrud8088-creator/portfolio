@@ -178,3 +178,23 @@
 .fx-btn { display: inline-flex; align-items: center; gap: 10px; padding: 16px 30px; border-radius: 999px; background: var(--v7-forest); color: #fff; font-size: 1.0625rem; font-weight: 600; transition: background .18s; }
 .fx-btn:hover { background: #1f4d40; }
 @media (max-width: 900px) { .fx { grid-template-columns: minmax(0, 1fr); } .fx--flip .fx__device { order: 0; } .fx__bezel { border-radius: 20px; padding: 8px; } .fx__screen { border-radius: 12px; } }
+
+/* ---- case study 02 ---- */
+.cs2-ov { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
+.cs2-ov__copy { display: flex; flex-direction: column; gap: 1.2em; max-width: 754px; }
+.cs2-ov__copy p { margin: 0; font-size: clamp(1.0625rem, .95rem + .4vw, 1.25rem); line-height: 1.55; }
+.cs2-ov__meta { margin: 0; display: grid; gap: 22px; }
+.cs2-ov__meta div { display: grid; gap: 6px; }
+.cs2-ov__meta dt { font-size: .8125rem; font-weight: 600; letter-spacing: .04em; color: #888; }
+.cs2-ov__meta dd { margin: 0; font-size: 1rem; line-height: 1.5; }
+.cs2-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; align-items: start; }
+.cs2-pair .v7-fig img { width: 100%; height: auto; border: 1px solid rgba(0, 0, 0, .1); }
+.cs2-band { position: relative; overflow: hidden; min-height: 420px; display: grid; }
+.cs2-band > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.cs2-band__dim { position: absolute; inset: 0; background: rgba(255, 255, 255, .88); }
+.cs2-band__in { position: relative; max-width: calc(1200px + 2 * var(--page-pad)); width: 100%; margin: 0 auto; padding: 104px var(--page-pad) 56px; display: flex; flex-direction: column; gap: 48px; }
+.cs2-band__obs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; }
+.cs2-band__obs h3 { margin: 0 0 12px; font-size: 1.25rem; font-weight: 600; line-height: 1.35; letter-spacing: -.01em; }
+.cs2-band__obs p { margin: 0; font-size: 1.125rem; line-height: 1.5; }
+.cs2-band__cap { margin: 0; font-size: .875rem; color: #888; }
+@media (max-width: 900px) { .cs2-ov, .cs2-pair, .cs2-band__obs { grid-template-columns: minmax(0, 1fr); } .cs2-band__in { padding-top: 64px; } }
